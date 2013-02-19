@@ -1,10 +1,6 @@
-# Symposion
+# SciPy 2013
 
-A conference management solution from Eldarion.
-
-Built with the generous support of the Python Software Foundation.
-
-See http://eldarion.com/symposion/ for commercial support, customization and hosting
+Website for the SciPy Conference 2013.
 
 ## Quickstart
 
