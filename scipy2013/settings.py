@@ -103,7 +103,7 @@ MIDDLEWARE_CLASSES = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
-ROOT_URLCONF = "symposion_project.urls"
+ROOT_URLCONF = "scipy2013.urls"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
@@ -163,7 +163,7 @@ INSTALLED_APPS = [
     "symposion.schedule",
     
     # project
-    "symposion_project.proposals",
+    "scipy2013.proposals",
 ]
 
 FIXTURE_DIRS = [
@@ -212,9 +212,9 @@ CONFERENCE_ID = 1
 SYMPOSION_PAGE_REGEX = r"(([\w-]{1,})(/[\w-]{1,})*)/"
 
 PROPOSAL_FORMS = {
-    "tutorial": "symposion_project.proposals.forms.TutorialProposalForm",
-    "talk": "symposion_project.proposals.forms.TalkProposalForm",
-    "poster": "symposion_project.proposals.forms.PosterProposalForm",
+    "tutorial": "scipy2013.proposals.forms.TutorialProposalForm",
+    "talk": "scipy2013.proposals.forms.TalkProposalForm",
+    "poster": "scipy2013.proposals.forms.PosterProposalForm",
 }
 
 # local_settings.py can be used to override environment-specific settings
