@@ -3,30 +3,48 @@ from django.db import models
 from symposion.proposals.models import ProposalBase
 
 
-class Proposal(ProposalBase):
+class TalkPosterProposal(ProposalBase):
+
+    TYPE_TALK_OR_POSTER = 1
+    TYPE_TALK_ONLY = 2
+    TYPE_POSTER_ONLY = 3
     
-    AUDIENCE_LEVEL_NOVICE = 1
-    AUDIENCE_LEVEL_EXPERIENCED = 2
-    AUDIENCE_LEVEL_INTERMEDIATE = 3
-    
-    AUDIENCE_LEVELS = [
-        (AUDIENCE_LEVEL_NOVICE, "Novice"),
-        (AUDIENCE_LEVEL_INTERMEDIATE, "Intermediate"),
-        (AUDIENCE_LEVEL_EXPERIENCED, "Experienced"),
+    SUBMISSION_TYPES = [
+        (TYPE_TALK_OR_POSTER, "Talk or Poster"),
+        (TYPE_TALK_ONLY, "Talk Only"),
+        (TYPE_POSTER_ONLY, "Poster Only"),
     ]
-    
-    audience_level = models.IntegerField(choices=AUDIENCE_LEVELS)
-    
-    recording_release = models.BooleanField(
-        default=True,
-        help_text="By submitting your talk proposal, you agree to give permission to the conference organizers to record, edit, and release audio and/or video of your presentation. If you do not agree to this, please uncheck this box."
-    )
-    
-    class Meta:
-        abstract = True
 
+    TRACK_GENERAL = 1
+    TRACK_MACHINE_LEARNING = 2
+    TRACK_TOOLS = 3
+    TRACK_DOMAIN_ONLY = 4
+    
+    TOPIC_TRACKS = [
+        (TRACK_GENERAL, "General"),
+        (TRACK_MACHINE_LEARNING, "Machine Learning"),
+        (TRACK_TOOLS, "Tools for Reproducibility"),
+        (TRACK_DOMAIN_ONLY, "None, only submit to Domain Symposia"),
+    ]
 
-class TalkPosterProposal(Proposal):
+    DOMAIN_NONE = 1
+    DOMAIN_MEDICAL_IMAGING = 2
+    DOMAIN_METEOROLOGY = 3
+    DOMAIN_ASTRONOMY = 4
+    DOMAIN_BIO_INFORMATICS = 5
+    
+    DOMAIN_SYMPOSIA = [
+        (DOMAIN_NONE, "None, only submit to tracks"),
+        (DOMAIN_MEDICAL_IMAGING, "Medical imaging"),
+        (DOMAIN_METEOROLOGY, "Meteorology, climatology, and atmospheric and oceanic science"),
+        (DOMAIN_ASTRONOMY, "Astronomy and astrophysics"),
+        (DOMAIN_BIO_INFORMATICS, "Bio-informatics"),
+    ]
+
+    submission_type = models.IntegerField(choices=SUBMISSION_TYPES, default=1)
+    topic_track = models.IntegerField(choices=TOPIC_TRACKS, default=1)
+    domain_symposium = models.IntegerField(choices=DOMAIN_SYMPOSIA, default=1)
+
     class Meta:
         verbose_name = "talk/poster proposal"
 

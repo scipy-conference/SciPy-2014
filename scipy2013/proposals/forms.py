@@ -22,14 +22,16 @@ class TalkPosterProposalForm(ProposalForm):
         model = TalkPosterProposal
         fields = [
             "title",
-            "audience_level",
             "description",
             "abstract",
+            "submission_type",
+            "topic_track",
+            "domain_symposium",
             "additional_notes",
-            "recording_release",
         ]
         widgets = {
             "abstract": MarkItUpWidget(),
+            "description": forms.widgets.Textarea(attrs={"class": "span9"}),
             "additional_notes": MarkItUpWidget(),
         }
 
