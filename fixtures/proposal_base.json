@@ -22,6 +22,28 @@
         }
     }, 
     {
+        "pk": 3, 
+        "model": "proposals.proposalsection", 
+        "fields": {
+            "start": null, 
+            "section": 3, 
+            "end": null, 
+            "closed": null, 
+            "published": null
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "proposals.proposalsection", 
+        "fields": {
+            "start": null, 
+            "section": 4, 
+            "end": null, 
+            "closed": null, 
+            "published": null
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "proposals.proposalkind", 
         "fields": {
@@ -35,17 +57,26 @@
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 2, 
-            "name": "talk", 
-            "slug": "talk"
+            "name": "talk/poster", 
+            "slug": "talk-poster"
         }
     }, 
     {
         "pk": 3, 
         "model": "proposals.proposalkind", 
         "fields": {
-            "section": 2, 
-            "name": "poster", 
-            "slug": "poster"
+            "section": 3, 
+            "name": "birds of a feather", 
+            "slug": "bof"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "proposals.proposalkind", 
+        "fields": {
+            "section": 4, 
+            "name": "sprint", 
+            "slug": "sprint"
         }
     }
 ]
