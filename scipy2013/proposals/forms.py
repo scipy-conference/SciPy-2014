@@ -2,7 +2,7 @@ from django import forms
 
 from markitup.widgets import MarkItUpWidget
 
-from scipy2013.proposals.models import TalkProposal, TutorialProposal, PosterProposal
+from scipy2013.proposals.models import TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
 
 
 class ProposalForm(forms.ModelForm):
@@ -16,10 +16,10 @@ class ProposalForm(forms.ModelForm):
         return value
 
 
-class TalkProposalForm(ProposalForm):
+class TalkPosterProposalForm(ProposalForm):
 
     class Meta:
-        model = TalkProposal
+        model = TalkPosterProposal
         fields = [
             "title",
             "audience_level",
@@ -53,20 +53,31 @@ class TutorialProposalForm(ProposalForm):
         }
 
 
-class PosterProposalForm(ProposalForm):
+class BofProposalForm(ProposalForm):
 
     class Meta:
-        model = PosterProposal
+        model = BofProposal
         fields = [
             "title",
-            "audience_level",
             "description",
-            "abstract",
             "additional_notes",
-            "recording_release",
-
         ]
         widgets = {
-            "abstract": MarkItUpWidget(),
+            "description": forms.widgets.Textarea(attrs={"class": "span9"}),
+            "additional_notes": MarkItUpWidget(),
+        }
+
+
+class SprintProposalForm(ProposalForm):
+
+    class Meta:
+        model = SprintProposal
+        fields = [
+            "title",
+            "description",
+            "additional_notes",
+        ]
+        widgets = {
+            "description": forms.widgets.Textarea(attrs={"class": "span9"}),
             "additional_notes": MarkItUpWidget(),
         }

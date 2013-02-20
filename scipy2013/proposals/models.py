@@ -26,9 +26,9 @@ class Proposal(ProposalBase):
         abstract = True
 
 
-class TalkProposal(Proposal):
+class TalkPosterProposal(Proposal):
     class Meta:
-        verbose_name = "talk proposal"
+        verbose_name = "talk/poster proposal"
 
 
 class TutorialProposal(Proposal):
@@ -36,6 +36,11 @@ class TutorialProposal(Proposal):
         verbose_name = "tutorial proposal"
 
 
-class PosterProposal(Proposal):
+class BofProposal(ProposalBase):
     class Meta:
-        verbose_name = "poster proposal"
+        verbose_name = "birds of a feather proposal"
+
+
+class SprintProposal(ProposalBase):
+    class Meta:
+        verbose_name = "sprint proposal"

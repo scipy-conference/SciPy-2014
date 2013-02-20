@@ -213,8 +213,9 @@ SYMPOSION_PAGE_REGEX = r"(([\w-]{1,})(/[\w-]{1,})*)/"
 
 PROPOSAL_FORMS = {
     "tutorial": "scipy2013.proposals.forms.TutorialProposalForm",
-    "talk": "scipy2013.proposals.forms.TalkProposalForm",
-    "poster": "scipy2013.proposals.forms.PosterProposalForm",
+    "talk-poster": "scipy2013.proposals.forms.TalkPosterProposalForm",
+    "bof": "scipy2013.proposals.forms.BofProposalForm",
+    "sprint": "scipy2013.proposals.forms.SprintProposalForm",
 }
 
 # local_settings.py can be used to override environment-specific settings
