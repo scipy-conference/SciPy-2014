@@ -3,10 +3,10 @@
         "pk": 1, 
         "model": "conference.conference", 
         "fields": {
-            "timezone": "US/Eastern", 
-            "start_date": "2040-01-01", 
-            "end_date": "2040-01-04", 
-            "title": "SymposionCon"
+            "timezone": "US/Central", 
+            "start_date": "2013-06-24", 
+            "end_date": "2013-06-29", 
+            "title": "SciPy 2013"
         }
     }, 
     {
@@ -14,9 +14,9 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2040-01-01", 
+            "start_date": "2013-06-24", 
             "name": "Tutorials", 
-            "end_date": "2040-01-01", 
+            "end_date": "2013-06-25", 
             "slug": "tutorials"
         }
     }, 
@@ -25,10 +25,32 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2040-01-02", 
-            "name": "General Sessions", 
-            "end_date": "2040-01-04", 
-            "slug": "general-sessions"
+            "start_date": "2013-06-26", 
+            "name": "Talks and Posters", 
+            "end_date": "2013-06-27", 
+            "slug": "talks-posters"
         }
-    }
+    },
+    {
+        "pk": 3, 
+        "model": "conference.section", 
+        "fields": {
+            "conference": 1, 
+            "start_date": "2013-06-27", 
+            "name": "Birds of a Feather", 
+            "end_date": "2013-06-27", 
+            "slug": "bofs"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "conference.section", 
+        "fields": {
+            "conference": 1, 
+            "start_date": "2013-06-28", 
+            "name": "Sprints", 
+            "end_date": "2013-06-29", 
+            "slug": "sprints"
+        }
+    },
 ]
