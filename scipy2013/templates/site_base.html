@@ -9,7 +9,8 @@
 {% block viewport %}{% endblock %}
 
 {% block style_base %}
-    <link href="{% static "symposion/css/symposion.css" %}" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link href="{% static "symposion/css/site.css" %}" rel="stylesheet">
     {% block extra_style %}{% endblock %}
 {% endblock %}
 
@@ -19,6 +20,8 @@
     {% markitup_media "no-jquery" %}
     {% block extra_head %}{% endblock %}
 {% endblock %}
+
+{% block wrapper_class %}container wrapper{% endblock %}
 
 {% block topbar_base %}
     <div class="container">
@@ -52,8 +55,7 @@
                 </ul>
             </div>
             
-            <h1><a href="{% url home %}">{{ SITE_NAME }}</a></h1>
-            <h2><a href="{% url home %}"><span style="font-weight: 200;">Some amazing location, February 31st</span></a></h2>
+            <h1><a href="{% url home %}"><img src="{% static "img/logo@2x.png" %}" width="400" height="120"></a></h1>
         </header>
         <div class="navbar">
             <div class="navbar-inner">
@@ -84,13 +86,13 @@
         
         {% block body_outer %}
             <div class="row">
-                <div class="span9">
-                    {% block body %}
-                    {% endblock %}
-                </div>
                 <div class="span3">
                     {% block sidebar %}
                         {% include "_default_sidebar.html" %}
+                    {% endblock %}
+                </div>
+                <div class="span9">
+                    {% block body %}
                     {% endblock %}
                 </div>
             </div>

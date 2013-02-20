@@ -1,15 +1,15 @@
 {% load sponsorship_tags %}
 {% load thumbnail %}
+{% load boxes_tags %}
 
 {% sponsor_levels as levels %}
 
-<h2>Sponsors</h2>
+{% box "sponsor-sidebar" %}
 
 <div class="sponsor-list">
     {% for level in levels %}
         {% if level.sponsors %}
-            <h3 style="margin-top: 3em;">{{ level.name }}</h3>
-            
+            <h4 style="margin-top: 3em;">{{ level.name }}</h4>
             {% for sponsor in level.sponsors %}
                 <div style="margin: 10px 0;">
                     <a href="{{ sponsor.external_url }}">
