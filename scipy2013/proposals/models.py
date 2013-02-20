@@ -31,7 +31,30 @@ class TalkPosterProposal(Proposal):
         verbose_name = "talk/poster proposal"
 
 
-class TutorialProposal(Proposal):
+class TutorialProposal(ProposalBase):
+
+    TRACK_INTRODUCTORY = 1
+    TRACK_INTERMEDIATE = 2
+    TRACK_ADVANCED = 3
+    
+    TRACKS = [
+        (TRACK_INTRODUCTORY, "Introductory"),
+        (TRACK_INTERMEDIATE, "Intermediate"),
+        (TRACK_ADVANCED, "Advanced"),
+    ]
+    
+    track = models.IntegerField(choices=TRACKS)
+
+    package_list = models.TextField(
+        "Package List",
+        help_text="""A list of Python packages that attendees will need to
+have installed prior to the class to follow along. Please mention if
+any packages are not cross platform. Installation instructions or
+links to installation documentation should be provided for packages
+that are not available through easy_install, pip, EPD, Anaconda CE
+etc., or that require third party libraries."""
+    )
+
     class Meta:
         verbose_name = "tutorial proposal"
 

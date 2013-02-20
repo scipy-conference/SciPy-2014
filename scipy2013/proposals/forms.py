@@ -40,16 +40,18 @@ class TutorialProposalForm(ProposalForm):
         model = TutorialProposal
         fields = [
             "title",
-            "audience_level",
+            "track",
             "description",
             "abstract",
+            "package_list",
             "additional_notes",
-            "recording_release",
 
         ]
         widgets = {
             "abstract": MarkItUpWidget(),
             "additional_notes": MarkItUpWidget(),
+            "description": forms.widgets.Textarea(attrs={"class": "span9"}),
+            "package_list": forms.widgets.Textarea(attrs={"class": "span9"}),
         }
 
 
