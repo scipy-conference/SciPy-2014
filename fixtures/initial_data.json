@@ -6,5 +6,13 @@
             "domain": "localhost",
             "name": "SciPy 2013 [local]"
         }
+    },
+    {
+        "pk": 2, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "dq276.o1.gondor.io",
+            "name": "SciPy 2013"
+        }
     }
 ]
