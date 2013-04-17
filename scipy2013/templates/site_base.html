@@ -9,8 +9,10 @@
 {% block viewport %}{% endblock %}
 
 {% block style_base %}
-    <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href="{% static "symposion/css/site.css" %}" rel="stylesheet">
+    <link href="{% static "symposion/css/2013.css" %}" rel="stylesheet">
     {% block extra_style %}{% endblock %}
 {% endblock %}
 
@@ -55,7 +57,7 @@
                 </ul>
             </div>
             
-            <h1><a href="{% url home %}"><img src="{% static "img/logo@2x.png" %}" width="400" height="120"></a></h1>
+            <h1><a href="{% url home %}"><img src="{% static "img/scipysticker.png" %}" width="359" height="99"></a></h1>
         </header>
         <div class="navbar">
             <div class="navbar-inner">
