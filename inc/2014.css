@@ -243,10 +243,10 @@ background: #fff;
   }
 
 #slim_sidebar {
-  width: 12%;
+  width: 14%;
+  min-width: 125px;
   float: left;
   padding-right: 1em;
-  border-right: 1px dotted #9E9A74;
   /*border: 1px solid red;*/
   clear: both;
   }
@@ -265,12 +265,10 @@ background: #fff;
   }
 
 #hp-content {
-  width: 83%;
+  width: 81%;
   float: left;
   padding-left: 20px;
-  border-left: 1px dotted #9E9A74;
   margin-left: -1px;
-  /*border: 1px solid green;*/
   }
 
 .hp_image {

@@ -94,6 +94,96 @@ session_start();
   </div>
 </div>
 
+<div class="row">
+  <div class="hp_cell">
+    <h2>Stay Informed</h2>
+    <p>To receive updates on conference specifics:</p>
+
+  <img src="img/newsletter_icon.png" width="32" height="32"  alt="newsletter" class="callout_date" />
+  <p>Subscribe to the SciPy 2014 announcements.</p>
+  <style type="text/css">
+.link,
+.link a,
+#SignUp .signupframe {
+	color: #226699;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	border: none;
+	}
+	.link,
+	.link a {
+		text-decoration: none;
+		}
+	#SignUp .signupframe {
+		width: 100%;
+		border: 1px solid #000000;
+		background: #ffffff;
+		}
+#SignUp .signupframe .required {
+	font-size: 10px;
+	}
+</style>
+<script type="text/javascript" src="http://app.icontact.com/icp/loadsignup.php/form.js?c=1254645&l=7470&f=2197"></script>
+
+
+<div class="row"  style="margin-top: 0;">
+  <div class="cell" style="width: 45%; padding: 0;">
+  <img src="img/twitter-bird-light-bgs.png" width="32" height="32" alt="twitter" style="display: block;" />
+  <p class="callout_description">Follow <a href="https://twitter.com/SciPyConf">@SciPyConf</a></p>
+</div>
+
+  <div class="cell" style="width: 45%; padding: 0 0 0 1em; border-left: 1px solid #cadbeb;">
+  <img src="img/gplus-32.png" width="32" height="32"  alt="g-plus" style="display: block;" />
+  <span class="callout_description"><a href="https://plus.google.com/u/0/100948873231627513165/posts">ScipyConference</a></span>
+</div>
+</div>
+
+  </div>
+  <div class="hp_cell" style="margin: 0 2%;">
+    <h2>Plan</h2>
+      <p>Registration for 2014 is not yet open.</p>
+      <p>For planning and budgeting purposes the anticipated 2014 session pricing is as follows:</p>
+
+<div align="center">
+<table id="schedule">
+  <tr>
+    <th>Session </th>
+    <th><div align="right">Std Price</div></th>
+    <th><div align="right">Academic<br />Price</div></th>
+    <th><div align="right">Student<br />Price</div></th>
+  </tr>
+  <tr>
+    <td>Tutorials</td>
+    <td align="right"> $ 450</td>
+    <td align="right"> $ 350</td>
+    <td align="right"> $ 250</td>
+  </tr>
+  <tr>
+    <td>Conference</td>
+    <td align="right"> $ 400</td>
+    <td align="right"> $ 300</td>
+    <td align="right"> $ 250</td>
+  </tr>
+  <tr>
+    <td>Sprints</td>
+    <td align="right"> $ 0 </td>
+    <td align="right"> $ 0 </td>
+    <td align="right"> $ 0 </td>
+  </tr>
+</table>
+
+</div>
+  </div>
+  <div class="hp_cell">
+    <h2>Plot</h2>
+    <img src="img/plot_contest.png" width="251" height="84" alt="plot contest"  class="hp_image" />
+    <p>In memory of John Hunter, in 2013, we announced the first</p>
+    <p style="text-align: center; font-weight: bold;"><a href="./jhepc2013/">SciPy John Hunter Excellence in Plotting Competition</a>.</p>
+    <p>We pleased to continue this competition again this year for 2014.</p>
+    <p>More details to come.</p>
+  </div>
+    
+  </div>
 
 
 </section>
