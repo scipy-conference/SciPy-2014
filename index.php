@@ -89,7 +89,7 @@ session_start();
   <div class="hp_cell">
     <h2>What's it like?</h2>
     <p>Watch the video highlighting last years conference.</p>
-    <a href="video_highlights.php"><img src="img/video_placeholder.png" width="260" height="146" alt="SciPy 2013 video highlights" class="hp_image" /></a>
+    <a href="video_highlights.php"><img src="img/video_placeholder.png" width="100%" alt="SciPy 2013 video highlights" class="hp_image" /></a>
     <p style="font-size: 0.75em; color: #333; text-align: right; margin-right: 1em;"><em>Video courtesy of Enthought, Inc.</em></p>
   </div>
 </div>
@@ -141,42 +141,14 @@ session_start();
   </div>
   <div class="hp_cell" style="margin: 0 2%;">
     <h2>Plan</h2>
-      <p>Registration for 2014 is not yet open.</p>
-      <p>For planning and budgeting purposes the anticipated 2014 session pricing is as follows:</p>
+      <p>We are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.</p>
+      <p>Sign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.</p>
 
-<div align="center">
-<table id="schedule">
-  <tr>
-    <th>Session </th>
-    <th><div align="right">Std Price</div></th>
-    <th><div align="right">Academic<br />Price</div></th>
-    <th><div align="right">Student<br />Price</div></th>
-  </tr>
-  <tr>
-    <td>Tutorials</td>
-    <td align="right"> $ 450</td>
-    <td align="right"> $ 350</td>
-    <td align="right"> $ 250</td>
-  </tr>
-  <tr>
-    <td>Conference</td>
-    <td align="right"> $ 400</td>
-    <td align="right"> $ 300</td>
-    <td align="right"> $ 250</td>
-  </tr>
-  <tr>
-    <td>Sprints</td>
-    <td align="right"> $ 0 </td>
-    <td align="right"> $ 0 </td>
-    <td align="right"> $ 0 </td>
-  </tr>
-</table>
 
-</div>
   </div>
   <div class="hp_cell">
     <h2>Plot</h2>
-    <img src="img/plot_contest.png" width="251" height="84" alt="plot contest"  class="hp_image" />
+    <img src="img/plot_contest.png"  width="100%" alt="plot contest"  class="hp_image" />
     <p>In memory of John Hunter, in 2013, we announced the first</p>
     <p style="text-align: center; font-weight: bold;"><a href="./jhepc2013/">SciPy John Hunter Excellence in Plotting Competition</a>.</p>
     <p>We pleased to continue this competition again this year for 2014.</p>
