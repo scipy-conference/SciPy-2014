@@ -150,7 +150,7 @@ session_start();
     <h2>Plot</h2>
     <img src="img/plot_contest.png"  width="100%" alt="plot contest"  class="hp_image" />
     <p>In memory of John Hunter, in 2013, we announced the first</p>
-    <p style="text-align: center; font-weight: bold;"><a href="./jhepc2013/">SciPy John Hunter Excellence in Plotting Competition</a>.</p>
+    <p style="text-align: center; font-weight: bold;"><a href="../jhepc2013/">SciPy John Hunter Excellence in Plotting Competition</a>.</p>
     <p>We pleased to continue this competition again this year for 2014.</p>
     <p>More details to come.</p>
   </div>
