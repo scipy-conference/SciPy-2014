@@ -34,15 +34,15 @@ session_start();
 
 <p>2-days of Tutorials</p>
 
-<p>We provide two days of expert-led tutorials at the start of the conference. These tutorials are very popular, with an introductory track for attendees new to Python, and intermediate and advanced tracks for experienced users.</p>
+<p style="padding-left: 2em;">We provide two days of expert-led tutorials at the start of the conference. These tutorials are very popular, with an introductory track for attendees new to Python, and intermediate and advanced tracks for experienced users.</p>
 
 <p>3-days of Talks, BoFs, Poster Sessions and Mini-symposia</p>
 
-<p>Authors share their juried presentations and poster papers covering the latest developments in the use of Python in science during the three main days of the conference. Birds-of-a-Feather sessions, Mini-symposia presentations, Lightning talks and Keynote presentations provide a wide variety of opportunities for attendees to participate and learn.</p>
+<p style="padding-left: 2em;">Authors share their juried presentations and poster papers covering the latest developments in the use of Python in science during the three main days of the conference. Birds-of-a-Feather sessions, Mini-symposia presentations, Lightning talks and Keynote presentations provide a wide variety of opportunities for attendees to participate and learn.</p>
 
 <p>2-days of Sprints</p>
 
-<p>Each year, two days of sprints wrap up the SciPy Conference and provide an opportunity for collaborative coding and problem-solving on SciPy open-source projects. Last year’s sprints contributed real, significant progress for many packages and tools. The Matplotlib sprinters alone checked in close to 10,000 lines of code.</p>
+<p style="padding-left: 2em;">Each year, two days of sprints wrap up the SciPy Conference and provide an opportunity for collaborative coding and problem-solving on SciPy open-source projects. Last year’s sprints contributed real, significant progress for many packages and tools. The Matplotlib sprinters alone checked in close to 10,000 lines of code.</p>
 
 <h2>Why Sponsor?</h2>
 
