@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from scipy2013.proposals.models import TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
+from scipy2014.proposals.models import TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
 
 
 admin.site.register(TalkPosterProposal)
