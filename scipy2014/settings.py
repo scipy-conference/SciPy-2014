@@ -4,7 +4,8 @@
 import os.path
 import posixpath
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                            os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
@@ -25,12 +26,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3", # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
-        "NAME": "dev.db",                       # Or path to database file if using sqlite3.
-        "USER": "",                             # Not used with sqlite3.
-        "PASSWORD": "",                         # Not used with sqlite3.
-        "HOST": "",                             # Set to empty string for localhost. Not used with sqlite3.
-        "PORT": "",                             # Set to empty string for default. Not used with sqlite3.
+        "ENGINE": "django.db.backends.sqlite3",  # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
+        "NAME": "dev.db",                        # Or path to database file if using sqlite3.
+        "USER": "",                              # Not used with sqlite3.
+        "PASSWORD": "",                          # Not used with sqlite3.
+        "HOST": "",                              # Set to empty string for localhost. Not used with sqlite3.
+        "PORT": "",                              # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -103,7 +104,7 @@ MIDDLEWARE_CLASSES = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
-ROOT_URLCONF = "scipy2013.urls"
+ROOT_URLCONF = "scipy2014.urls"
 
 TEMPLATE_DIRS = [
     os.path.join(PACKAGE_ROOT, "templates"),
@@ -133,11 +134,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
-    
+
     # theme
     "pinax_theme_bootstrap",
     "django_forms_bootstrap",
-    
+
     # external
     "debug_toolbar",
     "mailer",
@@ -149,7 +150,7 @@ INSTALLED_APPS = [
     "easy_thumbnails",
     "sitetree",
     "account",
-    
+
     # symposion
     "symposion",
     "symposion.sponsorship",
@@ -161,9 +162,9 @@ INSTALLED_APPS = [
     "symposion.teams",
     "symposion.reviews",
     "symposion.schedule",
-    
+
     # project
-    "scipy2013.proposals",
+    "scipy2014.proposals",
 ]
 
 FIXTURE_DIRS = [
@@ -189,12 +190,12 @@ ACCOUNT_USER_DISPLAY = lambda user: user.email
 AUTHENTICATION_BACKENDS = [
     # Permissions Backends
     "symposion.teams.backends.TeamPermissionsBackend",
-    
+
     # Auth backends
     "account.auth_backends.EmailAuthenticationBackend",
 ]
 
-LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
+LOGIN_URL = "/account/login/"  # @@@ any way this can be a url name?
 
 EMAIL_CONFIRMATION_DAYS = 2
 EMAIL_DEBUG = DEBUG
@@ -212,10 +213,10 @@ CONFERENCE_ID = 1
 SYMPOSION_PAGE_REGEX = r"(([\w-]{1,})(/[\w-]{1,})*)/"
 
 PROPOSAL_FORMS = {
-    "tutorial": "scipy2013.proposals.forms.TutorialProposalForm",
-    "talk-poster": "scipy2013.proposals.forms.TalkPosterProposalForm",
-    "bof": "scipy2013.proposals.forms.BofProposalForm",
-    "sprint": "scipy2013.proposals.forms.SprintProposalForm",
+    "tutorial": "scipy2014.proposals.forms.TutorialProposalForm",
+    "talk-poster": "scipy2014.proposals.forms.TalkPosterProposalForm",
+    "bof": "scipy2014.proposals.forms.BofProposalForm",
+    "sprint": "scipy2014.proposals.forms.SprintProposalForm",
 }
 
 # local_settings.py can be used to override environment-specific settings

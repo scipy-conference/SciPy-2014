@@ -4,9 +4,9 @@
         "model": "conference.conference", 
         "fields": {
             "timezone": "US/Central", 
-            "start_date": "2013-06-24", 
-            "end_date": "2013-06-29", 
-            "title": "SciPy 2013"
+            "start_date": "2014-06-24", 
+            "end_date": "2014-06-29", 
+            "title": "SciPy 2014"
         }
     }, 
     {
@@ -14,9 +14,9 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2013-06-24", 
+            "start_date": "2014-06-24", 
             "name": "Tutorials", 
-            "end_date": "2013-06-25", 
+            "end_date": "2014-06-25", 
             "slug": "tutorials"
         }
     }, 
@@ -25,9 +25,9 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2013-06-26", 
+            "start_date": "2014-06-26", 
             "name": "Talks and Posters", 
-            "end_date": "2013-06-27", 
+            "end_date": "2014-06-27", 
             "slug": "talks-posters"
         }
     },
@@ -36,9 +36,9 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2013-06-27", 
+            "start_date": "2014-06-27", 
             "name": "Birds of a Feather", 
-            "end_date": "2013-06-27", 
+            "end_date": "2014-06-27", 
             "slug": "bofs"
         }
     }, 
@@ -47,9 +47,9 @@
         "model": "conference.section", 
         "fields": {
             "conference": 1, 
-            "start_date": "2013-06-28", 
+            "start_date": "2014-06-28", 
             "name": "Sprints", 
-            "end_date": "2013-06-29", 
+            "end_date": "2014-06-29", 
             "slug": "sprints"
         }
     }

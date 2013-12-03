@@ -2,11 +2,11 @@ from django import forms
 
 from markitup.widgets import MarkItUpWidget
 
-from scipy2013.proposals.models import TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
+from scipy2014.proposals.models import (TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal)
 
 
 class ProposalForm(forms.ModelForm):
-    
+
     def clean_description(self):
         value = self.cleaned_data["description"]
         if len(value) > 400:

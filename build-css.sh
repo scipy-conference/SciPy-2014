@@ -1,1 +1,1 @@
-lessc --yui-compress scipy2013/static/symposion/less/site.less > scipy2013/static/symposion/css/site.css
+lessc --yui-compress scipy2014/static/symposion/less/site.less > scipy2014/static/symposion/css/site.css
