@@ -1,6 +1,6 @@
-# SciPy 2013
+# SciPy 2014
 
-Website for the SciPy Conference 2013.
+Website for the SciPy Conference 2014.
 
 ## Quickstart
 
