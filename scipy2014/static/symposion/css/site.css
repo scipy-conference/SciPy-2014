@@ -1,4 +1,5 @@
 @import url('//fonts.googleapis.com/css?family=News+Cycle:400,700');
+@import url('//fonts.googleapis.com/css?family=Michroma');
 /*!
  * Bootstrap v2.3.0
  *
@@ -3331,7 +3332,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 .nav > li > a > img {
   max-width: none;
@@ -5289,8 +5290,8 @@ hr {
   border-bottom: 1px solid #eeeeee;
 }
 .navbar {
-  font-family: lato, "Arial Narrow Bold", sans-serif;
-  font-weight: bold;
+  font-family: Michroma, "Arial Narrow Bold", sans-serif;
+
 }
 .navbar .navbar-inner {
   border-bottom: 2px solid #eeeeee;
@@ -5310,9 +5311,9 @@ hr {
 }
 .navbar .nav > li > a {
   padding: 20px 10px 20px;
-  font-size: 18px;
+  font-size: 0.9em;
   text-shadow: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .navbar .nav > .active > a {
   background-color: transparent;
@@ -5342,7 +5343,7 @@ hr {
   border-radius: 0;
 }
 .navbar .dropdown-menu a {
-  font-size: 15px;
+  font-size: 0.75em;
   font-weight: bold;
 }
 .navbar .navbar-search .search-query,
