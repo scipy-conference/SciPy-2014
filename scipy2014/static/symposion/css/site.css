@@ -258,7 +258,7 @@ a:focus {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 100%;
 }
 .span12 {
   width: 940px;
@@ -3684,7 +3684,7 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
-  border: 1px solid #e0e0e0;
+/*  border: 1px solid #e0e0e0; */
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -7673,6 +7673,9 @@ body {
   background-color: #f2f2f2;
 }
 div.wrapper {
+  width: 80%;
+  min-width: 1000px;
+  margin: 1% auto;
   padding: 25px;
   text-align: left;
   background: #fff;
@@ -7681,7 +7684,7 @@ div.wrapper {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, 0.75);
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, 0.75);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, 0.75);
+  box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, .75);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, .75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(202, 219, 232, .75);
 }

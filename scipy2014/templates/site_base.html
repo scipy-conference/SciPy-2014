@@ -87,20 +87,20 @@
         {# {% endblock %} #}
         
         {% block body_outer %}
-            <div class="row">
-                <div class="span3">
+            <div class="row-fluid">
+                <div class="span2">
                     {% block sidebar %}
                         {% include "_default_sidebar.html" %}
                     {% endblock %}
                 </div>
-                <div class="span9">
+                <div class="span10">
                     {% block body %}
                     {% endblock %}
                 </div>
             </div>
         {% endblock %}
         {% block footer_base %}
-            <hr />
+
             <footer>
                 {% block footer %}{% include "_footer.html" %}{% endblock %}
             </footer>
