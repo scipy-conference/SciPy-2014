@@ -141,9 +141,31 @@ session_start();
   </div>
   <div class="hp_cell" style="margin: 0 2%;">
     <h2>Plan</h2>
-      <p>We are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.</p>
-      <p>Sign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.</p>
 
+      <p>Early-Bird Session Pricing</p>
+
+<table>
+  <tr>
+    <th>Session </th>
+    <th><div align="right">Std Price</div></th>
+    <th><div align="right">Academic<br />Price</div></th>
+    <th><div align="right">Student<br />Price</div></th>
+  </tr>
+  <tr>
+    <td><strong>Tutorials</strong><br />Jul 6th&nbsp;-&nbsp;7th</td>
+    <td align="right"> $ 475</td>
+    <td align="right"> $ 375</td>
+    <td align="right"> $ 275</td>
+  </tr>
+  <tr>
+    <td><strong>Conference</strong><br />Jul 8th&nbsp;-&nbsp;10th</td>
+    <td align="right"> $ 425</td>
+    <td align="right"> $ 325</td>
+    <td align="right"> $ 225</td>
+  </tr>
+</table>
+
+<p>Registration will be opening soon.</p>
 
   </div>
   <div class="hp_cell">
