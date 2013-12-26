@@ -24,8 +24,14 @@ django-reversion==1.8.0
 django-markitup==2.1
 markdown==2.3.1
 django-sitetree==0.12
-PIL==1.1.7
+# TODO pip install PIL isn't working on my vagrant box
+./Imaging-1.1.7.tar.gz
 easy-thumbnails==1.4
 
 gunicorn==18.0
-mysql-python==1.2.4
+# TODO I don't know how to script a mysql deb install
+# so for the purposes of demonstrating a vagrant
+# install I'm using postgresql until I figure that out
+# (I use postgresql for my own stuff)
+psycopg2
+#mysql-python==1.2.4

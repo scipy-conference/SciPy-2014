@@ -3,3 +3,5 @@ _build
 dev.db
 site_media
 *.DS_Store
+.vagrant
+env
