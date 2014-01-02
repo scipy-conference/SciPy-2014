@@ -412,11 +412,10 @@ td {
   font-size: .9em;
   vertical-align: top;
   padding: 0 0.4em;
-  border: 1px solid #ddd;
   }
 
-.no_brder {
-  border: none;
+.borders {
+  border: 1px solid #ddd;
   }
 
 th{
@@ -478,7 +477,7 @@ img.right {
   }
 
 .hp_cell {
-  width: 30%;
+  width: 29%;
   min-width: 230px;
   min-height: 330px;
   margin: 0 0.5em;
