@@ -27,7 +27,11 @@ urlpatterns = patterns(
     url(r'^video_highlights/$',
         direct_to_template,
         {'template': 'video_highlights.html'},
-        name='video_highlights'),
+        name='video highlights'),
+    url(r'^privacy_policy/$',
+        direct_to_template,
+        {'template': 'privacy_policy.html'},
+        name='privacy_policy'),
 
     url(r"^account/signup/$",
         symposion.views.SignupView.as_view(),
