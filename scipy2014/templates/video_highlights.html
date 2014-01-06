@@ -1,0 +1,19 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% load boxes_tags %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+
+<h1>SciPy 2013 Video Highlights</h1>
+
+<div style="display: block; width: 640px; margin: 0 auto;">
+  <iframe src="https://docs.google.com/a/enthought.com/file/d/0B0I7VMiDT-fTM2d0MFNFNVBIUzA/preview" width="640" height="385"></iframe>
+</div>
+
+{% endblock %}
