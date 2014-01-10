@@ -144,5 +144,120 @@
             "hidden": false, 
             "urlaspattern": true
         }
+    },
+    {
+        "pk": 7, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "venue", 
+            "inbreadcrumbs": true, 
+            "title": "Venue Info", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 7, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 8, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "floorplans", 
+            "inbreadcrumbs": true, 
+            "title": "Venue Floor Maps", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 8, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 9, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "lodging", 
+            "inbreadcrumbs": true, 
+            "title": "Lodging", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 9, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 10, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "directions", 
+            "inbreadcrumbs": true, 
+            "title": "Directions", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 10, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 11, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "restaurants", 
+            "inbreadcrumbs": true, 
+            "title": "Restaurants", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 11, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
     }
 ]
