@@ -259,5 +259,120 @@
             "hidden": false, 
             "urlaspattern": true
         }
+    },
+    {
+        "pk": 12, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "about", 
+            "inbreadcrumbs": true, 
+            "title": "About", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 12, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 13, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "plotting_contest", 
+            "inbreadcrumbs": true, 
+            "title": "Plotting Contest", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 13, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 14, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "organizers", 
+            "inbreadcrumbs": true, 
+            "title": "Organizers", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 14, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 15, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "diversity", 
+            "inbreadcrumbs": true, 
+            "title": "Diversity", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 15, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    },
+    {
+        "pk": 16, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "code_of_conduct", 
+            "inbreadcrumbs": true, 
+            "title": "Code of Conduct", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 16, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
     }
 ]
