@@ -19,12 +19,13 @@ class TalkPosterProposal(ProposalBase):
     TRACK_MACHINE_LEARNING = 2
     TRACK_TOOLS = 3
     TRACK_DOMAIN_ONLY = 4
+    TRACK_EDUCATION = 5
+    TRACK_GIS = 6
     
     TOPIC_TRACKS = [
         (TRACK_GENERAL, "General"),
-        (TRACK_MACHINE_LEARNING, "Machine Learning"),
-        (TRACK_TOOLS, "Tools for Reproducibility"),
-        (TRACK_DOMAIN_ONLY, "None, only submit to Domain Symposia"),
+        (TRACK_EDUCATION, 'Scientific Computing Education'),
+        (TRACK_GIS, 'Geospatial Data in Science'),
     ]
 
     DOMAIN_NONE = 1
@@ -32,13 +33,18 @@ class TalkPosterProposal(ProposalBase):
     DOMAIN_METEOROLOGY = 3
     DOMAIN_ASTRONOMY = 4
     DOMAIN_BIO_INFORMATICS = 5
-    
+    DOMAIN_GEOPHYSICS = 6
+    DOMAIN_VISUALIZATION = 7
+    DOMAIN_SOCIAL = 8
+    DOMAIN_ENGINEERING = 9
+
     DOMAIN_SYMPOSIA = [
         (DOMAIN_NONE, "None, only submit to tracks"),
-        (DOMAIN_MEDICAL_IMAGING, "Medical imaging"),
-        (DOMAIN_METEOROLOGY, "Meteorology, climatology, and atmospheric and oceanic science"),
-        (DOMAIN_ASTRONOMY, "Astronomy and astrophysics"),
-        (DOMAIN_BIO_INFORMATICS, "Bio-informatics"),
+        (DOMAIN_ASTRONOMY, 'Astronomy and Astrophysics'),
+        (DOMAIN_BIO_INFORMATICS, 'Bioinformatics'),
+        (DOMAIN_GEOPHYSICS, 'Geophysics'),
+        (DOMAIN_VISUALIZATION, 'Vision, Visualization, and Imaging'),
+        (DOMAIN_ENGINEERING, 'Engineering'),
     ]
 
     submission_type = models.IntegerField(choices=SUBMISSION_TYPES, default=1)
