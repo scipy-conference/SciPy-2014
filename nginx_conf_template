@@ -5,7 +5,7 @@ upstream citationsneeded_org {
 server {
     listen 80;
     server_name citationsneeded.org;
-    rewrite ^ https://citationsneeded.org$requrest_url? permanent;
+    rewrite ^ https://citationsneeded.org$request_uri? permanent;
 }
 
 server {
