@@ -42,6 +42,7 @@ def update_repo(commit=None):
 
     scipy_put('rackspace_settings.py',
               pjoin(REPO, 'scipy2014/local_settings.py'))
+    scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
 
 def build_static(venv_path):
@@ -57,7 +58,7 @@ def deploy_nginx():
                    server_name=SITE, upstream=UPSTREAM)
     put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILALBE),
         use_sudo=True)
-    install_certs()
+    #install_certs()
 
 
 def build_venv():
