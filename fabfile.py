@@ -34,7 +34,7 @@ def deploy(commit=None):
 
 def update_repo(commit=None):
     if commit is None:
-        commit = 'HEAD'
+        commit = 'origin/master'
 
     with cd(REPO):
         scipy_do('git fetch')
