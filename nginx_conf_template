@@ -20,7 +20,7 @@ server {
     error_log /home/scipy/site/logs/scipy.error.log;
 
     location /site_media/media/ {
-        alias /home/scipy/site/site_media/static/media;
+        alias /home/scipy/site/site_media/media/;
     }
 
     location /site_media/static/ {
