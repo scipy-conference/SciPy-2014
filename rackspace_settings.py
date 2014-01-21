@@ -14,6 +14,7 @@ EMAIL_HOST_PASSWORD = secrets.email_host_password
 EMAIL_PORT = secrets.email_port
 
 STATIC_ROOT = '/home/scipy/site/site_media/'
+MEDIA_ROOT = '/home/scipy/site/site_media/media/'
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -58,3 +59,8 @@ LOGGING = {
         },
     }
 }
+
+FILE_UPLOAD_PERMISSIONS = 0644
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
