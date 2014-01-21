@@ -5,8 +5,8 @@
         "fields": {
             "conference": 1,
             "description": "", 
-            "cost": 10000, 
-            "name": "Gold", 
+            "cost": 12000, 
+            "name": "Platinum", 
             "order": 0
         }
     }, 
@@ -16,8 +16,8 @@
         "fields": {
             "conference": 1,
             "description": "", 
-            "cost": 5000, 
-            "name": "Silver", 
+            "cost": 4000, 
+            "name": "Gold", 
             "order": 1
         }
     }, 
@@ -28,8 +28,19 @@
             "conference": 1,
             "description": "", 
             "cost": 2000, 
-            "name": "Bronze", 
+            "name": "Silver", 
             "order": 2
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "sponsorship.sponsorlevel", 
+        "fields": {
+            "conference": 1,
+            "description": "", 
+            "cost": 0, 
+            "name": "Media & Community", 
+            "order": 3
         }
     }
 ]
