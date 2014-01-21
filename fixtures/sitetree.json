@@ -115,7 +115,7 @@
             "tree": 1, 
             "access_perm_type": 1, 
             "alias": null, 
-            "sort_order": 6, 
+            "sort_order": 18, 
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
@@ -138,7 +138,7 @@
             "tree": 1, 
             "access_perm_type": 1, 
             "alias": null, 
-            "sort_order": 5, 
+            "sort_order": 17, 
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
@@ -374,5 +374,51 @@
             "hidden": false, 
             "urlaspattern": true
         }
-    }
+    },
+    {
+        "pk": 17, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 3, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "sponsorship", 
+            "inbreadcrumbs": true, 
+            "title": "Sponsor Prospectus", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 5, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 3, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "sponsor_levels", 
+            "inbreadcrumbs": true, 
+            "title": "Sponsor Levels", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 6, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true
+        }
+    } 
 ]
