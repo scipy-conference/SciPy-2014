@@ -19,11 +19,11 @@ server {
     access_log /home/scipy/site/logs/scipy.access.log;
     error_log /home/scipy/site/logs/scipy.error.log;
 
-    location /site_media/media/ {
+    location /scipy2014/site_media/media/ {
         alias /home/scipy/site/site_media/media/;
     }
 
-    location /site_media/static/ {
+    location /scipy2014/site_media/static/ {
         alias /home/scipy/site/site_media/;
     }
 
