@@ -21,6 +21,8 @@ def scipy_do(*args, **kw):
 
 
 def deploy(commit=None):
+    install_system_deps()
+
     update_repo(commit=commit)
 
     venv_path = deploy_venv()
@@ -130,3 +132,9 @@ def deploy_mail(venv_path):
     render_to_file('django_mail_template.sh', 'django_mail.sh',
                    virtualenv=venv_path)
     scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'))
+
+
+def install_system_deps():
+    sudo('apt-get install python-virtualenv')
+    # for pillow
+    sudo('apt-get install libjpeg-dev libtiff-dev zlib1g-dev')
