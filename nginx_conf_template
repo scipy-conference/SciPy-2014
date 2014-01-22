@@ -24,7 +24,7 @@ server {
     }
 
     location /scipy2014/site_media/static/ {
-        alias /home/scipy/site/site_media/;
+        alias /home/scipy/site/site_media/static/;
     }
 
     location /scipy2014/ {
