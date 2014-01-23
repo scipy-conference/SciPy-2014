@@ -9,18 +9,20 @@ import jinja2
 
 
 env.disable_known_hosts = True
-env.user = 'vagrant'
-env.hosts = ['127.0.0.1:2222']
-env.key_filename = local('vagrant ssh-config | grep IdentityFile | cut -f4 -d " "', capture=True)
-#env.hosts = ['mrterry@citationsneeded.org']
+env.hosts = [
+    '162.242.221.143',
+    #'vagrant@127.0.0.1:2222',
+    #'mrterry@citationsneeded.org',
+]
+#env.key_filename = local('vagrant ssh-config | grep IdentityFile | cut -f4 -d " "', capture=True)
 VENV_DIR = '/home/scipy/venvs/'
-SITE = 'citationsneeded.org'
+SITE = 'conference.scipy.org'
 REPO = '/home/scipy/site/SciPy-2014'
 SITE_PATH = '/home/scipy/site'
 GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 
 UPSTREAM = SITE.replace('.', '_')
-AVAILALBE = SITE.split('.')[0]
+AVAILABLE = SITE.split('.')[0]
 
 
 def scipy_do(*args, **kw):
@@ -36,6 +38,8 @@ def deploy(commit=None):
     venv_path = deploy_venv()
     deploy_mail(venv_path)
     build_static(venv_path)
+
+    deploy_supervisor()
     restart_gunicorn()
 
     deploy_nginx()
@@ -50,7 +54,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
-    scipy_put('rackspace_settings.py',
+    scipy_put('deployment/rackspace_settings.py',
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
@@ -66,9 +70,15 @@ def build_static(venv_path):
 def deploy_nginx():
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
                    server_name=SITE, upstream=UPSTREAM)
-    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILALBE),
+    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILABLE),
         use_sudo=True)
+    require.nginx.enabled(AVAILABLE)
+    require.nginx.disabled('default')
     #install_certs()
+
+def deploy_supervisor():
+    upload_template('deployment/scipy2014.conf', '/etc/supervisor/conf.d/scipy2014.conf', use_sudo=True)
+    supervisor.update_config()
 
 
 def build_venv():
