@@ -28,7 +28,7 @@ pillow==2.2.2
 easy-thumbnails==1.4
 
 gunicorn==18.0
-mysql-python==1.2.4
+mysql-python==1.2.5
 
 fabric
 jinja2
