@@ -13,7 +13,7 @@ EMAIL_HOST_USER = secrets.email_host_user
 EMAIL_HOST_PASSWORD = secrets.email_host_password
 EMAIL_PORT = secrets.email_port
 
-STATIC_ROOT = '/home/scipy/site/site_media/'
+STATIC_ROOT = '/home/scipy/site/site_media/static/'
 MEDIA_ROOT = '/home/scipy/site/site_media/media/'
 
 INTERNAL_IPS = [

@@ -31,6 +31,8 @@ def scipy_do(*args, **kw):
 
 
 def deploy(commit=None):
+    install_system_deps()
+
     update_repo(commit=commit)
 
     venv_path = deploy_venv()
@@ -214,3 +216,9 @@ def install_python_packages():
     sudo('python get-pip.py')
     # install global python packages
     require.python.packages(['virtualenvwrapper','setproctitle'], use_sudo=True)
+
+
+def install_system_deps():
+    sudo('apt-get install python-virtualenv')
+    # for pillow
+    sudo('apt-get install libjpeg-dev libtiff-dev zlib1g-dev')
