@@ -9,20 +9,72 @@ import jinja2
 
 
 env.disable_known_hosts = True
-env.hosts = [
-    '162.242.221.143',
-    #'vagrant@127.0.0.1:2222',
-    #'mrterry@citationsneeded.org',
-]
-#env.key_filename = local('vagrant ssh-config | grep IdentityFile | cut -f4 -d " "', capture=True)
+
 VENV_DIR = '/home/scipy/venvs/'
-SITE = 'conference.scipy.org'
 REPO = '/home/scipy/site/SciPy-2014'
 SITE_PATH = '/home/scipy/site'
 GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 
-UPSTREAM = SITE.replace('.', '_')
-AVAILABLE = SITE.split('.')[0]
+USAGE = """
+The command to deploy is:
+    fab $TARGET $COMMAND
+
+Where $TARGET is staging || prod || dev (eventually), and $COMMAND
+is the task to be run.  $TARGET is a special fabric task that correctly
+sets up the environment
+
+Example usage:
+$ fab staging deploy
+$ fab prod deploy:576a8e4241962464f4ac9c11cd5054e306f2f0d1
+$ fab dev deploy:origin/v1.0003
+"""
+
+CONFIG = None
+
+
+staging_config = {
+    'site': 'citationsneeded.org',
+    'upstream': 'citationsneeded_org',
+    'available': 'citationsneeded',
+    'cert_name': 'citationsneeded',
+    'hosts': ['mrterry@citationsneeded.org'],
+    'local_settings': 'deployment/staging_settings.py',
+}
+
+
+prod_config = {
+    'site': 'conference.scipy.org',
+    'upstream': 'conference_scipy_org',
+    'available': 'conference',
+    'cert_name': 'scipy2014',
+    'hosts': ['162.242.221.143'],
+    'local_settings': 'deployment/prod_settings.py',
+}
+
+
+dev_config = {
+}
+
+
+def staging():
+    global CONFIG
+    CONFIG = staging_config
+    env.hosts = CONFIG['hosts']
+
+
+def prod():
+    global CONFIG
+    CONFIG = staging_config
+    env.hosts = CONFIG['hosts']
+
+
+def dev():
+    global CONFIG
+    CONFIG = dev_config
+    env.key_filename = local(
+        'vagrant ssh-CONFIG | grep IdentityFile | cut -f4 -d " "',
+        capture=True,
+    )
 
 
 def scipy_do(*args, **kw):
@@ -31,7 +83,7 @@ def scipy_do(*args, **kw):
 
 
 def deploy(commit=None):
-    install_system_deps()
+    install_dependencies()
 
     update_repo(commit=commit)
 
@@ -54,7 +106,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
-    scipy_put('deployment/rackspace_settings.py',
+    scipy_put(CONFIG['local_settings'],
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
@@ -69,10 +121,13 @@ def build_static(venv_path):
 
 def deploy_nginx():
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
-                   server_name=SITE, upstream=UPSTREAM)
-    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILABLE),
+                   server_name=CONFIG['site'],
+                   cert_name=CONFIG['cert_name'],
+                   upstream=CONFIG['upstream'])
+    put('nginx_conf',
+        pjoin('/etc/nginx/sites-available/', CONFIG['avaailable']),
         use_sudo=True)
-    require.nginx.enabled(AVAILABLE)
+    require.nginx.enabled(CONFIG['avaailable'])
     require.nginx.disabled('default')
     #install_certs()
 
@@ -144,11 +199,11 @@ def render_to_file(template_path, output_path, **kw):
         f.write(conf)
 
 
-def install_certs():
-    put('citationsneeded.crt', '/etc/ssl/certs/citationsneeded.crt',
-        use_sudo=True, mode=0400)
-    put('citationsneeded.key', '/etc/ssl/private/citationsneeded.key',
-        use_sudo=True, mode=0400)
+#def install_certs():
+#    put('citationsneeded.crt', '/etc/ssl/certs/citationsneeded.crt',
+#        use_sudo=True, mode=0400)
+#    put('citationsneeded.key', '/etc/ssl/private/citationsneeded.key',
+#        use_sudo=True, mode=0400)
 
 
 def deploy_mail(venv_path):
@@ -159,7 +214,7 @@ def deploy_mail(venv_path):
 
 def provision():
     install_dependencies()
-    install_python_packages()
+    #install_python_packages()
     configure_ssh()
     setup_user()
     setup_sitepaths()
@@ -179,9 +234,9 @@ def configure_ssh():
 
 def setup_sitepaths():
     with cd(fabtools.user.home_directory('scipy')):
-        scipy_do('mkdir site venvs')
+        scipy_do('mkdir -p site venvs')
     with cd(SITE_PATH):
-        scipy_do('mkdir bin logs')
+        scipy_do('mkdir -p bin logs')
         scipy_do('git clone %s' % GIT_REPO)
 
 
@@ -206,6 +261,10 @@ def install_dependencies():
         'mysql-server',
         'mysql-client',
         'python-mysqldb',
+        'libjpeg-dev',
+        'libtiff-dev',
+        'zlib1g-dev',
+        'python-virtualenv',
     ])
 
 
@@ -215,10 +274,4 @@ def install_python_packages():
     sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
-    require.python.packages(['virtualenvwrapper','setproctitle'], use_sudo=True)
-
-
-def install_system_deps():
-    sudo('apt-get install python-virtualenv')
-    # for pillow
-    sudo('apt-get install libjpeg-dev libtiff-dev zlib1g-dev')
+    require.python.packages(['virtualenvwrapper', 'setproctitle'], use_sudo=True)
