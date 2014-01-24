@@ -29,8 +29,6 @@ def scipy_do(*args, **kw):
     kw['user'] = 'scipy'
     return sudo(*args, **kw)
 
-def sudosu(cmd, user='scipy'):
-    sudo("su %s -c '%s'" % (user, cmd))
 
 def deploy(commit=None):
     update_repo(commit=commit)
@@ -76,8 +74,11 @@ def deploy_nginx():
     require.nginx.disabled('default')
     #install_certs()
 
+
 def deploy_supervisor():
-    upload_template('deployment/scipy2014.conf', '/etc/supervisor/conf.d/scipy2014.conf', use_sudo=True)
+    upload_template('deployment/scipy2014.conf',
+                    '/etc/supervisor/conf.d/scipy2014.conf',
+                    use_sudo=True)
     supervisor.update_config()
 
 
@@ -112,7 +113,9 @@ def deploy_venv():
 
 
 def put_gunicorn_conf(venv):
-    render_to_file('deployment/runserver_template.sh', 'runserver.sh', virtualenv=venv)
+    render_to_file('deployment/runserver_template.sh',
+                   'runserver.sh',
+                   virtualenv=venv)
     scipy_put('runserver.sh', pjoin(SITE_PATH, 'bin/runserver.sh'),
               mode='0755')
 
@@ -165,16 +168,19 @@ def setup_user():
 
 
 def configure_ssh():
-    sed('/etc/ssh/sshd_config', '^#PasswordAuthentication yes', 'PasswordAuthentication no', use_sudo=True)
+    sed('/etc/ssh/sshd_config',
+        '^#PasswordAuthentication yes',
+        'PasswordAuthentication no',
+        use_sudo=True)
     sudo('service ssh restart')
 
 
 def setup_sitepaths():
     with cd(fabtools.user.home_directory('scipy')):
-        sudosu('mkdir site venvs')
+        scipy_do('mkdir site venvs')
     with cd(SITE_PATH):
-        sudosu('mkdir bin logs')
-        sudosu('git clone %s' % GIT_REPO)
+        scipy_do('mkdir bin logs')
+        scipy_do('git clone %s' % GIT_REPO)
 
 
 def install_dependencies():
@@ -207,8 +213,4 @@ def install_python_packages():
     sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
-    require.python.packages([
-        'virtualenvwrapper',
-        'setproctitle',
-    ], use_sudo=True)
-
+    require.python.packages(['virtualenvwrapper','setproctitle'], use_sudo=True)
