@@ -32,3 +32,4 @@ mysql-python==1.2.5
 
 fabric
 jinja2
+fabtools

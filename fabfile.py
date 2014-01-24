@@ -1,24 +1,36 @@
 from os.path import join as pjoin
 import datetime
 
-from fabric.api import run, env, sudo, put, cd
+from fabric.api import run, env, sudo, put, cd, local
+from fabric.contrib.files import sed, upload_template
+from fabtools import require, supervisor
+import fabtools
 import jinja2
 
 
-env.hosts = ['mrterry@citationsneeded.org']
+env.disable_known_hosts = True
+env.hosts = [
+    '162.242.221.143',
+    #'vagrant@127.0.0.1:2222',
+    #'mrterry@citationsneeded.org',
+]
+#env.key_filename = local('vagrant ssh-config | grep IdentityFile | cut -f4 -d " "', capture=True)
 VENV_DIR = '/home/scipy/venvs/'
-SITE = 'citationsneeded.org'
+SITE = 'conference.scipy.org'
 REPO = '/home/scipy/site/SciPy-2014'
 SITE_PATH = '/home/scipy/site'
+GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 
 UPSTREAM = SITE.replace('.', '_')
-AVAILALBE = SITE.split('.')[0]
+AVAILABLE = SITE.split('.')[0]
 
 
 def scipy_do(*args, **kw):
     kw['user'] = 'scipy'
     return sudo(*args, **kw)
 
+def sudosu(cmd, user='scipy'):
+    sudo("su %s -c '%s'" % (user, cmd))
 
 def deploy(commit=None):
     update_repo(commit=commit)
@@ -26,6 +38,8 @@ def deploy(commit=None):
     venv_path = deploy_venv()
     deploy_mail(venv_path)
     build_static(venv_path)
+
+    deploy_supervisor()
     restart_gunicorn()
 
     deploy_nginx()
@@ -40,7 +54,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
-    scipy_put('rackspace_settings.py',
+    scipy_put('deployment/rackspace_settings.py',
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
@@ -54,11 +68,17 @@ def build_static(venv_path):
 
 
 def deploy_nginx():
-    render_to_file('nginx_conf_template', 'nginx_conf',
+    render_to_file('deployment/nginx_conf_template', 'nginx_conf',
                    server_name=SITE, upstream=UPSTREAM)
-    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILALBE),
+    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILABLE),
         use_sudo=True)
+    require.nginx.enabled(AVAILABLE)
+    require.nginx.disabled('default')
     #install_certs()
+
+def deploy_supervisor():
+    upload_template('deployment/scipy2014.conf', '/etc/supervisor/conf.d/scipy2014.conf', use_sudo=True)
+    supervisor.update_config()
 
 
 def build_venv():
@@ -92,7 +112,7 @@ def deploy_venv():
 
 
 def put_gunicorn_conf(venv):
-    render_to_file('runserver_template.sh', 'runserver.sh', virtualenv=venv)
+    render_to_file('deployment/runserver_template.sh', 'runserver.sh', virtualenv=venv)
     scipy_put('runserver.sh', pjoin(SITE_PATH, 'bin/runserver.sh'),
               mode='0755')
 
@@ -127,6 +147,68 @@ def install_certs():
 
 
 def deploy_mail(venv_path):
-    render_to_file('django_mail_template.sh', 'django_mail.sh',
+    render_to_file('deployment/django_mail_template.sh', 'django_mail.sh',
                    virtualenv=venv_path)
     scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'))
+
+
+def provision():
+    install_dependencies()
+    install_python_packages()
+    configure_ssh()
+    setup_user()
+    setup_sitepaths()
+
+
+def setup_user():
+    sudo('useradd -s/bin/bash -d/home/scipy -m scipy')
+
+
+def configure_ssh():
+    sed('/etc/ssh/sshd_config', '^#PasswordAuthentication yes', 'PasswordAuthentication no', use_sudo=True)
+    sudo('service ssh restart')
+
+
+def setup_sitepaths():
+    with cd(fabtools.user.home_directory('scipy')):
+        sudosu('mkdir site venvs')
+    with cd(SITE_PATH):
+        sudosu('mkdir bin logs')
+        sudosu('git clone %s' % GIT_REPO)
+
+
+def install_dependencies():
+    require.deb.uptodate_index(max_age={'hour': 1})
+    require.deb.packages([
+        'python-software-properties',
+        'python-dev',
+        'build-essential',
+        'nginx',
+        'libxslt1-dev',
+        'supervisor',
+        'git',
+        'tig',
+        'vim',
+        'multitail',
+        'curl',
+        'tmux',
+        'htop',
+        'ack-grep',
+        'libmysqlclient-dev',
+        'mysql-server',
+        'mysql-client',
+        'python-mysqldb',
+    ])
+
+
+def install_python_packages():
+    sudo('wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
+    sudo('wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py')
+    sudo('python ez_setup.py')
+    sudo('python get-pip.py')
+    # install global python packages
+    require.python.packages([
+        'virtualenvwrapper',
+        'setproctitle',
+    ], use_sudo=True)
+
