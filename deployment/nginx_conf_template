@@ -6,7 +6,11 @@ upstream conference_org {
 server {
     listen 80;
     server_name {{ server_name }} localhost;
-    rewrite ^ https://conference.scipy.org$request_uri? permanent;
+    rewrite ^/scipy2014 https://conference.scipy.org$request_uri? permanent;
+
+    location / location {
+        root /home/scipy/site/conference;
+    }
 }
 
 server {
