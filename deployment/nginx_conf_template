@@ -14,8 +14,8 @@ server {
     server_name {{ server_name }} localhost;
 
     ssl on;
-    ssl_certificate     /etc/ssl/certs/{{ cert_name }}.crt;
-    ssl_certificate_key /etc/ssl/private/{{ cert_name }}.key;
+    ssl_certificate     {{ ssl_cert }};
+    ssl_certificate_key {{ ssl_key }};
 
     access_log /home/scipy/site/logs/scipy.access.log;
     error_log /home/scipy/site/logs/scipy.error.log;

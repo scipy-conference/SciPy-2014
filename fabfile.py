@@ -38,7 +38,8 @@ def staging():
         'site': 'citationsneeded.org',
         'upstream': 'citationsneeded_org',
         'available': 'citationsneeded',
-        'cert_name': 'citationsneeded',
+        'ssl_cert': '/etc/ssl/certs/citationsneeded.crt;',
+        'ssl_key': '/etc/ssl/private/citationsneeded.key;',
         'hosts': ['citationsneeded.org'],
         'local_settings': 'deployment/staging_settings.py',
     })
@@ -50,7 +51,8 @@ def prod():
         'site': 'conference.scipy.org',
         'upstream': 'conference_scipy_org',
         'available': 'conference',
-        'cert_name': 'scipy2014',
+        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt;',
+        'ssl_key': '/etc/ssl/private/conference.scipy.org.key;',
         'hosts': ['162.242.221.143'],
         'local_settings': 'deployment/prod_settings.py',
     })
@@ -71,7 +73,7 @@ def scipy_do(*args, **kw):
 
 @task
 def deploy(commit=None):
-    require('site', 'upstream', 'available', 'cert_name', 'hosts',
+    require('site', 'upstream', 'available', 'ssl_cert', 'ssl_key', 'hosts',
             'local_settings',
             provided_by=('prod', 'staging', 'dev'))
     install_dependencies()
@@ -114,11 +116,12 @@ def build_static(venv_path):
 
 @task
 def deploy_nginx():
-    require('site', 'upstream', 'availalble', 'cert_name',
+    require('site', 'upstream', 'available', 'ssl_cert', 'ssl_key',
             provided_by=('prod', 'staging', 'dev'))
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
                    server_name=env['site'],
-                   cert_name=env['cert_name'],
+                   ssl_cert=env['ssl_cert'],
+                   ssl_key=env['ssl_key'],
                    upstream=env['upstream'])
     put('nginx_conf',
         pjoin('/etc/nginx/sites-available/', env['available']),
@@ -235,9 +238,13 @@ def configure_ssh():
 
 def setup_sitepaths():
     scipy_do('mkdir -p ~/site ~/venvs')
+    scipy_do('mkdir -p ~/site/site_media')
+    scipy_do('mkdir -p ~/site/site_media/static')
+    scipy_do('mkdir -p ~/site/site_media/media')
     with cd(SITE_PATH):
         scipy_do('mkdir -p bin logs')
         scipy_do('git clone %s' % GIT_REPO)
+    scipy_do('mkdir -p ~/site/site_media')
 
 
 def install_dependencies():
