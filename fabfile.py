@@ -1,21 +1,5 @@
-from os.path import join as pjoin
-import datetime
+"""Deployment scripts for the scipy 2014 conference website
 
-from fabric.api import run, env, sudo, put, cd, local, task
-from fabric.contrib.files import sed, upload_template
-from fabtools import require, supervisor
-import fabtools
-import jinja2
-
-
-env.disable_known_hosts = True
-
-VENV_DIR = '/home/scipy/venvs/'
-REPO = '/home/scipy/site/SciPy-2014'
-SITE_PATH = '/home/scipy/site'
-GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
-
-USAGE = """
 The command to deploy is:
     fab $TARGET $COMMAND
 
@@ -29,52 +13,51 @@ $ fab prod deploy:576a8e4241962464f4ac9c11cd5054e306f2f0d1
 $ fab dev deploy:origin/v1.0003
 """
 
-CONFIG = None
+from os.path import join as pjoin
+import datetime
 
-username = 'mrterry'
-
-
-staging_config = {
-    'site': 'citationsneeded.org',
-    'upstream': 'citationsneeded_org',
-    'available': 'citationsneeded',
-    'cert_name': 'citationsneeded',
-    'hosts': [username + '@citationsneeded.org'],
-    'local_settings': 'deployment/staging_settings.py',
-}
+from fabric.api import run, env, sudo, put, cd, local, task, require
+from fabric.contrib.files import sed, upload_template
+from fabtools import supervisor
+from fabtools.require import deb, nginx, python
+import jinja2
 
 
-prod_config = {
-    'site': 'conference.scipy.org',
-    'upstream': 'conference_scipy_org',
-    'available': 'conference',
-    'cert_name': 'scipy2014',
-    'hosts': [username + '@162.242.221.143'],
-    'local_settings': 'deployment/prod_settings.py',
-}
+env.disable_known_hosts = True
+env.user = 'mrterry'
 
-
-dev_config = {
-}
+VENV_DIR = '/home/scipy/venvs/'
+REPO = '/home/scipy/site/SciPy-2014'
+SITE_PATH = '/home/scipy/site'
+GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 
 
 @task
 def staging():
-    global CONFIG
-    CONFIG = staging_config
-    env.hosts = CONFIG['hosts']
+    env.update({
+        'site': 'citationsneeded.org',
+        'upstream': 'citationsneeded_org',
+        'available': 'citationsneeded',
+        'cert_name': 'citationsneeded',
+        'hosts': ['citationsneeded.org'],
+        'local_settings': 'deployment/staging_settings.py',
+    })
 
 
 @task
 def prod():
-    global CONFIG
-    CONFIG = staging_config
-    env.hosts = CONFIG['hosts']
+    env.update({
+        'site': 'conference.scipy.org',
+        'upstream': 'conference_scipy_org',
+        'available': 'conference',
+        'cert_name': 'scipy2014',
+        'hosts': ['162.242.221.143'],
+        'local_settings': 'deployment/prod_settings.py',
+    })
 
 
+@task
 def dev():
-    global CONFIG
-    CONFIG = dev_config
     env.key_filename = local(
         'vagrant ssh-CONFIG | grep IdentityFile | cut -f4 -d " "',
         capture=True,
@@ -88,6 +71,9 @@ def scipy_do(*args, **kw):
 
 @task
 def deploy(commit=None):
+    require('site', 'upstream', 'available', 'cert_name', 'hosts',
+            'local_settings',
+            provided_by=('prod', 'staging', 'dev'))
     install_dependencies()
 
     update_repo(commit=commit)
@@ -105,6 +91,7 @@ def deploy(commit=None):
 
 @task
 def update_repo(commit=None):
+    require('local_settings', provided_by=('prod', 'staging', 'dev'))
     if commit is None:
         commit = 'origin/master'
 
@@ -112,7 +99,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
-    scipy_put(CONFIG['local_settings'],
+    scipy_put(env['local_settings'],
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
@@ -127,15 +114,17 @@ def build_static(venv_path):
 
 @task
 def deploy_nginx():
+    require('site', 'upstream', 'availalble', 'cert_name',
+            provided_by=('prod', 'staging', 'dev'))
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
-                   server_name=CONFIG['site'],
-                   cert_name=CONFIG['cert_name'],
-                   upstream=CONFIG['upstream'])
+                   server_name=env['site'],
+                   cert_name=env['cert_name'],
+                   upstream=env['upstream'])
     put('nginx_conf',
-        pjoin('/etc/nginx/sites-available/', CONFIG['available']),
+        pjoin('/etc/nginx/sites-available/', env['available']),
         use_sudo=True)
-    require.nginx.enabled(CONFIG['available'])
-    require.nginx.disabled('default')
+    nginx.enabled(env['available'])
+    nginx.disabled('default')
     #install_certs()
 
 
@@ -177,7 +166,6 @@ def deploy_venv():
     return venv_path
 
 
-@task
 def put_gunicorn_conf(venv):
     render_to_file('deployment/runserver_template.sh',
                    'runserver.sh',
@@ -246,16 +234,15 @@ def configure_ssh():
 
 
 def setup_sitepaths():
-    with cd(fabtools.user.home_directory('scipy')):
-        scipy_do('mkdir -p site venvs')
+    scipy_do('mkdir -p ~/site ~/venvs')
     with cd(SITE_PATH):
         scipy_do('mkdir -p bin logs')
         scipy_do('git clone %s' % GIT_REPO)
 
 
 def install_dependencies():
-    require.deb.uptodate_index(max_age={'hour': 1})
-    require.deb.packages([
+    deb.uptodate_index(max_age={'hour': 1})
+    deb.packages([
         'python-software-properties',
         'python-dev',
         'build-essential',
@@ -288,5 +275,4 @@ def install_python_packages():
     sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
-    require.python.packages(['virtualenvwrapper', 'setproctitle'],
-                            use_sudo=True)
+    python.packages(['virtualenvwrapper', 'setproctitle'], use_sudo=True)
