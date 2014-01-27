@@ -1,38 +1,83 @@
+"""Deployment scripts for the scipy 2014 conference website
+
+The command to deploy is:
+    fab $TARGET $COMMAND
+
+Where $TARGET is staging || prod || dev (eventually), and $COMMAND
+is the task to be run.  $TARGET is a special fabric task that correctly
+sets up the environment
+
+Example usage:
+$ fab staging deploy
+$ fab prod deploy:576a8e4241962464f4ac9c11cd5054e306f2f0d1
+$ fab dev deploy:origin/v1.0003
+"""
+
 from os.path import join as pjoin
 import datetime
 
-from fabric.api import run, env, sudo, put, cd, local
+from fabric.api import run, env, sudo, put, cd, local, task, require
 from fabric.contrib.files import sed, upload_template
-from fabtools import require, supervisor
-import fabtools
+from fabtools import supervisor
+from fabtools.require import deb, nginx, python
 import jinja2
 
 
 env.disable_known_hosts = True
-env.hosts = [
-    '162.242.221.143',
-    #'vagrant@127.0.0.1:2222',
-    #'mrterry@citationsneeded.org',
-]
-#env.key_filename = local('vagrant ssh-config | grep IdentityFile | cut -f4 -d " "', capture=True)
+env.user = 'mrterry'
+
 VENV_DIR = '/home/scipy/venvs/'
-SITE = 'conference.scipy.org'
 REPO = '/home/scipy/site/SciPy-2014'
 SITE_PATH = '/home/scipy/site'
 GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 
-UPSTREAM = SITE.replace('.', '_')
-AVAILABLE = SITE.split('.')[0]
+
+@task
+def staging():
+    env.update({
+        'site': 'citationsneeded.org',
+        'upstream': 'citationsneeded_org',
+        'available': 'citationsneeded',
+        'ssl_cert': '/etc/ssl/certs/citationsneeded.crt',
+        'ssl_key': '/etc/ssl/private/citationsneeded.key',
+        'hosts': ['citationsneeded.org'],
+        'local_settings': 'deployment/staging_settings.py',
+    })
+
+
+@task
+def prod():
+    env.update({
+        'site': 'conference.scipy.org',
+        'upstream': 'conference_scipy_org',
+        'available': 'conference',
+        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
+        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
+        'hosts': ['162.242.221.143'],
+        'local_settings': 'deployment/prod_settings.py',
+    })
+
+
+@task
+def dev():
+    env.key_filename = local(
+        'vagrant ssh-CONFIG | grep IdentityFile | cut -f4 -d " "',
+        capture=True,
+    )
 
 
 def scipy_do(*args, **kw):
     kw['user'] = 'scipy'
     return sudo(*args, **kw)
 
-def sudosu(cmd, user='scipy'):
-    sudo("su %s -c '%s'" % (user, cmd))
 
+@task
 def deploy(commit=None):
+    require('site', 'upstream', 'available', 'ssl_cert', 'ssl_key', 'hosts',
+            'local_settings',
+            provided_by=('prod', 'staging', 'dev'))
+    install_dependencies()
+
     update_repo(commit=commit)
 
     venv_path = deploy_venv()
@@ -46,7 +91,9 @@ def deploy(commit=None):
     restart_nginx()
 
 
+@task
 def update_repo(commit=None):
+    require('local_settings', provided_by=('prod', 'staging', 'dev'))
     if commit is None:
         commit = 'origin/master'
 
@@ -54,7 +101,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
-    scipy_put('deployment/rackspace_settings.py',
+    scipy_put(env['local_settings'],
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
 
@@ -67,17 +114,28 @@ def build_static(venv_path):
     scipy_do('chmod -R a+rx %s' % pjoin(SITE_PATH, 'site_media'))
 
 
+@task
 def deploy_nginx():
+    require('site', 'upstream', 'available', 'ssl_cert', 'ssl_key',
+            provided_by=('prod', 'staging', 'dev'))
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
-                   server_name=SITE, upstream=UPSTREAM)
-    put('nginx_conf', pjoin('/etc/nginx/sites-available/', AVAILABLE),
+                   server_name=env['site'],
+                   ssl_cert=env['ssl_cert'],
+                   ssl_key=env['ssl_key'],
+                   upstream=env['upstream'])
+    put('nginx_conf',
+        pjoin('/etc/nginx/sites-available/', env['available']),
         use_sudo=True)
-    require.nginx.enabled(AVAILABLE)
-    require.nginx.disabled('default')
+    nginx.enabled(env['available'])
+    nginx.disabled('default')
     #install_certs()
 
+
+@task
 def deploy_supervisor():
-    upload_template('deployment/scipy2014.conf', '/etc/supervisor/conf.d/scipy2014.conf', use_sudo=True)
+    upload_template('deployment/scipy2014.conf',
+                    '/etc/supervisor/conf.d/scipy2014.conf',
+                    use_sudo=True)
     supervisor.update_config()
 
 
@@ -112,15 +170,19 @@ def deploy_venv():
 
 
 def put_gunicorn_conf(venv):
-    render_to_file('deployment/runserver_template.sh', 'runserver.sh', virtualenv=venv)
+    render_to_file('deployment/runserver_template.sh',
+                   'runserver.sh',
+                   virtualenv=venv)
     scipy_put('runserver.sh', pjoin(SITE_PATH, 'bin/runserver.sh'),
               mode='0755')
 
 
+@task
 def restart_gunicorn():
     sudo('supervisorctl restart scipy2014')
 
 
+@task
 def restart_nginx():
     sudo('service nginx restart')
 
@@ -139,22 +201,24 @@ def render_to_file(template_path, output_path, **kw):
         f.write(conf)
 
 
-def install_certs():
-    put('citationsneeded.crt', '/etc/ssl/certs/citationsneeded.crt',
-        use_sudo=True, mode=0400)
-    put('citationsneeded.key', '/etc/ssl/private/citationsneeded.key',
-        use_sudo=True, mode=0400)
+#def install_certs():
+#    put('citationsneeded.crt', '/etc/ssl/certs/citationsneeded.crt',
+#        use_sudo=True, mode=0400)
+#    put('citationsneeded.key', '/etc/ssl/private/citationsneeded.key',
+#        use_sudo=True, mode=0400)
 
 
+@task
 def deploy_mail(venv_path):
     render_to_file('deployment/django_mail_template.sh', 'django_mail.sh',
                    virtualenv=venv_path)
     scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'))
 
 
+@task
 def provision():
     install_dependencies()
-    install_python_packages()
+    #install_python_packages()
     configure_ssh()
     setup_user()
     setup_sitepaths()
@@ -165,21 +229,27 @@ def setup_user():
 
 
 def configure_ssh():
-    sed('/etc/ssh/sshd_config', '^#PasswordAuthentication yes', 'PasswordAuthentication no', use_sudo=True)
+    sed('/etc/ssh/sshd_config',
+        '^#PasswordAuthentication yes',
+        'PasswordAuthentication no',
+        use_sudo=True)
     sudo('service ssh restart')
 
 
 def setup_sitepaths():
-    with cd(fabtools.user.home_directory('scipy')):
-        sudosu('mkdir site venvs')
+    scipy_do('mkdir -p ~/site ~/venvs')
+    scipy_do('mkdir -p ~/site/site_media')
+    scipy_do('mkdir -p ~/site/site_media/static')
+    scipy_do('mkdir -p ~/site/site_media/media')
     with cd(SITE_PATH):
-        sudosu('mkdir bin logs')
-        sudosu('git clone %s' % GIT_REPO)
+        scipy_do('mkdir -p bin logs')
+        scipy_do('git clone %s' % GIT_REPO)
+    scipy_do('mkdir -p ~/site/site_media')
 
 
 def install_dependencies():
-    require.deb.uptodate_index(max_age={'hour': 1})
-    require.deb.packages([
+    deb.uptodate_index(max_age={'hour': 1})
+    deb.packages([
         'python-software-properties',
         'python-dev',
         'build-essential',
@@ -198,17 +268,18 @@ def install_dependencies():
         'mysql-server',
         'mysql-client',
         'python-mysqldb',
+        'libjpeg-dev',
+        'libtiff-dev',
+        'zlib1g-dev',
+        'python-virtualenv',
     ])
 
 
 def install_python_packages():
-    sudo('wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
+    sudo('wget '
+         'https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
     sudo('wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py')
     sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
-    require.python.packages([
-        'virtualenvwrapper',
-        'setproctitle',
-    ], use_sudo=True)
-
+    python.packages(['virtualenvwrapper', 'setproctitle'], use_sudo=True)
