@@ -38,8 +38,8 @@ def staging():
         'site': 'citationsneeded.org',
         'upstream': 'citationsneeded_org',
         'available': 'citationsneeded',
-        'ssl_cert': '/etc/ssl/certs/citationsneeded.crt;',
-        'ssl_key': '/etc/ssl/private/citationsneeded.key;',
+        'ssl_cert': '/etc/ssl/certs/citationsneeded.crt',
+        'ssl_key': '/etc/ssl/private/citationsneeded.key',
         'hosts': ['citationsneeded.org'],
         'local_settings': 'deployment/staging_settings.py',
     })
@@ -51,8 +51,8 @@ def prod():
         'site': 'conference.scipy.org',
         'upstream': 'conference_scipy_org',
         'available': 'conference',
-        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt;',
-        'ssl_key': '/etc/ssl/private/conference.scipy.org.key;',
+        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
+        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
         'hosts': ['162.242.221.143'],
         'local_settings': 'deployment/prod_settings.py',
     })
