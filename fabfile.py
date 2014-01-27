@@ -31,13 +31,15 @@ $ fab dev deploy:origin/v1.0003
 
 CONFIG = None
 
+username = 'mrterry'
+
 
 staging_config = {
     'site': 'citationsneeded.org',
     'upstream': 'citationsneeded_org',
     'available': 'citationsneeded',
     'cert_name': 'citationsneeded',
-    'hosts': ['mrterry@citationsneeded.org'],
+    'hosts': [username + '@citationsneeded.org'],
     'local_settings': 'deployment/staging_settings.py',
 }
 
@@ -47,7 +49,7 @@ prod_config = {
     'upstream': 'conference_scipy_org',
     'available': 'conference',
     'cert_name': 'scipy2014',
-    'hosts': ['162.242.221.143'],
+    'hosts': [username + '@162.242.221.143'],
     'local_settings': 'deployment/prod_settings.py',
 }
 
