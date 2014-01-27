@@ -7,9 +7,18 @@ server {
     listen 80;
     server_name {{ server_name }} localhost;
     rewrite ^/scipy2014 https://conference.scipy.org$request_uri? permanent;
+    root /home/scipy/site/conference;
+    index index.php index.htm index.html;
 
-    location / location {
-        root /home/scipy/site/conference;
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        if (!-f $document_root$fastcgi_script_name) {
+            return 404;
+        }
+
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
     }
 }
 
