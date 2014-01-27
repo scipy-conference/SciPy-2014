@@ -130,9 +130,9 @@ def deploy_nginx():
                    cert_name=CONFIG['cert_name'],
                    upstream=CONFIG['upstream'])
     put('nginx_conf',
-        pjoin('/etc/nginx/sites-available/', CONFIG['avaailable']),
+        pjoin('/etc/nginx/sites-available/', CONFIG['available']),
         use_sudo=True)
-    require.nginx.enabled(CONFIG['avaailable'])
+    require.nginx.enabled(CONFIG['available'])
     require.nginx.disabled('default')
     #install_certs()
 
@@ -280,9 +280,11 @@ def install_dependencies():
 
 
 def install_python_packages():
-    sudo('wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
+    sudo('wget '
+         'https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
     sudo('wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py')
     sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
-    require.python.packages(['virtualenvwrapper', 'setproctitle'], use_sudo=True)
+    require.python.packages(['virtualenvwrapper', 'setproctitle'],
+                            use_sudo=True)
