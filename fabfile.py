@@ -1,7 +1,7 @@
 from os.path import join as pjoin
 import datetime
 
-from fabric.api import run, env, sudo, put, cd, local
+from fabric.api import run, env, sudo, put, cd, local, task
 from fabric.contrib.files import sed, upload_template
 from fabtools import require, supervisor
 import fabtools
@@ -56,12 +56,14 @@ dev_config = {
 }
 
 
+@task
 def staging():
     global CONFIG
     CONFIG = staging_config
     env.hosts = CONFIG['hosts']
 
 
+@task
 def prod():
     global CONFIG
     CONFIG = staging_config
@@ -82,6 +84,7 @@ def scipy_do(*args, **kw):
     return sudo(*args, **kw)
 
 
+@task
 def deploy(commit=None):
     install_dependencies()
 
@@ -98,6 +101,7 @@ def deploy(commit=None):
     restart_nginx()
 
 
+@task
 def update_repo(commit=None):
     if commit is None:
         commit = 'origin/master'
@@ -119,6 +123,7 @@ def build_static(venv_path):
     scipy_do('chmod -R a+rx %s' % pjoin(SITE_PATH, 'site_media'))
 
 
+@task
 def deploy_nginx():
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
                    server_name=CONFIG['site'],
@@ -132,6 +137,7 @@ def deploy_nginx():
     #install_certs()
 
 
+@task
 def deploy_supervisor():
     upload_template('deployment/scipy2014.conf',
                     '/etc/supervisor/conf.d/scipy2014.conf',
@@ -169,6 +175,7 @@ def deploy_venv():
     return venv_path
 
 
+@task
 def put_gunicorn_conf(venv):
     render_to_file('deployment/runserver_template.sh',
                    'runserver.sh',
@@ -177,10 +184,12 @@ def put_gunicorn_conf(venv):
               mode='0755')
 
 
+@task
 def restart_gunicorn():
     sudo('supervisorctl restart scipy2014')
 
 
+@task
 def restart_nginx():
     sudo('service nginx restart')
 
@@ -206,12 +215,14 @@ def render_to_file(template_path, output_path, **kw):
 #        use_sudo=True, mode=0400)
 
 
+@task
 def deploy_mail(venv_path):
     render_to_file('deployment/django_mail_template.sh', 'django_mail.sh',
                    virtualenv=venv_path)
     scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'))
 
 
+@task
 def provision():
     install_dependencies()
     #install_python_packages()
