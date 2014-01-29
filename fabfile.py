@@ -285,9 +285,9 @@ def install_dependencies():
         'python-virtualenv',
     ])
 
-
+@task
 def install_php_dependencies():
-    dep.packages{[
+    deb.packages([
         "php5",
         "php5-fpm",
         "php-pear",
@@ -296,7 +296,7 @@ def install_php_dependencies():
         "php5-mysql",
         "php5-cli",
         "php5-gd",
-    ]}
+    ])
 
 
 def install_python_packages():
