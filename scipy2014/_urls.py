@@ -69,7 +69,15 @@ urlpatterns = patterns(
         direct_to_template,
         {'template': 'sponsorship.html'},
         name='sponsorship'),
-
+    url(r'^sponsor_levels/$',
+        direct_to_template,
+        {'template': 'sponsor_levels.html'},
+        name='sponsor_levels'),
+    url(r'^keynotes/$',
+        direct_to_template,
+        {'template': 'keynotes.html'},
+        name='keynotes'),
+        
     url(r"^account/signup/$",
         symposion.views.SignupView.as_view(),
         name="account_signup"),

@@ -1,0 +1,37 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% load boxes_tags %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+
+<h1>SciPy 2014 Keynote Speakers</h1>
+
+<div class="biobox">
+  <h2><a id="Wilson" name="Ramsey">Paul Ramsey</a></h2>
+  <div class="cell" style="width: 10em;">
+  <img src="../site_media/static/img/hs_ramsey.png" class="sideslung" width="161" height="120" alt="Paul Ramsey" />
+  </div>
+  <div class="cell" style="width: 65%;">
+  <p>Paul Ramsey is a Geospatial Architect at OpenGeo. He has been working with geospatial software for over a decade: consulting to government and industry; building a geospatial software company; and programming on open source. He founded the PostGIS spatial database project in 2001, and is currently an active developer and member of the project steering committee. In 2008, Paul received the Sol Katz Award for achievement in open source geospatial software. Paul speaks and teaches regularly at conferences around the world.</p>
+  </div>
+</div>
+
+<div class="biobox">
+  <h2><a id="Wilson" name="Wilson">Greg Wilson</a></h2>
+  <div class="cell" style="width: 10em;">
+  <img src="../site_media/static/img/hs_wilson.png" class="sideslung" width="161" height="120" alt="Greg Wilson" />
+  </div>
+  <div class="cell" style="width: 65%;">
+  <p>Greg Wilson is the creator of Software Carpentry, a crash course in computing skills for scientists and engineers.  He has worked for 25 years in high-performance computing, data visualization, computer security, and academia, and is the author or editor of several books on computing (including the 2008 Jolt Award winner "Beautiful Code") and two for children. Greg received a Ph.D. in Computer Science from the University of Edinburgh in 1993, and presently works for the Mozilla Foundation.</p>
+  
+  </div>
+</div>
+<p style="clear: both;">More to be announced soon.</p>
+
+{% endblock %}
