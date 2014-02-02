@@ -98,7 +98,7 @@ def deploy(commit=None):
     deploy_supervisor()
     restart_gunicorn()
 
-    deploy_nginxi()
+    deploy_nginx()
     restart_nginx()
 
 

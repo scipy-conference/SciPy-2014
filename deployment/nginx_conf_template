@@ -40,6 +40,20 @@ server {
     #    deny all;
     #}
 
+    root /home/scipy/site/conference;
+    index index.php index.htm index.html;
+
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        if (!-f $document_root$fastcgi_script_name) {
+            return 404;
+        }
+
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+
     location /scipy2014/site_media/media/ {
         alias /home/scipy/site/site_media/media/;
     }
