@@ -50,8 +50,8 @@ def prod():
         'site': 'conference.scipy.org',
         'upstream': 'conference_scipy_org',
         'available': 'conference',
-        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
-        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
+        'ssl_cert': '/etc/ssl/localcerts/star_scipy_org.chained.crt',
+        'ssl_key': '/etc/ssl/private/star_scipy_org.key',
         'hosts': ['162.242.221.143'],
         'local_settings': 'deployment/prod_settings.py',
     })
