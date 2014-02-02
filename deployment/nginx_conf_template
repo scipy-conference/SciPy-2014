@@ -6,7 +6,20 @@ upstream conference_org {
 server {
     listen 80;
     server_name {{ server_name }} localhost;
-    rewrite ^ https://conference.scipy.org$request_uri? permanent;
+    rewrite ^/scipy2014 https://conference.scipy.org$request_uri? permanent;
+    root /home/scipy/site/conference;
+    index index.php index.htm index.html;
+
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        if (!-f $document_root$fastcgi_script_name) {
+            return 404;
+        }
+
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
 }
 
 server {
@@ -26,6 +39,20 @@ server {
     #    allow {{ local_ip }}
     #    deny all;
     #}
+
+    root /home/scipy/site/conference;
+    index index.php index.htm index.html;
+
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        if (!-f $document_root$fastcgi_script_name) {
+            return 404;
+        }
+
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
 
     location /scipy2014/site_media/media/ {
         alias /home/scipy/site/site_media/media/;

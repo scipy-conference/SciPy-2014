@@ -24,7 +24,6 @@ import jinja2
 
 
 env.disable_known_hosts = True
-env.user = 'mrterry'
 
 VENV_DIR = '/home/scipy/venvs/'
 REPO = '/home/scipy/site/SciPy-2014'
@@ -51,8 +50,8 @@ def prod():
         'site': 'conference.scipy.org',
         'upstream': 'conference_scipy_org',
         'available': 'conference',
-        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
-        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
+        'ssl_cert': '/etc/ssl/localcerts/star_scipy_org.chained.crt',
+        'ssl_key': '/etc/ssl/private/star_scipy_org.key',
         'hosts': ['162.242.221.143'],
         'local_settings': 'deployment/prod_settings.py',
     })
@@ -60,10 +59,22 @@ def prod():
 
 @task
 def dev():
+    env.update({
+        'site': 'localhost',
+        'upstream': 'localhost',
+        'available': 'conference',
+        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
+        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
+        'local_settings': 'deployment/prod_settings.py',
+    })
+    env.user = 'vagrant'
+    env.hosts = ['127.0.0.1:2201']
     env.key_filename = local(
         'vagrant ssh-CONFIG | grep IdentityFile | cut -f4 -d " "',
         capture=True,
     )
+
+
 
 
 def scipy_do(*args, **kw):
@@ -272,6 +283,20 @@ def install_dependencies():
         'libtiff-dev',
         'zlib1g-dev',
         'python-virtualenv',
+    ])
+
+
+@task
+def install_php_dependencies():
+    deb.packages([
+        "php5",
+        "php5-fpm",
+        "php-pear",
+        "php5-common",
+        "php5-mcrypt",
+        "php5-mysql",
+        "php5-cli",
+        "php5-gd",
     ])
 
 
