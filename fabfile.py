@@ -98,7 +98,7 @@ def deploy(commit=None):
     deploy_supervisor()
     restart_gunicorn()
 
-    deploy_nginx()
+    deploy_nginxi()
     restart_nginx()
 
 
@@ -284,6 +284,7 @@ def install_dependencies():
         'zlib1g-dev',
         'python-virtualenv',
     ])
+
 
 @task
 def install_php_dependencies():
