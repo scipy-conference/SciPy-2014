@@ -35,11 +35,11 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+#main ol, ul {
   list-style-position: inside;
-  /*text-indent: -2em; - messing up nav pills */
-  padding-left: 2em;
-  margin: 0 0 1em 0;
+  text-indent: -1em;
+  padding-left: 1em;
+  margin: 0 0 1em 1em;
   }
 
 blockquote, q {
