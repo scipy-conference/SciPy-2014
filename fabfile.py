@@ -75,8 +75,6 @@ def dev():
     )
 
 
-
-
 def scipy_do(*args, **kw):
     kw['user'] = 'scipy'
     return sudo(*args, **kw)
@@ -223,7 +221,8 @@ def render_to_file(template_path, output_path, **kw):
 def deploy_mail(venv_path):
     render_to_file('deployment/django_mail_template.sh', 'django_mail.sh',
                    virtualenv=venv_path)
-    scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'))
+    scipy_put('django_mail.sh', pjoin(SITE_PATH, 'bin/django_mail.sh'),
+              mode=0500)
 
 
 @task

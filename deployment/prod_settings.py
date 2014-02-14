@@ -3,6 +3,7 @@ from . import secrets
 
 DEBUG = False
 TEMPLATE_DEBUG = False
+SITE_ID = 3
 
 # tells Pinax to serve media through the staticfiles app.
 SERVE_MEDIA = False
