@@ -77,7 +77,6 @@ urlpatterns = patterns(
         direct_to_template,
         {'template': 'keynotes.html'},
         name='keynotes'),
-        
     url(r"^account/signup/$",
         symposion.views.SignupView.as_view(),
         name="account_signup"),
@@ -100,3 +99,11 @@ urlpatterns = patterns(
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    urlpatterns += patterns(
+        '',
+        url(r'^site_media/media/(?P<path>.*)$',
+            'django.views.static.serve',
+            {'document_root': settings.MEDIA_ROOT}),
+    )
