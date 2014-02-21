@@ -1,10 +1,18 @@
 {% load sponsorship_tags %}
 {% load thumbnail %}
 {% load boxes_tags %}
-
-{% box "sponsor-sidebar" %}
-
+<h2>Sponsors</h2>
 <div class="sponsor-list">
+      <h4 style="margin-top: 3em;">Institutional</h4>
+      
+        <div style="margin: 10px 0;">
+          <a href="https://www.enthought.com/">
+            <img src="/scipy2014/site_media/media/sponsor_files/enthought.png"
+                 alt="Enthought"
+                 style="width: 90%; display: block;margin: 1em auto;" />
+          </a>
+        </div>
+
   {% for level, sponsors in sponsor_levels %}
     {% if sponsors %}
       <h4 style="margin-top: 3em;">{{ level }}</h4>
@@ -19,4 +27,5 @@
       {% endfor %}
     {% endif %}
   {% endfor %}
+{% box "sponsor-sidebar" %}
 </div>
