@@ -35,7 +35,7 @@ body {
   line-height: 1;
 }
 
-#main ol, ul {
+#main ol ul {
   list-style-position: inside;
   text-indent: -1em;
   padding-left: 1em;
@@ -685,3 +685,19 @@ img.sideslung {
   border: 1px solid #666;
   padding: 0 4px;
   } 
+
+.navbar ul.nav li  {
+  min-width: 130px;
+  text-align: center;
+  }
+
+.navbar ul.nav li.dropdown.active  {
+/*  background-color: #cadbeb; */
+  }
+
+
+.navbar ul.nav li ul.dropdown-menu li {
+  text-align: left;
+  }
+
+
