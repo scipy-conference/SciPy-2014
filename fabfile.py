@@ -35,6 +35,7 @@ GIT_REPO = 'https://github.com/scipy-conference/SciPy-2014.git'
 def staging():
     env.update({
         'site': 'citationsneeded.org',
+        'rewrite_name': 'citationsneeded.org',
         'upstream': 'citationsneeded_org',
         'available': 'citationsneeded',
         'ssl_cert': '/etc/ssl/certs/citationsneeded.crt',
@@ -48,6 +49,7 @@ def staging():
 def prod():
     env.update({
         'site': 'conference.scipy.org',
+        'rewrite_name': 'conference.scipy.org',
         'upstream': 'conference_scipy_org',
         'available': 'conference',
         'ssl_cert': '/etc/ssl/localcerts/star_scipy_org.chained.crt',
@@ -98,6 +100,7 @@ def get_vagrant_config():
 def dev():
     env.update({
         'site': 'localhost',
+        'rewrite_name': 'localhost',
         'upstream': 'localhost',
         'available': 'conference',
         'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
@@ -105,7 +108,7 @@ def dev():
         'local_settings': 'deployment/prod_settings.py',
     })
     env.user = 'vagrant'
-    env.hosts = ['127.0.0.1:2201']
+    env.hosts = ['127.0.0.1:2222']
     env.key_filename = local(
         'vagrant ssh-CONFIG | grep IdentityFile | cut -f4 -d " "',
         capture=True,
@@ -166,6 +169,7 @@ def deploy_nginx():
             provided_by=('prod', 'staging', 'dev'))
     render_to_file('deployment/nginx_conf_template', 'nginx_conf',
                    server_name=env['site'],
+                   rewrite_name=env['rewrite_name'],
                    ssl_cert=env['ssl_cert'],
                    ssl_key=env['ssl_key'],
                    upstream=env['upstream'])
