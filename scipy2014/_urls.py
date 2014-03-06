@@ -79,7 +79,7 @@ urlpatterns = patterns(
         name='keynotes'),
     url(r'^speaking/tutorials/$',
         direct_to_template,
-        {'templage': 'speaking/tutorials.html'}),
+        {'template': 'speaking/tutorials.html'}),
     url(r"^account/signup/$",
         symposion.views.SignupView.as_view(),
         name="account_signup"),
