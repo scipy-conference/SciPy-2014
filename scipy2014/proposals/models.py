@@ -75,7 +75,7 @@ class TutorialProposal(ProposalBase):
 have installed prior to the class to follow along. Please mention if
 any packages are not cross platform. Installation instructions or
 links to installation documentation should be provided for packages
-that are not available through easy_install, pip, EPD, Anaconda CE
+that are not available through easy_install, pip, EPD, Anaconda
 etc., or that require third party libraries."""
     )
 
