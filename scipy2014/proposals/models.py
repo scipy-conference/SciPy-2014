@@ -8,7 +8,7 @@ class TalkPosterProposal(ProposalBase):
     TYPE_TALK_OR_POSTER = 1
     TYPE_TALK_ONLY = 2
     TYPE_POSTER_ONLY = 3
-    
+
     SUBMISSION_TYPES = [
         (TYPE_TALK_OR_POSTER, "Talk or Poster"),
         (TYPE_TALK_ONLY, "Talk Only"),
@@ -21,7 +21,7 @@ class TalkPosterProposal(ProposalBase):
     TRACK_DOMAIN_ONLY = 4
     TRACK_EDUCATION = 5
     TRACK_GIS = 6
-    
+
     TOPIC_TRACKS = [
         (TRACK_GENERAL, "General"),
         (TRACK_EDUCATION, 'Scientific Computing Education'),
@@ -60,13 +60,13 @@ class TutorialProposal(ProposalBase):
     TRACK_INTRODUCTORY = 1
     TRACK_INTERMEDIATE = 2
     TRACK_ADVANCED = 3
-    
+
     TRACKS = [
         (TRACK_INTRODUCTORY, "Introductory"),
         (TRACK_INTERMEDIATE, "Intermediate"),
         (TRACK_ADVANCED, "Advanced"),
     ]
-    
+
     track = models.IntegerField(choices=TRACKS)
 
     package_list = models.TextField(
@@ -75,7 +75,7 @@ class TutorialProposal(ProposalBase):
 have installed prior to the class to follow along. Please mention if
 any packages are not cross platform. Installation instructions or
 links to installation documentation should be provided for packages
-that are not available through easy_install, pip, EPD, Anaconda
+that are not available through easy_install, pip, Canopy, Anaconda
 etc., or that require third party libraries."""
     )
 
