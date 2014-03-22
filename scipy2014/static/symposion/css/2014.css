@@ -700,14 +700,9 @@ img.sideslung {
   text-align: left;
   }
 
-.column_left {
+.column_half {
     width: 45%;
     float: left;
     position:relative;
 }
 
-.column_right {
-    width: 45%;
-    float: right;
-    position:relative;
-}
