@@ -68,6 +68,10 @@ urlpatterns = patterns(
     url(r'^sponsorship/$',
         direct_to_template,
         {'template': 'sponsorship.html'},
+    # Override the sponsor prospectus page
+    url(r'^sponsors/prospectus$',
+        direct_to_template,
+        {'template': 'sponsorship.html'},
         name='sponsorship'),
     url(r'^sponsor_levels/$',
         direct_to_template,
