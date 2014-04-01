@@ -27,6 +27,7 @@ class TalkPosterProposal(ProposalBase):
         (TRACK_EDUCATION, 'Scientific Computing Education'),
         (TRACK_GIS, 'Geospatial Data in Science'),
     ]
+    track_lookup = dict(TOPIC_TRACKS)
 
     DOMAIN_NONE = 1
     DOMAIN_MEDICAL_IMAGING = 2
@@ -48,10 +49,17 @@ class TalkPosterProposal(ProposalBase):
         (DOMAIN_ENGINEERING, 'Engineering'),
         (DOMAIN_SOCIAL_SCIENCES_AND_HUMANITIES, 'Computational Social Sciences and Digital Humanities'),
     ]
+    domain_lookup = dict(DOMAIN_SYMPOSIA)
 
     submission_type = models.IntegerField(choices=SUBMISSION_TYPES, default=1)
     topic_track = models.IntegerField(choices=TOPIC_TRACKS, default=1)
     domain_symposium = models.IntegerField(choices=DOMAIN_SYMPOSIA, default=1)
+
+    def topic_track_display(self):
+        return self.track_lookup.get(self.topic_track, '')
+    def domain_symposium_display(self):
+        return self.domain_lookup.get(self.domain_symposium, '')
+
 
     class Meta:
         verbose_name = "talk/poster proposal"
@@ -68,6 +76,7 @@ class TutorialProposal(ProposalBase):
         (TRACK_INTERMEDIATE, "Intermediate"),
         (TRACK_ADVANCED, "Advanced"),
     ]
+    track_lookup = dict(TRACKS)
 
     track = models.IntegerField(choices=TRACKS)
 
@@ -80,6 +89,9 @@ links to installation documentation should be provided for packages
 that are not available through easy_install, pip, Canopy, Anaconda
 etc., or that require third party libraries."""
     )
+
+    def track_display(self):
+        return self.track_lookup.get(self.track, '')
 
     class Meta:
         verbose_name = "tutorial proposal"
