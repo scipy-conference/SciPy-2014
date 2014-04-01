@@ -4,7 +4,8 @@
     <thead>
         <th>#</th>
         <th>{% trans "Speaker / Title" %}</th>
-        <th>{% trans "Category / Domain" %}</th>
+        <th>{% trans "Category" %}</th>
+        <th>{% trans "Domain" %}</th>
         <th><i class="icon-comment-alt"></i></th>
         <th>{% trans "+1" %}</th>
         <th>{% trans "+0" %}</th>
@@ -27,6 +28,8 @@
                 <td>
                   {{ proposal.topic_track_display }}
                   {{ proposal.track_display }}
+                </td>
+                <td>
                   {{ proposal.domain_symposium_display }}
                 </td>
                 <td>{{ proposal.comment_count }}</td>
