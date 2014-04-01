@@ -37,6 +37,7 @@ class TalkPosterProposal(ProposalBase):
     DOMAIN_VISUALIZATION = 7
     DOMAIN_SOCIAL = 8
     DOMAIN_ENGINEERING = 9
+    DOMAIN_SOCIAL_SCIENCES_AND_HUMANITIES = 10
 
     DOMAIN_SYMPOSIA = [
         (DOMAIN_NONE, "None, only submit to tracks"),
@@ -45,6 +46,7 @@ class TalkPosterProposal(ProposalBase):
         (DOMAIN_GEOPHYSICS, 'Geophysics'),
         (DOMAIN_VISUALIZATION, 'Vision, Visualization, and Imaging'),
         (DOMAIN_ENGINEERING, 'Engineering'),
+        (DOMAIN_SOCIAL_SCIENCES_AND_HUMANITIES, 'Computational Social Sciences and Digital Humanities'),
     ]
 
     submission_type = models.IntegerField(choices=SUBMISSION_TYPES, default=1)
