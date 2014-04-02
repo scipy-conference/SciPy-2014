@@ -58,6 +58,43 @@ def prod():
 
 
 @task
+def vagrant():
+    """
+    Run commands using vagrant
+    """
+    env.update({
+        'site': 'localhost',
+        'upstream': 'localhost',
+        'available': 'conference',
+        'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
+        'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
+        'local_settings': 'deployment/prod_settings.py',
+    })
+    vc = get_vagrant_config()
+    # change from the default user to 'vagrant'
+    env.user = vc['User']
+    # connect to the port-forwarded ssh
+    env.hosts = ['%s:%s' % (vc['HostName'], vc['Port'])]
+    # use vagrant ssh key
+    env.key_filename = vc['IdentityFile'].strip('"')
+    # Forward the agent if specified:
+    env.forward_agent = vc.get('ForwardAgent', 'no') == 'yes'
+
+
+def get_vagrant_config():
+    """
+    Parses vagrant configuration and returns it as dict of ssh parameters
+    and their values
+    """
+    result = local('vagrant ssh-config', capture=True)
+    conf = {}
+    for line in iter(result.splitlines()):
+        parts = line.split()
+        conf[parts[0]] = ' '.join(parts[1:])
+    return conf
+
+
+@task
 def dev():
     env.update({
         'site': 'localhost',
@@ -228,7 +265,7 @@ def deploy_mail(venv_path):
 @task
 def provision():
     install_dependencies()
-    #install_python_packages()
+    install_python_packages()
     configure_ssh()
     setup_user()
     setup_sitepaths()
