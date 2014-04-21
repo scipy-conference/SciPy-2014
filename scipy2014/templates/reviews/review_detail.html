@@ -118,6 +118,13 @@
 
                         {% csrf_token %}
                             {{ review_form|as_bootstrap }}
+                        <p style="color:red;">DO NOT SUBMIT '-0' or '-1' as it will cause an error 
+                        (this is a <a href="https://github.com/scipy-conference/SciPy-2014/issues/78">known issue</a>). 
+                        
+                        We are ignoring these votes and using only the Google Form for decisions. You MUST fill
+                        out a response at this form: <a
+                        href="https://docs.google.com/forms/d/1wa1th-8ALQA_7tdkOshOBK_uC1OrlM0ug7-V5FyXBuc/viewform">SciPy2014
+                    Submission Reviews</a>.</p>
                             <div class="form-action">
                                 <input type="submit" class="btn btn-primary" name="vote_submit" value="Submit Review" />
                             </div>
