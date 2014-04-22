@@ -13,6 +13,9 @@
     <dt>{% trans "Domain Symposium" %}</dt>
     <dd>{{ proposal.get_domain_symposium_display }}&nbsp;</dd>
 
+    <dt>{% trans "Submission Type" %}</dt>
+    <dd>{{ proposal.get_submission_type_display }}&nbsp;</dd>
+
     {% if proposal.additional_speakers.all %}
         <dt>{% trans "Additional Speakers" %}</dt>
         <dd>

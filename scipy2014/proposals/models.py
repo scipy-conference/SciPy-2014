@@ -61,7 +61,7 @@ class TalkPosterProposal(ProposalBase):
     def domain_symposium_display(self):
         return self.domain_lookup.get(self.domain_symposium, '')
     def submission_type_display(self):
-        return self.submission_type_lookup.get(self.domain_symposium, '')
+        return self.submission_type_lookup.get(self.submission_type, '')
 
 
     class Meta:

@@ -6,6 +6,7 @@
         <th>{% trans "Speaker / Title" %}</th>
         <th>{% trans "Category" %}</th>
         <th>{% trans "Domain" %}</th>
+        <th>{% trans "Type" %}</th>
         <th><i class="icon-comment-alt"></i></th>
         <th>{% trans "+1" %}</th>
         <th>{% trans "+0" %}</th>
@@ -31,6 +32,9 @@
                 </td>
                 <td>
                   {{ proposal.domain_symposium_display }}
+                </td>
+                <td>
+                  {{ proposal.submission_type_display }}
                 </td>
                 <td>{{ proposal.comment_count }}</td>
                 <td>{{ proposal.plus_one }}</td>
