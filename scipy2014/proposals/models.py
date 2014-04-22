@@ -14,6 +14,7 @@ class TalkPosterProposal(ProposalBase):
         (TYPE_TALK_ONLY, "Talk Only"),
         (TYPE_POSTER_ONLY, "Poster Only"),
     ]
+    submission_type_lookup = dict(SUBMISSION_TYPES)
 
     TRACK_GENERAL = 1
     TRACK_MACHINE_LEARNING = 2
@@ -59,6 +60,8 @@ class TalkPosterProposal(ProposalBase):
         return self.track_lookup.get(self.topic_track, '')
     def domain_symposium_display(self):
         return self.domain_lookup.get(self.domain_symposium, '')
+    def submission_type_display(self):
+        return self.submission_type_lookup.get(self.domain_symposium, '')
 
 
     class Meta:
