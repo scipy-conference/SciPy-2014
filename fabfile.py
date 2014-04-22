@@ -337,10 +337,7 @@ def install_php_dependencies():
 
 
 def install_python_packages():
-    sudo('wget '
-         'https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py')
     sudo('wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py')
-    sudo('python ez_setup.py')
     sudo('python get-pip.py')
     # install global python packages
     python.packages(['virtualenvwrapper', 'setproctitle'], use_sudo=True)
