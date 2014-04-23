@@ -10,7 +10,7 @@
 Django==1.4.5
 django-user-accounts==1.0b7
 #symposion==1.0b1.dev54
--e git+https://github.com/scipy-conference/symposion.git@reviewadmin#egg=symposion
+-e git+https://github.com/scipy-conference/symposion.git@0.0.0-negativevotes#egg=symposion
 pinax-theme-bootstrap==3.0a4
 django-forms-bootstrap==2.0.3.post1
 metron==1.3
