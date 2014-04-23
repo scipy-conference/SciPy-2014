@@ -16,10 +16,10 @@ $ fab dev deploy:origin/v1.0003
 from os.path import join as pjoin
 import datetime
 
-from fabric.api import run, env, sudo, put, cd, local, task, require
+from fabric.api import run, env, sudo, put, cd, local, task, require, settings
 from fabric.contrib.files import sed, upload_template
-from fabtools import supervisor
-from fabtools.require import deb, nginx, python
+from fabtools import supervisor, user
+from fabtools.require import deb, nginx, python, mysql
 import jinja2
 
 
@@ -269,10 +269,22 @@ def provision():
     configure_ssh()
     setup_user()
     setup_sitepaths()
+    #setup_db()
+    print("YOU HAVE TO SETUP MYSQL MANUALLY")
+
+
+"""
+# this does not at all work but something similar could
+def setup_db():
+    with settings(mysql_user='root', password='notapassword'):
+        mysql.user('scipy', password='notapassword')
+        mysql.database('scipy2014', owner='scipy')
+"""
 
 
 def setup_user():
-    sudo('useradd -s/bin/bash -d/home/scipy -m scipy')
+    if not user.exists('scipy'):
+        sudo('useradd -s/bin/bash -d/home/scipy -m scipy')
 
 
 def configure_ssh():
