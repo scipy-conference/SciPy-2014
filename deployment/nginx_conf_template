@@ -9,6 +9,7 @@ server {
     rewrite ^/scipy2014 https://conference.scipy.org$request_uri? permanent;
     root /home/scipy/site/conference;
     index index.php index.htm index.html;
+    client_max_body_size 10M;
 
     location ~ [^/]\.php(/|$) {
         fastcgi_split_path_info ^(.+?\.php)(/.*)$;
@@ -25,6 +26,7 @@ server {
 server {
     listen 443;
     server_name {{ server_name }} localhost;
+    client_max_body_size 10M;
 
     ssl on;
     ssl_certificate     {{ ssl_cert }};
