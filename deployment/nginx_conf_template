@@ -5,7 +5,7 @@ upstream conference_org {
 
 server {
     listen 80;
-    server_name {{ server_name }};
+    server_name {{ server_name }} localhost;
     rewrite ^/scipy2014 https://{{ rewrite_name }}$request_uri? permanent;
     root /home/scipy/site/conference;
     index index.php index.htm index.html;
@@ -34,13 +34,6 @@ server {
 
     access_log /home/scipy/site/logs/scipy.access.log;
     error_log /home/scipy/site/logs/scipy.error.log;
-
-    location /nginx_status {
-        stub_status on;
-        access_log off;
-        allow 127.0.0.1;
-        deny all;
-    }
 
     root /home/scipy/site/conference;
     index index.php index.htm index.html;
