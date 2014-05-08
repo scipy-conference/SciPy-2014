@@ -7,10 +7,10 @@
 --extra-index-url=http://dist.pinaxproject.com/alpha/
 --extra-index-url=http://dist.pinaxproject.com/fresh-start/
 
-Django==1.4.5
+Django==1.4.12
 django-user-accounts==1.0b7
 #symposion==1.0b1.dev54
--e git+https://github.com/scipy-conference/symposion.git@0.0.0-negativevotes#egg=symposion
+-e git+https://github.com/scipy-conference/symposion.git@0.0.1-schedulebuilder#egg=symposion
 pinax-theme-bootstrap==3.0a4
 django-forms-bootstrap==2.0.3.post1
 metron==1.3
@@ -34,3 +34,5 @@ mysql-python==1.2.5
 fabric
 jinja2
 fabtools
+
+django-extensions==1.3.6

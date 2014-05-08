@@ -151,6 +151,8 @@ INSTALLED_APPS = [
     "easy_thumbnails",
     "sitetree",
     "account",
+    "django_extensions",
+
 
     # symposion
     "symposion",
