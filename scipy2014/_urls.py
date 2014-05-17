@@ -100,6 +100,9 @@ urlpatterns = patterns(
     url(r'^participate/wssspe/$',
         direct_to_template,
         {'template': 'participate/wssspe.html'}),
+
+    url(r'^posters/', include('scipy2014.posters.urls'),  name='posters'),
+
     url(r"^account/signup/$",
         symposion.views.SignupView.as_view(),
         name="account_signup"),

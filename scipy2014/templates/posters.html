@@ -1,0 +1,74 @@
+{% extends "site_base.html" %}
+
+{% load url from future %}
+
+
+{% load i18n %}
+{% load cache %}
+{% load sitetree %}
+
+{% block head_title %}Poster Listing{% endblock %}
+
+{% block extra_head %}
+    <style>
+        .presentation {
+
+        }
+        .presentation h3 {
+            line-height: 1.1em;
+            font-weight: bold;
+        }
+        .presentation h4 {
+
+        }
+        .presentation p {
+            margin-bottom: 0.5em;
+            line-height: 1.2em;
+        }
+    </style>
+{% endblock %}
+
+{% block breadcrumbs %}{% sitetree_breadcrumbs from "main" %}{% endblock %}
+
+{% block body %}
+
+{% comment %}
+HACK
+
+This year we used TalkPosterProposals, which buckets posters and talks. Next
+year we should not do this. We should have separate proposals for each.
+
+We want to have a page where people can view the list of accepted posters.
+For a workaround, the convention will be to leave the review status as
+'standby' for all posters.
+{% endcomment %}
+
+  {% for proposal in proposals %}
+    <div class="row">
+      <div class="span8 presentation well">
+
+        <h3>{{ proposal.title }}</h3>
+        <h4>
+          {% for speaker in proposal.speakers %}
+            <a href="{% url 'speaker_profile' speaker.pk %}">{{ speaker }}</a>
+            {% if not forloop.last %}, {% endif %}
+          {% endfor %}
+        </h4>
+
+        <h4>Description</h4>
+        <div class="description">{{ proposal.description }}</div>
+
+        {% if proposal.topic_track %}
+          <p>Topic Track: {{ proposal.topic_track_display }}</p>
+        {% endif %}
+        {% if proposal.domain_symposium %}
+          {% if proposal.domain_symposium != 1 %}
+            <p>Domain Symposion: {{ proposal.domain_symposum_display }}</p>
+          {% endif %}
+        {% endif %}
+
+      </div>
+    </div>
+  {% endfor %}
+
+{% endblock %}

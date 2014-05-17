@@ -168,6 +168,7 @@ INSTALLED_APPS = [
 
     # project
     "scipy2014.proposals",
+    "scipy2014.posters",
 ]
 
 FIXTURE_DIRS = [
