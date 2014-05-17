@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 #from symposion.proposals.actions import export_as_csv_action
-from scipy2014.proposals.models import TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
+from scipy2014.proposals.models import PosterProposal, TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal
 
 class TalkPosterProposalAdmin(admin.ModelAdmin):
     model = TalkPosterProposal
@@ -16,6 +16,18 @@ class TalkPosterProposalAdmin(admin.ModelAdmin):
     ]
     list_filter = ['submission_type', 'topic_track', 'domain_symposium', 'cancelled']
 
+admin.site.register(PosterProposal, 
+     list_display = [
+        'title',
+        'speaker',
+        'speaker_email',
+        'topic_track',
+        'domain_symposium',
+        'kind',
+        'cancelled',
+    ],
+    list_filter = ['topic_track', 'domain_symposium', 'cancelled']
+)
 admin.site.register(TalkPosterProposal, TalkPosterProposalAdmin)
 admin.site.register(TutorialProposal,
         list_display = ['title', 'speaker', 'speaker_email', 'track', 'cancelled'],

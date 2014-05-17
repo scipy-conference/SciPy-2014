@@ -220,6 +220,7 @@ PROPOSAL_FORMS = {
     "talk-poster": "scipy2014.proposals.forms.TalkPosterProposalForm",
     "bof": "scipy2014.proposals.forms.BofProposalForm",
     "sprint": "scipy2014.proposals.forms.SprintProposalForm",
+    "poster": "scipy2014.proposals.forms.PosterProposalForm",
 }
 
 # local_settings.py can be used to override environment-specific settings

@@ -2,7 +2,7 @@ from django import forms
 
 from markitup.widgets import MarkItUpWidget
 
-from scipy2014.proposals.models import (TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal)
+from scipy2014.proposals.models import (PosterProposal, TalkPosterProposal, TutorialProposal, BofProposal, SprintProposal)
 
 
 class ProposalForm(forms.ModelForm):
@@ -14,6 +14,25 @@ class ProposalForm(forms.ModelForm):
                 u"The description must be less than 400 characters"
             )
         return value
+
+
+class PosterProposalForm(ProposalForm):
+
+    class Meta:
+        model = PosterProposal
+        fields = [
+            "title",
+            "description",
+            "abstract",
+            "topic_track",
+            "domain_symposium",
+            "additional_notes",
+        ]
+        widgets = {
+            "abstract": MarkItUpWidget(),
+            "description": forms.widgets.Textarea(attrs={"class": "span9"}),
+            "additional_notes": MarkItUpWidget(),
+        }
 
 
 class TalkPosterProposalForm(ProposalForm):

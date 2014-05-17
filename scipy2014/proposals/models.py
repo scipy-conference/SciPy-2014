@@ -3,6 +3,28 @@ from django.db import models
 from symposion.proposals.models import ProposalBase
 
 
+class PosterProposal(ProposalBase):
+    TOPIC_TRACKS = [
+        ('general', 'General'),
+        ('education', 'Scientific Computing Education'),
+        ('gis', 'Geospatial Data in Science'),
+    ]
+    DOMAIN_SYMPOSIA = [
+        ('none', 'None'),
+        ('astronomy', 'Astronomy and Astrophysics'),
+        ('bio_informatics', 'Bioinformatics'),
+        ('geophysics', 'Geophysics'),
+        ('visualization', 'Vision, Visualization, and Imaging'),
+        ('engineering', 'Engineering'),
+        ('social_sciences_and_humanities', 'Computational Social Sciences and Digital Humanities'),
+    ]
+    topic_track = models.CharField(choices=TOPIC_TRACKS, default='general', max_length=50)
+    domain_symposium = models.CharField(choices=DOMAIN_SYMPOSIA, default='none', max_length=50)
+
+    class Meta:
+        verbose_name = "poster proposal"
+
+
 class TalkPosterProposal(ProposalBase):
 
     TYPE_TALK_OR_POSTER = 1
