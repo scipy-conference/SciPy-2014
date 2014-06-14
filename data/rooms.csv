@@ -1,0 +1,19 @@
+section_slug,name,order
+talks-posters,Grand Ballroom,0
+talks-posters,Room 203,1
+talks-posters,Room 204,2
+tutorials,Room 101,0
+tutorials,Room 102,1
+tutorials,Room 105,2
+tutorials,Room 106,3
+bofs,Grand Ballroom,0
+bofs,Room 203,1
+bofs,Room 204,2
+bofs,Room 110,3
+bofs,Room 111,4
+bofs,Room 112,5
+sprints,Room 103,0
+sprints,Room 104,1
+sprints,Room 107,2
+sprints,Room 108,3
+sprints,Room 202,4
