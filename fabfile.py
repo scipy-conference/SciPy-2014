@@ -67,6 +67,7 @@ def vagrant():
     env.update({
         'site': 'localhost',
         'upstream': 'localhost',
+        'rewrite_name': 'citationsneeded.org',
         'available': 'conference',
         'ssl_cert': '/etc/ssl/localcerts/conference.scipy.org.crt',
         'ssl_key': '/etc/ssl/private/conference.scipy.org.key',
