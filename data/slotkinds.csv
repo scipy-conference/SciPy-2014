@@ -18,3 +18,6 @@ talks-posters,Scientific Computing in Education,TRUE
 talks-posters,Setup,FALSE
 talks-posters,Welcome,FALSE
 talks-posters,BOFs,FALSE
+tutorials,tutorial,TRUE
+bofs,bof,TRUE
+sprints,sprint,TRUE
