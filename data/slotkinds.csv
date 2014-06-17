@@ -1,23 +1,23 @@
-section_slug,slot_kind,presentation_menu
-talks-posters,Astronomy and Astrophysics Symposium,TRUE
-talks-posters,Bioinformatics Symposium,TRUE
-talks-posters,Break,FALSE
-talks-posters,Breakfast,FALSE
-talks-posters,Digital Social Sciences Symposium,TRUE
-talks-posters,Engineering Symposium,TRUE
-talks-posters,General,TRUE
-talks-posters,Geophysics Symposium,TRUE
-talks-posters,Geospatial Data in Science,TRUE
-talks-posters,Imaging and Vision Symposium,TRUE
-talks-posters,Job Fair,FALSE
-talks-posters,Keynote,FALSE
-talks-posters,Lightning Talks,FALSE
-talks-posters,Lunch,FALSE
-talks-posters,Posters,FALSE
-talks-posters,Scientific Computing in Education,TRUE
-talks-posters,Setup,FALSE
-talks-posters,Welcome,FALSE
-talks-posters,BOFs,FALSE
-tutorials,tutorial,TRUE
-bofs,bof,TRUE
-sprints,sprint,TRUE
+section_slug,slot_kind,presentation_menu,plenary
+talks-posters,Astronomy and Astrophysics Symposium,1,
+talks-posters,Bioinformatics Symposium,1,
+talks-posters,Plenary Break,0,1
+talks-posters,Break,0,
+talks-posters,Digital Social Sciences Symposium,1,
+talks-posters,Engineering Symposium,1,
+talks-posters,General,1,
+talks-posters,Geophysics Symposium,1,
+talks-posters,Geospatial Data in Science,1,
+talks-posters,Imaging and Vision Symposium,1,
+talks-posters,Keynote,0,1
+talks-posters,Lightning Talks,0,1
+talks-posters,Posters,0,1
+talks-posters,Scientific Computing in Education,1,
+talks-posters,Welcome,0,1
+talks-posters,BOFs,0,
+talks-posters,Special Event,0,
+tutorials,Special Event,0,
+tutorials,Plenary Break,0,1
+tutorials,tutorial,1,
+bofs,bof,1,
+sprints,sprint,1,
