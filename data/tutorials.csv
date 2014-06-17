@@ -1,5 +1,5 @@
 section_slug,date,time_start,time_end,kind,room,proposal_id,description
-tutorials,7/6/2014,7:30,8:00,Plenary Break,Special,,Breakfast
+tutorials,7/6/2014,7:30,8:00,plenarybreak,Special,,Breakfast
 tutorials,7/6/2014,8:00,12:00,tutorial,Room 101,174,
 tutorials,7/6/2014,8:00,12:00,tutorial,Room 102,117,
 tutorials,7/6/2014,8:00,12:00,tutorial,Room 105,181,
@@ -8,7 +8,7 @@ tutorials,7/6/2014,13:00,17:00,tutorial,Room 101,102,
 tutorials,7/6/2014,13:00,17:00,tutorial,Room 102,12,
 tutorials,7/6/2014,13:00,17:00,tutorial,Room 105,31,
 tutorials,7/6/2014,13:00,17:00,tutorial,Room 106,126,
-tutorials,7/7/2014,7:30,8:00,Plenary Break,Special,,Breakfast
+tutorials,7/7/2014,7:30,8:00,plenarybreak,Special,,Breakfast
 tutorials,7/7/2014,8:00,12:00,tutorial,Room 101,76,
 tutorials,7/7/2014,8:00,12:00,tutorial,Room 102,146,
 tutorials,7/7/2014,8:00,12:00,tutorial,Room 105,25,
@@ -17,4 +17,4 @@ tutorials,7/7/2014,13:00,17:00,tutorial,Room 101,138,
 tutorials,7/7/2014,13:00,17:00,tutorial,Room 102,65,
 tutorials,7/7/2014,13:00,17:00,tutorial,Room 105,23,
 tutorials,7/7/2014,13:00,17:00,tutorial,Room 106,147,
-tutorials,7/7/2014,19:00,20:00,Special Event,Special,,Reception
+tutorials,7/7/2014,19:00,20:00,special,Special,,Reception

@@ -1,23 +1,23 @@
 section_slug,slot_kind,presentation_menu,plenary
-talks-posters,Astronomy and Astrophysics Symposium,1,
-talks-posters,Bioinformatics Symposium,1,
-talks-posters,Plenary Break,0,1
+talks-posters,astro,1,
+talks-posters,bio,1,
+talks-posters,plenarybreak,0,1
 talks-posters,Break,0,
-talks-posters,Digital Social Sciences Symposium,1,
-talks-posters,Engineering Symposium,1,
+talks-posters,digisocial,1,
+talks-posters,engineering,1,
 talks-posters,General,1,
-talks-posters,Geophysics Symposium,1,
-talks-posters,Geospatial Data in Science,1,
-talks-posters,Imaging and Vision Symposium,1,
+talks-posters,geophysics,1,
+talks-posters,geospatial,1,
+talks-posters,imaging,1,
 talks-posters,Keynote,0,1
-talks-posters,Lightning Talks,0,1
+talks-posters,lightning,0,1
 talks-posters,Posters,0,1
-talks-posters,Scientific Computing in Education,1,
+talks-posters,edu,1,
 talks-posters,Welcome,0,1
 talks-posters,BOFs,0,
-talks-posters,Special Event,0,
-tutorials,Special Event,0,
-tutorials,Plenary Break,0,1
+talks-posters,special,0,
+tutorials,special,0,
+tutorials,plenarybreak,0,1
 tutorials,tutorial,1,
 bofs,bof,1,
 sprints,sprint,1,
