@@ -716,6 +716,11 @@ img.sideslung {
   background-color: #EBFFEB;
 }
 
+/* workshops */
+.slot-workshop {
+  background-color: #FFFFEB;
+}
+
 /* non talks */
 .slot-BOFs {
   background-color: #E3E1E3;
