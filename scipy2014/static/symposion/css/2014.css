@@ -653,38 +653,102 @@ img.sideslung {
   clear: both;
   }
 
-/*ms styles*/
+/* schedule grid tracks and minisymposion styles
+ *
+ * .slot-<kind> corresponds to the label field of SlotKind
+ * 
+ * hard coded, meh.
+ */
 
-.astro {
-  background-color: #999; 
-  color: #fff;
-  border: 1px solid #666;
-   padding: 0 4px    
-  }
+/* 
+ * td.slot, td.slot.slot-plenary, td.slot.slot-break are in site.css
+ * probably some historical reason why some styles are here and others there
+ */
 
-.gis {
-  background-color: #eee;
-  border: 1px solid #666;
-  padding: 0 4px;    
-  }
+/* talks-posters schedule */
 
-.meteorology {
-  background-color: #cadbeb;
-  border: 1px solid #666;
-  padding: 0 4px; 
-  }
+/* Plenary talk types */
+.slot-Keynote {
+  background-color: #FFFFFF;
+}
+.slot-Welcome {
+  background-color: #FFFFFF;
+}
+.slot-lightning {
+  background-color: #FFFFFF;
+}
+.slot-Posters {
+  background-color: #FFFFFF;
+}
 
-.medical-imaging {
-  background-color: #eaffc7;
-  border: 1px solid #666;
-  padding: 0 4px;  
-  }
+/* Main conference tracks */
+.slot-edu {
+  background-color: #EBF5FF;
+}
+.slot-geospatial {
+  background-color: #D6EBFF;
+}
+.slot-General {
+  background-color: #C2E0FF;
+}
 
-.bioinformatics {
-  background-color: #fcf6da;
-  border: 1px solid #666;
-  padding: 0 4px;
-  } 
+/* mini symposion July 9th */
+.slot-bio {
+  background-color: #D6D6FF;
+}
+.slot-astro {
+  background-color: #E0E0FF; 
+}
+.slot-geophysics {
+  background-color: #EBEBFF;
+}
+/* mini symposion July 10th */
+.slot-engineering {
+  background-color: #F5FFFA;
+}
+.slot-digisocial {
+  background-color: #F5FFF5;
+}
+.slot-imaging {
+  background-color: #EBFFEB;
+}
+.slot-imagingpanel {
+  background-color: #EBFFEB;
+}
+
+/* non talks */
+.slot-BOFs {
+  background-color: #E3E1E3;
+}
+.slot-social {
+  background-color: #FFFF00;
+}
+.slot-special {
+  background-color: #99FF99;
+}
+.slot-plenarybreak {
+  background-color: #E3E1E3;
+}
+.slot-Break {
+  background-color: #E3E1E3;
+}
+
+/* tutorials schedule */
+.slot-tutorial {
+  background-color: #FFFFFF;
+}
+/* bofs schedule */
+.slot-bof {
+  background-color: #FFFFFF;
+}
+/* sprints schedule */
+.slot-sprint {
+  background-color: #FFFFFF;
+}
+
+
+
+
 
 .navbar ul.nav li  {
   min-width: 130px;
