@@ -38,7 +38,7 @@
       <h3>{{ poster.title }}</h3>
       <h4>{{ poster.speaker }}</h4>
       {{ poster.description }}
-      <br>Topic Track: {{ poster.topic }} Domain Symposium: {{ poster.domain }}
+      <br>Topic Track: {{ poster.get_topic_display }} Domain Symposium: {{ poster.get_domain_display }}
     </div>
   </div>
   {% endfor %}
