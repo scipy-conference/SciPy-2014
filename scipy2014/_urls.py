@@ -8,6 +8,8 @@ from django.contrib import admin
 
 import symposion.views
 
+from scipy2014.schedule.views import poster_list
+
 # from pinax.apps.account.openid_consumer import PinaxConsumer
 
 urlpatterns = patterns(
@@ -118,7 +120,10 @@ urlpatterns = patterns(
     url(r"^schedule/", include("symposion.schedule.urls")),
     url(r"^markitup/", include("markitup.urls")),
 
+    url(r"^posters/", poster_list, name="poster_list"),
+
     url(r"^", include("symposion.cms.urls")),
+
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
