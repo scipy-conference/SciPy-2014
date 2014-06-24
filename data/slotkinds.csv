@@ -23,3 +23,8 @@ tutorials,plenarybreak,0,1
 tutorials,tutorial,1,
 bofs,bof,1,
 sprints,sprint,1,
+sprints,Sprinting,,
+sprints,Break,,
+sprints,Closed,,
+sprints,plenary,,1
+sprints,special,,

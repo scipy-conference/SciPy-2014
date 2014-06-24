@@ -15,8 +15,5 @@ bofs,Room 106,3
 bofs,Room 110,4
 bofs,Room 111,5
 bofs,Room 112,6
-sprints,Room 103,0
-sprints,Room 104,1
-sprints,Room 107,2
-sprints,Room 108,3
-sprints,Room 202,4
+sprints,Special,0
+sprints,Sprint Rooms,1
