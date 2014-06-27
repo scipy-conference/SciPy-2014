@@ -151,6 +151,7 @@ def update_repo(commit=None):
         scipy_do('git fetch')
         scipy_do('git checkout %s' % commit)
 
+    scipy_put('deployment/regenerate.sh', pjoin(SITE_PATH, 'bin/regenerate.sh'))
     scipy_put(env['local_settings'],
               pjoin(REPO, 'scipy2014/local_settings.py'))
     scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
