@@ -14,7 +14,7 @@ id,speaker,title,category,domain
 168,Isaac Yeaton,Pyadisi - A Python package for animal locomotion studies,General,None
 112,Jake VanderPlas,"In with the old, In with the new: Matplotlib’s role in a D3js world",General,None
 30,Jean-Christophe Fillion-Robin,Python cross-compilation and platform builds for HPC and scientific computing,General,Engineering
-164,Jeff Jones,Analyzing potentiometric surface rasters of the Floridan Aquifer with ArcPy and SciPy/NumPy.,Geospatial Data in Science,None
+77,Michael Nowak,Python Coding of Geospatial Processing in Web-based Mapping Applications,Geospatial Data in Science,None
 124,Jeffrey Spies,How to open science by connecting the tools you use or develop to the scientist's workflow,General,None
 187,Joe Young,An community collection of decoders for instrument-specific data formats,General,None
 21,John Leeman,Investigating Stiffness Controls on Earthquake Behavior – An Ideal Environment for Python Workflows,General,Geophysics
