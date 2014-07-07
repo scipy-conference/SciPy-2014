@@ -8,7 +8,7 @@ from django.contrib import admin
 
 import symposion.views
 
-from scipy2014.schedule.views import poster_list
+from scipy2014.schedule.views import poster_list, sprint_list
 
 # from pinax.apps.account.openid_consumer import PinaxConsumer
 
@@ -121,6 +121,7 @@ urlpatterns = patterns(
     url(r"^markitup/", include("markitup.urls")),
 
     url(r"^posters/", poster_list, name="poster_list"),
+    url(r"^sprints/", sprint_list, name="sprint_list"),
 
     url(r"^", include("symposion.cms.urls")),
 
