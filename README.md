@@ -19,3 +19,6 @@ $ python manage.py syncdb
 $ python manage.py loaddata fixtures/*
 $ python manage.py runserver
 ~~~
+
+Open http://localhost:8000/scipyla2016/ on your web browser
+to preview the web site.
