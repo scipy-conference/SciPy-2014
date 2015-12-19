@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
   # You will need to create the manifests directory and a manifest in
-  # the file scipy2014.pp in the manifests_path directory.
+  # the file scipyla2016.pp in the manifests_path directory.
   #
   # An example Puppet manifest to provision the message of the day:
   #

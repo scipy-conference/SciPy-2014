@@ -1,0 +1,31 @@
+{% load sponsorship_tags %}
+{% load thumbnail %}
+{% load boxes_tags %}
+<h2>Sponsors</h2>
+<div class="sponsor-list">
+      <h4 style="margin-top: 3em;">Institutional</h4>
+      
+        <div style="margin: 10px 0;">
+          <a href="https://www.enthought.com/">
+            <img src="/scipyla2016/site_media/static/img/enthought.png"
+                 alt="Enthought"
+                 style="width: 100%; display: block;margin: 1em auto;" />
+          </a>
+        </div>
+
+  {% for level, sponsors in sponsor_levels %}
+    {% if sponsors %}
+      <h4 style="margin-top: 3em;">{{ level }}</h4>
+      {% for s in sponsors %}
+        <div style="margin: 10px 0;">
+          <a href="{{ s.external_url }}">
+            <img src="{% thumbnail s.website_logo '250x90' %}"
+                 alt="{{ s.name }}"
+                 style="display: block;margin: 1em auto;" />
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% box "sponsor-sidebar" %}
+</div>

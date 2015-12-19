@@ -16,8 +16,8 @@ esac
 set -e
 VIRTUALENV={{ virtualenv }}
 DJANGODIR=/home/scipy/site/SciPy-2014/
-DJANGO_SETTINGS_MODULE=scipy2014.settings
-DJANGO_WSGI_MODULE=scipy2014.wsgi
+DJANGO_SETTINGS_MODULE=scipyla2016.settings
+DJANGO_WSGI_MODULE=scipyla2016.wsgi
 
 echo "Starting django-mailer: $MAILCMD"
 echo "Activating $VIRTUALENV"

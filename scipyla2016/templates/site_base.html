@@ -1,0 +1,130 @@
+{% extends "symposion_sidebar_base.html" %}
+
+{% load metron_tags %}
+{% load i18n %}
+{% load sitetree %}
+{% load markitup_tags %}
+{% load static %}
+
+{% block viewport %}{% endblock %}
+
+{% block style_base %}
+    <link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="{% static "symposion/css/site.css" %}" rel="stylesheet">
+    <link href="{% static "symposion/css/2014.css" %}" rel="stylesheet">
+    {% block extra_style %}{% endblock %}
+{% endblock %}
+
+{% block extra_head_base %}
+    <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon" />
+    <script src="{% block jquery_src %}{% static "pinax/js/jquery.js" %}{% endblock %}"></script>
+    {% markitup_media "no-jquery" %}
+    {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% block wrapper_class %}container wrapper{% endblock %}
+
+{% block topbar_base %}
+    <div class="container">
+        <header id="masthead">
+            <div class="pull-right">
+                <ul class="nav nav-pills">
+                    {% if not request.user.is_authenticated %}
+                        <li>
+                            <a href="{% url account_login %}">Log in</a>
+                        </li>
+                        <li>
+                            <a href="{% url account_signup %}">Sign up</a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{% url dashboard %}">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="{% url account_settings %}">Settings</a>
+                        </li>
+                        {% if request.user.is_staff %}
+                            <li>
+                                <a href="{% url admin:index %}">Admin</a>
+                            </li>
+                        {% endif %}
+                        <li>
+                            <a id="logout_link" href="{% url account_logout %}" data-form-submit="#account_logout_form">Log out</a>
+                        </li>
+                        <form id="account_logout_form" class="hide" action="{% url account_logout %}" method="post">{% csrf_token %}</form>
+                    {% endif %}
+                </ul>
+            </div>
+            
+            <h1><a href="{% url home %}"><img src="{% static "img/scipyla2016_logo_simple.png" %}" width="387" height="100" style="margin-top: 0.5em;"></a></h1>
+
+              <div class="header_tagline">Scientific Computing with Python <br /> Austin, Texas &#8226; July 6-12<br ?.<span class="highlight" style="font-family: Arial, non-serif; padding: 0 4em 0 4em;">Registration - 100% Full</span>
+              <br />
+            </div>
+        </header>
+        <div class="navbar">
+            <div class="navbar-inner">
+                {% block topbar %}
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse">
+                        {% block nav %}
+                            {% sitetree_menu from "main" include "trunk" template "sitetree/menu_bootstrap.html" %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body_base %}
+    <div class="container">
+        {% include "_messages.html" %}
+        
+        {# {% block breadcrumbs %} #}
+            {# {% sitetree_breadcrumbs from "main" %} #}
+        {# {% endblock %} #}
+        
+        {% block body_outer %}
+            <div class="row-fluid">
+                <div class="span3">
+                    {% block sidebar %}
+                        {% include "_default_sidebar.html" %}
+                    {% endblock %}
+                </div>
+                <div class="span9">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+        {% endblock %}
+        {% block footer_base %}
+
+            <footer>
+                {% block footer %}{% include "_footer.html" %}{% endblock %}
+            </footer>
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block script_base %}
+    {% analytics %}
+    <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+    <script src="{% static "pinax/js/theme.js" %}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#logout_link").on("click", function(e) {
+                var form = $($(this).data("form-submit"));
+                form.submit();
+                return false;
+            });
+            $(".required-field").prepend("<span style='color:red;'>* </div>");
+        });
+    </script>
+    {% block extra_script %}{% endblock %}
+{% endblock %}

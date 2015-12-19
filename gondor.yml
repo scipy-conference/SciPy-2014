@@ -30,7 +30,7 @@ wsgi:
     #
     # wsgi = the Python module which should be importable
     # application = the callable in the Python module
-    entry_point: scipy2014.wsgi:application
+    entry_point: scipyla2016.wsgi:application
     
     # Options for gunicorn which runs your WSGI project.
     gunicorn:
@@ -39,4 +39,4 @@ wsgi:
         worker_class: sync
 
 env:
-    DJANGO_SETTINGS_MODULE: scipy2014.settings_gondor
+    DJANGO_SETTINGS_MODULE: scipyla2016.settings_gondor

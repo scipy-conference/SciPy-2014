@@ -6,7 +6,7 @@ upstream conference_org {
 server {
     listen 80;
     server_name {{ server_name }} localhost;
-    rewrite ^/scipy2014 https://{{ rewrite_name }}$request_uri? permanent;
+    rewrite ^/scipyla2016 https://{{ rewrite_name }}$request_uri? permanent;
     root /home/scipy/site/conference;
     index index.php index.htm index.html;
     client_max_body_size 10M;
@@ -57,15 +57,15 @@ server {
         fastcgi_busy_buffers_size 256k;
     }
 
-    location /scipy2014/site_media/media/ {
+    location /scipyla2016/site_media/media/ {
         alias /home/scipy/site/site_media/media/;
     }
 
-    location /scipy2014/site_media/static/ {
+    location /scipyla2016/site_media/static/ {
         alias /home/scipy/site/site_media/static/;
     }
 
-    location /scipy2014/ {
+    location /scipyla2016/ {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Ssl on;
         proxy_set_header Host $host;
