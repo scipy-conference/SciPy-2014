@@ -30,7 +30,7 @@
             "end_date": "2014-07-10", 
             "slug": "talks-posters"
         }
-    },
+    }, 
     {
         "pk": 3, 
         "model": "conference.section", 

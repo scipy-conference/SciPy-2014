@@ -27,7 +27,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
     }, 
     {
@@ -50,7 +51,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
     }, 
     {
@@ -73,7 +75,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": false
+            "urlaspattern": false, 
+            "access_guest": false
         }
     }, 
     {
@@ -96,7 +99,248 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "about", 
+            "inbreadcrumbs": true, 
+            "title": "About", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 12, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": false, 
+            "hint": "", 
+            "url": "plotting_contest", 
+            "inbreadcrumbs": false, 
+            "title": "Plotting Contest", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 13, 
+            "inmenu": false, 
+            "access_loggedin": false, 
+            "hidden": true, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "organizers", 
+            "inbreadcrumbs": true, 
+            "title": "Organizers", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 14, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "diversity", 
+            "inbreadcrumbs": true, 
+            "title": "Diversity", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 15, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 1, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "code_of_conduct", 
+            "inbreadcrumbs": true, 
+            "title": "Code of Conduct", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 16, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "venue", 
+            "inbreadcrumbs": true, 
+            "title": "Venue Info", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 7, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": false, 
+            "hint": "", 
+            "url": "floorplans", 
+            "inbreadcrumbs": false, 
+            "title": "Venue Floor Maps", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 8, 
+            "inmenu": false, 
+            "access_loggedin": false, 
+            "hidden": true, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": true, 
+            "hint": "", 
+            "url": "lodging", 
+            "inbreadcrumbs": true, 
+            "title": "Lodging", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 9, 
+            "inmenu": true, 
+            "access_loggedin": false, 
+            "hidden": false, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": false, 
+            "hint": "", 
+            "url": "directions", 
+            "inbreadcrumbs": false, 
+            "title": "Directions", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 10, 
+            "inmenu": false, 
+            "access_loggedin": false, 
+            "hidden": true, 
+            "urlaspattern": true, 
+            "access_guest": false
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "sitetree.treeitem", 
+        "fields": {
+            "parent": 2, 
+            "access_restricted": false, 
+            "access_permissions": [], 
+            "description": "", 
+            "insitetree": false, 
+            "hint": "", 
+            "url": "restaurants", 
+            "inbreadcrumbs": false, 
+            "title": "Restaurants", 
+            "tree": 1, 
+            "access_perm_type": 1, 
+            "alias": null, 
+            "sort_order": 11, 
+            "inmenu": false, 
+            "access_loggedin": false, 
+            "hidden": true, 
+            "urlaspattern": true, 
+            "access_guest": false
         }
     }, 
     {
@@ -119,7 +363,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
     }, 
     {
@@ -142,239 +387,10 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
-    },
-    {
-        "pk": 7, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 2, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "venue", 
-            "inbreadcrumbs": true, 
-            "title": "Venue Info", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 7, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 8, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 2, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "floorplans", 
-            "inbreadcrumbs": true, 
-            "title": "Venue Floor Maps", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 8, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 9, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 2, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "lodging", 
-            "inbreadcrumbs": true, 
-            "title": "Lodging", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 9, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 10, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 2, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "directions", 
-            "inbreadcrumbs": true, 
-            "title": "Directions", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 10, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 11, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 2, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "restaurants", 
-            "inbreadcrumbs": true, 
-            "title": "Restaurants", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 11, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 12, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 1, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "about", 
-            "inbreadcrumbs": true, 
-            "title": "About", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 12, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 13, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 1, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "plotting_contest", 
-            "inbreadcrumbs": true, 
-            "title": "Plotting Contest", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 13, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 14, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 1, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "organizers", 
-            "inbreadcrumbs": true, 
-            "title": "Organizers", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 14, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 15, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 1, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "diversity", 
-            "inbreadcrumbs": true, 
-            "title": "Diversity", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 15, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
-    {
-        "pk": 16, 
-        "model": "sitetree.treeitem", 
-        "fields": {
-            "parent": 1, 
-            "access_restricted": false, 
-            "access_permissions": [], 
-            "description": "", 
-            "insitetree": true, 
-            "hint": "", 
-            "url": "code_of_conduct", 
-            "inbreadcrumbs": true, 
-            "title": "Code of Conduct", 
-            "tree": 1, 
-            "access_perm_type": 1, 
-            "alias": null, 
-            "sort_order": 16, 
-            "inmenu": true, 
-            "access_loggedin": false, 
-            "hidden": false, 
-            "urlaspattern": true
-        }
-    },
+    }, 
     {
         "pk": 17, 
         "model": "sitetree.treeitem", 
@@ -395,7 +411,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
     }, 
     {
@@ -418,7 +435,8 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": true
+            "urlaspattern": true, 
+            "access_guest": false
         }
-    } 
+    }
 ]

@@ -1,67 +1,67 @@
 [
     {
-        "pk": 1,
-        "model": "boxes.box",
+        "pk": 1, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "Attend\\r------\\r![About SciPy](site_media/static/img/about.png \\\"\\\")\\rThe annual SciPy Conference allows participants from academic, commercial, and governmental organizations to showcase their latest Scientific Python projects, learn from skilled users and developers, and collaborate on code development.\\r\\rWe look forward to a very exciting conference and hope to see you at the 2014 conference.",
-            "last_updated_by": 1,
-            "_content_rendered": "<h2>Attend</h2><p><img alt=\"About SciPy\" src=\"site_media/static/img/about.png\" title=\"\" />The annual SciPy Conference allows participants from academic, commercial, and governmental organizations to showcase their latest Scientific Python projects, learn from skilled users and developers, and collaborate on code development.</p><p>We look forward to a very exciting conference and hope to see you at the 2014 conference.</p>",
-            "created_by": 1,
+            "content": "Attend\\r------\\r![About SciPy](site_media/static/img/about.png \\\"\\\")\\rThe annual SciPy Conference allows participants from academic, commercial, and governmental organizations to showcase their latest Scientific Python projects, learn from skilled users and developers, and collaborate on code development.\\r\\rWe look forward to a very exciting conference and hope to see you at the 2014 conference.", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<h2>Attend</h2><p><img alt=\"About SciPy\" src=\"site_media/static/img/about.png\" title=\"\" />The annual SciPy Conference allows participants from academic, commercial, and governmental organizations to showcase their latest Scientific Python projects, learn from skilled users and developers, and collaborate on code development.</p><p>We look forward to a very exciting conference and hope to see you at the 2014 conference.</p>", 
+            "created_by": 1, 
             "label": "hp_row1_left"
         }
-    },
+    }, 
     {
-        "pk": 2,
-        "model": "boxes.box",
+        "pk": 2, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "![gen_logo](/site_media/static/img/gen_logo.png \"Logo\")\\r\\rSciPy 2014 is open for sponsorships. If you are interested in supporting this event please contact us at: \\rscipy-organizers@scipy.org\\r\\rSee the SciPy 2014 Sponsorship Prospectus for more detailed information.",
-            "last_updated_by": 1,
-            "_content_rendered": "<p><img alt=\"gen_logo\" src=\"/site_media/static/img/gen_logo.png\" title=\"Logo\" /></p><p>SciPy 2014 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org</p><p>See the SciPy 2014 Sponsorship Prospectus for more detailed information.</p>",
-            "created_by": 1,
+            "content": "![gen_logo](/site_media/static/img/gen_logo.png \"Logo\")\r\n\r\nSciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org\r\n\r\nSee the SciPyLA 2016 Sponsorship Prospectus for more detailed information.", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<p><img alt=\"gen_logo\" src=\"/site_media/static/img/gen_logo.png\" title=\"Logo\" /></p>\n<p>SciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org</p>\n<p>See the SciPyLA 2016 Sponsorship Prospectus for more detailed information.</p>", 
+            "created_by": 1, 
             "label": "sponsor-sidebar"
         }
-    },
+    }, 
     {
-        "pk": 3,
-        "model": "boxes.box",
+        "pk": 3, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "Schedule\\r--------\\rThe 2014 conference will consist of two days of tutorials followed by **three days of presentations**, and concludes with two days of developer sprints on projects of interest to the attendees.",
-            "last_updated_by": 1,
-            "_content_rendered": "<h2>Schedule</h2><p>The 2014 conference will consist of two days of tutorials followed by <strong>three days of presentations</strong>, and concludes with two days of developer sprints on projects of interest to the attendees.</p>",
-            "created_by": 1,
+            "content": "Schedule\\r--------\\rThe 2014 conference will consist of two days of tutorials followed by **three days of presentations**, and concludes with two days of developer sprints on projects of interest to the attendees.", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<h2>Schedule</h2><p>The 2014 conference will consist of two days of tutorials followed by <strong>three days of presentations</strong>, and concludes with two days of developer sprints on projects of interest to the attendees.</p>", 
+            "created_by": 1, 
             "label": "hp_row1_middle"
         }
-    },
+    }, 
     {
-        "pk": 4,
-        "model": "boxes.box",
+        "pk": 4, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "What's it like?\\r---------------\\rWatch the video highlighting last years conference.\\r[![SciPy overview video](site_media/static/img/video_placeholder.png)](video_highlights.php)\\r_Video courtesy of Enthought, Inc._",
-            "last_updated_by": 1,
-            "_content_rendered": "<h2>What's it like?</h2><p>Watch the video highlighting last years conference.<a href=\"video_highlights.php\"><img alt=\"SciPy overview video\" src=\"site_media/static/img/video_placeholder.png\" /></a><em>Video courtesy of Enthought, Inc.</em></p>",
-            "created_by": 1,
+            "content": "What's it like?\\r---------------\\rWatch the video highlighting last years conference.\\r[![SciPy overview video](site_media/static/img/video_placeholder.png)](video_highlights.php)\\r_Video courtesy of Enthought, Inc._", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<h2>What's it like?</h2><p>Watch the video highlighting last years conference.<a href=\"video_highlights.php\"><img alt=\"SciPy overview video\" src=\"site_media/static/img/video_placeholder.png\" /></a><em>Video courtesy of Enthought, Inc.</em></p>", 
+            "created_by": 1, 
             "label": "hp_row1_right"
         }
-    },
+    }, 
     {
-        "pk": 6,
-        "model": "boxes.box",
+        "pk": 6, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "Plan\\r----\\rWe are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.\\r\\rSign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.",
-            "last_updated_by": 1,
-            "_content_rendered": "<h2>Plan</h2><p>We are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.</p><p>Sign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.</p>",
-            "created_by": 1,
+            "content": "Plan\\r----\\rWe are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.\\r\\rSign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<h2>Plan</h2><p>We are currently running the numbers for 2014 planning and budgeting purposes. We will announce the registration fees here as soon as they are available.</p><p>Sign up for the newsletter (left) to stay up-to-date with SciPy 2014 announcements.</p>", 
+            "created_by": 1, 
             "label": "hp_row2_middle"
         }
-    },
+    }, 
     {
-        "pk": 7,
-        "model": "boxes.box",
+        "pk": 7, 
+        "model": "boxes.box", 
         "fields": {
-            "content": "Plot\\r----\\r![Plot Contest](site_media/static/img/plot_contest.png)\\r\\rIn memory of John Hunter, in 2013, we announced the first\\r[SciPy John Hunter Excellence in Plotting Competition](jhepc2013/).\\r\\rWe pleased to continue this competition again this year for 2014.\\r\\rMore details to come.",
-            "last_updated_by": 1,
-            "_content_rendered": "<h2>Plot</h2><p><img alt=\"Plot Contest\" src=\"site_media/static/img/plot_contest.png\" /></p><p>In memory of John Hunter, in 2013, we announced the first<a href=\"jhepc2013/\">SciPy John Hunter Excellence in Plotting Competition</a>.</p><p>We pleased to continue this competition again this year for 2014.</p><p>More details to come.</p>",
-            "created_by": 1,
+            "content": "Plot\\r----\\r![Plot Contest](site_media/static/img/plot_contest.png)\\r\\rIn memory of John Hunter, in 2013, we announced the first\\r[SciPy John Hunter Excellence in Plotting Competition](jhepc2013/).\\r\\rWe pleased to continue this competition again this year for 2014.\\r\\rMore details to come.", 
+            "last_updated_by": 1, 
+            "_content_rendered": "<h2>Plot</h2><p><img alt=\"Plot Contest\" src=\"site_media/static/img/plot_contest.png\" /></p><p>In memory of John Hunter, in 2013, we announced the first<a href=\"jhepc2013/\">SciPy John Hunter Excellence in Plotting Competition</a>.</p><p>We pleased to continue this competition again this year for 2014.</p><p>More details to come.</p>", 
+            "created_by": 1, 
             "label": "hp_row2_right"
         }
     }

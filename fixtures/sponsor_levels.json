@@ -3,7 +3,7 @@
         "pk": 1, 
         "model": "sponsorship.sponsorlevel", 
         "fields": {
-            "conference": 1,
+            "conference": 1, 
             "description": "", 
             "cost": 12000, 
             "name": "Platinum", 
@@ -14,7 +14,7 @@
         "pk": 2, 
         "model": "sponsorship.sponsorlevel", 
         "fields": {
-            "conference": 1,
+            "conference": 1, 
             "description": "", 
             "cost": 4000, 
             "name": "Gold", 
@@ -25,18 +25,18 @@
         "pk": 3, 
         "model": "sponsorship.sponsorlevel", 
         "fields": {
-            "conference": 1,
+            "conference": 1, 
             "description": "", 
             "cost": 2000, 
             "name": "Silver", 
             "order": 2
         }
-    },
+    }, 
     {
         "pk": 4, 
         "model": "sponsorship.sponsorlevel", 
         "fields": {
-            "conference": 1,
+            "conference": 1, 
             "description": "", 
             "cost": 0, 
             "name": "Media & Community", 
