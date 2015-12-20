@@ -14,9 +14,9 @@
         "pk": 2, 
         "model": "boxes.box", 
         "fields": {
-            "content": "![gen_logo](/site_media/static/img/gen_logo.png \"Logo\")\r\n\r\nSciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org\r\n\r\nSee the SciPyLA 2016 Sponsorship Prospectus for more detailed information.", 
+            "content": "SciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org\r\n\r\nSee the SciPyLA 2016 Sponsorship Prospectus for more detailed information.", 
             "last_updated_by": 1, 
-            "_content_rendered": "<p><img alt=\"gen_logo\" src=\"/site_media/static/img/gen_logo.png\" title=\"Logo\" /></p>\n<p>SciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org</p>\n<p>See the SciPyLA 2016 Sponsorship Prospectus for more detailed information.</p>", 
+            "_content_rendered": "<p>SciPyLA 2016 is open for sponsorships. If you are interested in supporting this event please contact us at: scipy-organizers@scipy.org</p>\n<p>See the SciPyLA 2016 Sponsorship Prospectus for more detailed information.</p>", 
             "created_by": 1, 
             "label": "sponsor-sidebar"
         }
