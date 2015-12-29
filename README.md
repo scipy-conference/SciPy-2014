@@ -56,3 +56,7 @@ $ python manage.py dumpdata --indent=4 proposals.proposalkind proposals.proposal
 $ python manage.py dumpdata --indent=4 sponsorship.benefit sponsorship.benefitlevel > fixtures/sponsor_benefits.json
 $ python manage.py dumpdata --indent=4 sponsorship.sponsorlevel > fixtures/sponsor_levels.json
 ~~~
+
+## Issues
+
+Please create issues at https://github.com/scipy-latinamerica/scipyla2016/issues.
