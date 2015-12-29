@@ -57,6 +57,10 @@ $ python manage.py dumpdata --indent=4 sponsorship.benefit sponsorship.benefitle
 $ python manage.py dumpdata --indent=4 sponsorship.sponsorlevel > fixtures/sponsor_levels.json
 ~~~
 
+## Translation
+
+Please read https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#localization-how-to-create-language-files.
+
 ## Issues
 
 Please create issues at https://github.com/scipy-latinamerica/scipyla2016/issues.
