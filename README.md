@@ -61,6 +61,19 @@ $ python manage.py dumpdata --indent=4 sponsorship.sponsorlevel > fixtures/spons
 
 Please read https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#localization-how-to-create-language-files.
 
+To generate the `po` files:
+
+~~~
+$ cd scipyla2016
+$ django-admin makemessages -l pt -l es
+~~~
+
+The files to translate will be available at
+`scipyla2016/locale/XX/LC_MESSAGES/django.po`
+
+To test the translation you need to change the default language of your web browser.
+In Firefox, access `about:config` and change `general.useragent.locale`.
+
 ## Issues
 
 Please create issues at https://github.com/scipy-latinamerica/scipyla2016/issues.
