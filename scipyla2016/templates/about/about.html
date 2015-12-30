@@ -11,109 +11,86 @@
 {% block body %}
 
 <div class="callout">
-<h1>Submit a Proposal!</h1>
-<p>To submit a proposal, <a href="https://conference.scipy.org/scipyla2016/account/signup/">sign up</a> or <a href="https://conference.scipy.org/scipyla2016/account/login/">log in</a> to your account and proceed to your <a href="https://conference.scipy.org/scipyla2016/dashboard/">account dashboard</a>.</p><p>Click <ul style="list-style-position: inside;  padding-left: 1em;"><li>submit proposal</li><li>talks and posters</li><li>create new... "</li></ul>
+<h1>{% trans "Submit a Proposal!" %}</h1>
+<p>
+  {% trans "To submit a proposal" %},
+  <a href="https://conference.scipy.org/scipyla2016/account/signup/">{% trans "sign up" %}</a> or
+  <a href="https://conference.scipy.org/scipyla2016/account/login/">{% trans "log in" %}</a>
+  {% trans "to your account and proceed to your" %}
+  <a href="https://conference.scipy.org/scipyla2016/dashboard/">
+    {% trans "account dashboard" %}
+  </a>.
+</p>
+
+<p>
+  {% trans "Click:" %}
+  <ul style="list-style-position: inside;  padding-left: 1em;">
+    <li>{% trans "submit proposal" %}</li>
+    <li>{% trans "talks and posters" %}</li>
+    <!--<li>{% trans "create new... " %}</li>-->
+  </ul>
 
 </p>
 </div>
-<h1>SciPyLA 2016 Conference Announcement</h1>
+<h1>{% trans "SciPyLA 2016 Conference Announcement" %}</h1>
 
-<p>SciPyLA 2016, the thirteenth annual Scientific Computing with Python conference, will be held this July 6th-12th in Austin, Texas. SciPy is a community dedicated to the advancement of scientific computing through open source Python software for mathematics, science, and engineering. The annual SciPy Conference allows participants from all types of organizations to showcase their latest projects, l earn from skilled users and developers, and collaborate on code development.</p>
+<p>{% trans "SciPy Latin America 2016 Conference, the fourth annual Scientific Computing with Python conference, will be held this May 16th-20th 2016, in Florianópolis / Brazil. SciPy Latin America is a regional community dedicated to the advancement of scientific computing through open source Python software for mathematics, science, and engineering." %}</p>
 
-<p>This year the conference has been extended to include an additional day of presentations. During the presentation days SciPy is proud to host the following event and talk types:</p>
+<p>{% trans "During the presentation days SciPy is proud to host the following event and talk types:" %}</p>
 
-<ul>
-  <li>Keynotes</li>
-  <li>Expert Panels</li>
-  <li>Short Talks</li>
-  <li>Poster Presentations</li>
-  <li>Birds of a Feather Sessions</li>
+<ul style="padding-left:20px;">
+  <li>{% trans "Tutorials" %}</li>
+  <li>{% trans "Talks" %}</li>
+  <li>{% trans "Lighting Talks" %}</li>
+  <li>{% trans "Poster Presentations" %}</li>
+  <li>{% trans "Track teen" %}</li>
 </ul>
 
-<p>The full program will consist of two days of tutorials by followed by three days 
-of presentations, and concludes with two days of developer sprints on projects of 
-interest to attendees.  This year, we are excited to present a job fair for the 
-first time!</p>
+<br/>
 
-<h2>Specialized Tracks</h2>
+<p>{% trans "The full program will consist of two days of tutorials, followed by three days of presentations." %}</p>
 
-<p>This year we are happy to announce two specialized tracks that run in parallel to 
-the general conference:</p>
+<h2>{% trans "Tutorials" %}</h2>
 
-<h3>Scientific Computing in Education</h3>
+<p>{% trans "We are looking for tutorials that can help the community to grow at any level. The tutorials provide conceptual and practical coverage of tools that have broad interest at both an introductory or advanced level. Our goal is to have tutorials that can encourage scientific computing with Python, improve the community and shape the future. Tutorials last for 100-120 minutes, but if you believe you need more than one slot, you can split the content and submit two proposals complement each other, but are independent." %}
+</p>
 
-<p>Thanks to efforts such as Software Carpentry, the Hacker Within and grassroots
-Python Bootcamps, teaching scientific computing as a discipline is becoming
-more widely accepted and recognized as a crucial task in developing scientific
-literacy.  This special track will focus on efforts to promote and develop
-scientific computing education, as well as related topics such as
-reproducibility and best practices for scientific computing.</p>
+<h2>{% trans "Talks" %}</h2>
 
-<h3>Geospatial Data in Science</h3>
+<p>{% trans "These are the traditional lectures offered in the main days of the conference. They have a maximum duration of 30 minutes with 5 minutes for questions. If you believe you have a topic but do not know how to write the proposal, contact our activities committee and we will help you in this task. We will gladly help you submit a good proposal." %}
+</p>
 
-<p>Python has become a core component of organiziing, understanding, and
-visualizing geospatial data.  This track will focus on libraries, tools and
-techniques for processing Geospatial data of all types and for all purposes --
-from low-volume to high-volume, local and global.</p>
+<h2>{% trans "Lighting Talks" %}</h2>
 
-<h3>Domain-specific Mini-symposia</h3>
+<p>{% trans "You want to give a talk, but you do not have enough material for one? These talks are a maximum of 5 minutes in a sequence of similar talks in the main hall. No need to fill all the available time. The registration of this talk modality will be held during the event until last presentation of the day." %}
+</p>
 
-<p>Introduced in 2012, mini-symposia are held to discuss scientific
-computing applied to a specific scientific domain/industry during a
-half afternoon after the general conference. Their goal is to promote
-industry specific libraries and tools, and gather people with similar
-interests for discussions. </p>
+<h2>{% trans "Posters" %}</h2>
 
-<p>Mini-symposia on the following topics will take place this year:</p>
+<p>{% trans "The poster session offers a more interactive presentation and targeted public that the talks. The idea is to present your topic in the poster and when the participants exchange rooms they find their work, read what you wrote and initiate a discussion about it. Simple like that." %}
+</p>
 
-<ul>
-  <li>Astronomy and astrophysics</li>
-  <li>Bioinformatics</li>
-  <li>Geophysics</li>
-  <li>Vision, Visualization, and Imaging</li>
-  <li>Computational Social Science and Digital Humanities</li>
-  <li>Engineering</li>
+<h2>{% trans "Track Teen" %}</h2>
+
+<p>{% trans "The teen track is a journey that aims to introduce a great creative potential public (such as children and adolescents) the world of science, programming and any area that can contribute to your creative, through an educational and fun interactive way ." %}
+</p>
+
+<p>{% trans "One of the goals of this conference is to show teenagers that science and programming are made by people like them. Both are present in daily use by anyone and the only thing needed is the desire to learn and implement these ideas that arise in their minds. And it can become generators of ideas that can be useful to others." %}
+</p>
+
+
+<h2>{% trans "Important Dates" %}</h2>
+
+<ul style="padding-left:20px;">
+  <li>{% trans "March 1st: Initial date for submission of talks, tutorials and posters;" %}</li>
+  <li>{% trans "April 8th: Deadline for submission of talks, tutorials and posters;" %}</li>
+  <li>{% trans "April 22nd: Notification of acceptance for talks, tutorials and posters;" %}</li>
+  <li>{% trans "May 16th-20th: 2 days of tutorials, 3 days of conference." %}</li>
 </ul>
 
-<h2>Tutorials</h2>
+<p></p>
+<p>{% trans "We look forward to a very exciting conference and hope to see you all in Florianópolis soon!" %}</p>
 
-<p>Multiple interactive half-day tutorials will be taught by community experts.
-The tutorials provide conceptual and practical coverage of tools that have
-broad interest at both an introductory or advanced level. This year, a
-third track will be added, which target specifically programmers with no
-prior knowledge of scientific python. </p>
-
-<h2>Developer Sprints</h2>
-
-<p>A hackathon environment is setup for attendees to work on the core SciPy
-packages or their own personal projects.  The conference is an opportunity for
-developers that are usually physically separated to come together and engage in
-highly productive sessions. It is also an occasion for new community members to
-introduce themselves and receive tips from community experts. This year, some of
-the sprints will be scheduled and announced ahead of the conference.</p>
-
-<h2>Birds-of-a-Feather (BOF) Sessions</h2>
-
-<p>Birds-of-a-Feather sessions are self-organized discussions that run parallel to
-the main conference.  The BOFs sessions cover primary, tangential, or unrelated
-topics in an interactive, discussion setting. This year, some of the BOF
-sessions will be scheduled and announced ahead of the conference. </p>
-
-<h2>Important Dates</h2>
-
-<ul>
-  <li>April 1st: Presentation abstracts, poster, tutorial submission
-  deadline. Application for sponsorship deadline.</li>
-  <li>April 17th: Speakers selected</li>
-  <li>April 22nd: Sponsorship acceptance deadline</li>
-  <li>May 1st: Speaker schedule announced</li>
-  <li>May 6th, or 150 registrants: Early-bird registration ends</li>
-  <li>July 6-12th: 2 days of tutorials, 3 days of conference, 2 days of sprints</li>
-</ul>
-
-<p>We look forward to a very exciting conference and hope to see you all in Austin
-this summer!</p>
-
-<p>The SciPy2014 Organizers</p>
+<p>{% trans "The SciPyLA2016 Organizers" %}</p>
 
 {% endblock %}
