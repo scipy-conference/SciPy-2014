@@ -72,7 +72,12 @@ The files to translate will be available at
 `scipyla2016/locale/XX/LC_MESSAGES/django.po`
 
 To test the translation you need to change the default language of your web browser.
-In Firefox, access `about:config` and change `general.useragent.locale`.
+In Firefox,
+access `about:config`
+and change `intl.accept_languages` to `en`, `pt` or `es`,
+Django uses [standard language format](https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code).
+For more information about how Django discovers language preference
+read https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#how-django-discovers-language-preference.
 
 ## Issues
 
