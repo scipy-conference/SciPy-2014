@@ -71,6 +71,13 @@ $ django-admin makemessages -l pt -l es
 The files to translate will be available at
 `scipyla2016/locale/XX/LC_MESSAGES/django.po`
 
+After translate the `po` file you need to run
+
+~~~
+$ cd scipyla2016
+$ django-admin.py compilemessages
+~~~
+
 To test the translation you need to change the default language of your web browser.
 In Firefox,
 access `about:config`
