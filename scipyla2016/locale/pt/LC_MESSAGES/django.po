@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-30 15:21-0200\n"
+"POT-Creation-Date: 2015-12-30 16:07-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,12 +24,23 @@ msgstr ""
 msgid "Sponsors"
 msgstr "Sobre sonos patrocinadores"
 
-#: templates/_default_sidebar.html:7
+#: templates/_default_sidebar.html:7 templates/sponsorship/list.html:16
 msgid "Institutional"
 msgstr ""
 
-#: templates/_footer.html:5
+#: templates/_footer.html:3
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/_footer.html:3
 msgid "contact"
+msgstr ""
+
+#: templates/_footer.html:3
+msgid ""
+"<a href='https://github.com/pinax/symposion/'><b>Symposion</b></a>: a Pinax "
+"project sponsored by <a href='http://eldarion.com/'>Eldarion</a> and the <a "
+"href='http://www.python.org/psf/'>Python Software Foundation</a>."
 msgstr ""
 
 #: templates/about/about.html:7 templates/about/code_of_conduct.html:7
@@ -48,28 +59,156 @@ msgstr "Bem-vindo"
 msgid "Code of Conduct"
 msgstr ""
 
-#: templates/about/code_of_conduct.html:34
+#: templates/about/code_of_conduct.html:16
+msgid ""
+"SciPyLA is a community conference intended for networking and collaboration "
+"in the scientific Python developer community."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:18
+msgid ""
+"We value the participation of each member of this community and want all "
+"attendees to have an enjoyable and fulfilling experience. Accordingly, all "
+"attendees are expected to show respect and courtesy to other attendees "
+"throughout the conference and at all conference events, whether officially "
+"sponsored by SciPyLA or not."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:20
+msgid ""
+"To make clear what is expected, all delegates, speakers, exhibitors and "
+"volunteers at any SciPyLA event are required to conform to the following "
+"Code of Conduct.  Organizers will enforce this code throughout the event."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:22
 #, fuzzy
 #| msgid "Reviews"
-msgid "Overview<"
+msgid "Overview"
 msgstr "Revisões"
 
-#: templates/about/code_of_conduct.html:63
+#: templates/about/code_of_conduct.html:24
+msgid ""
+"SciPyLA is dedicated to providing a harassment-free conference experience "
+"for everyone, regardless of gender, sexual orientation, disability, physical "
+"appearance, body size, race, or religion. We do not tolerate harassment of "
+"conference participants in any form."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:26
+msgid ""
+"All communication should be appropriate for a professional audience "
+"including people of many different backgrounds. Sexual language and imagery "
+"is not appropriate for any conference venue, including talks."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:28
+msgid ""
+"Be kind to others. Do not insult or put down other attendees. Behave "
+"professionally.  Remember that harassment and sexist, racist, or "
+"exclusionary jokes are not appropriate for SciPyLA."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:30
+msgid ""
+"Attendees violating these rules may be asked to leave the conference without "
+"a refund at the sole discretion of the conference organizers."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:32
+msgid "Thank you for helping make this a welcoming, friendly event for all."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:34
 #, fuzzy
 #| msgid "Proposal Details"
 msgid "Details"
 msgstr "Detalhes da proposta"
 
-#: templates/about/code_of_conduct.html:97
+#: templates/about/code_of_conduct.html:36
+msgid ""
+"Harassment includes offensive verbal comments related to gender, sexual "
+"orientation, disability, physical appearance, body size, race, religion, "
+"sexual images in public spaces, deliberate intimidation, stalking, "
+"following, harassing photography or recording, sustained disruption of talks "
+"or other events, inappropriate physical contact, and unwelcome sexual "
+"attention."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:38
+msgid ""
+"Participants asked to stop any harassing behavior are expected to comply "
+"immediately."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:40
+msgid ""
+"Exhibitors in the expo hall, sponsor or vendor booths, or similar activities "
+"are also subject to the anti-harassment policy. In particular, exhibitors "
+"should not use sexualized images, activities, or other material. Booth staff "
+"(including volunteers) should not use sexualized clothing/uniforms/costumes, "
+"or otherwise create a sexualized environment."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:42
+msgid ""
+"Be careful in the words that you choose. Remember that sexist, racist, and "
+"other exclusionary jokes can be offensive to those around you. Excessive "
+"swearing and offensive jokes are not appropriate for SciPyLA."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:44
+msgid ""
+"If a participant engages in behavior that violates this code of conduct, the "
+"conference organizers may take any action they deem appropriate, including "
+"warning the offender or expulsion from the conference with no refund."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:46
 msgid "Contact Information"
 msgstr ""
 
-#: templates/about/code_of_conduct.html:109
+#: templates/about/code_of_conduct.html:48
+msgid ""
+"If you are being harassed, notice that someone else is being harassed, or "
+"have any other concerns, please contact a member of conference staff or a "
+"conference volunteer."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:50
+msgid ""
+"If the matter is especially urgent, please call/contact any of these "
+"individuals:"
+msgstr ""
+
+#: templates/about/code_of_conduct.html:53
 msgid "Ivan Ogasawara (conference chair) at +55 48 9909 0207"
 msgstr ""
 
-#: templates/about/code_of_conduct.html:110
+#: templates/about/code_of_conduct.html:54
 msgid "Raniere Gaia Costa da Silva (conference co-chair) at +55 19 988 196 827"
+msgstr ""
+
+#: templates/about/code_of_conduct.html:57
+msgid ""
+"The conference staff will be happy to help participants contact hotel/venue "
+"security or local law enforcement, provide escorts, or otherwise assist "
+"those experiencing harassment to feel safe for the duration of the "
+"conference. We value your attendance."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:59
+msgid ""
+"This Code of Conduct was forked the PyCon Code of Conduct, which itself was "
+"forked from the example policy from the Geek Feminism wiki, created by the "
+"Ada Initiative and other volunteers which is under a Creative Commons Zero "
+"license."
+msgstr ""
+
+#: templates/about/code_of_conduct.html:61
+msgid ""
+"Conference Code of Conduct is licensed under a Creative Commons Attribution "
+"3.0 Unported License."
 msgstr ""
 
 #: templates/about/diversity.html:13
@@ -96,21 +235,100 @@ msgid "Partnering with PyLadies of Austin to advertise these activities"
 msgstr ""
 
 #: templates/about/diversity.html:22
-msgid "Diversity Statement<"
+msgid "Diversity Statement"
 msgstr ""
 
-#: templates/about/diversity.html:44
+#: templates/about/diversity.html:24
+msgid ""
+"Our goal is to create an inclusive, respectful conference environment that "
+"invites participation from people of all races, ethnicities, genders, ages, "
+"abilities, religions, and sexual orientations. SciPy fully supports and "
+"endorses the Python Software Foundation's <a href='http://www.python.org/psf/"
+"diversity/'>diversity statement</a>."
+msgstr ""
+
+#: templates/about/diversity.html:26
+msgid ""
+"The Python Software Foundation and the global Python community welcome and "
+"encourage participation by everyone. Our community is based on mutual "
+"respect, tolerance, and encouragement, and we are working to help each other "
+"live up to these principles. We want our community to be more diverse: "
+"whoever you are, and whatever your background, we welcome you."
+msgstr ""
+
+#: templates/about/diversity.html:28
+msgid ""
+"We are actively seeking to increase the diversity of our attendees, "
+"speakers, and sponsors through our calls for proposals, other open "
+"submission processes, and through dialogue with the larger communities we "
+"serve."
+msgstr ""
+
+#: templates/about/diversity.html:30
+msgid ""
+"This is an ongoing process. We are talking to our program chairs, program "
+"committees, and various innovators, experts, and organizations about this "
+"goal and about ways they can help us achieve it."
+msgstr ""
+
+#: templates/about/diversity.html:32
 msgid ""
 "Here are some ways you can help us build a more diverse conference "
 "experience:"
 msgstr ""
 
-#: templates/about/diversity.html:53
+#: templates/about/diversity.html:35
+msgid ""
+"Recommend appropriate speakers and/or program committee members to the "
+"conference chairs. "
+msgstr ""
+
+#: templates/about/diversity.html:36
+msgid ""
+"Forward our call for proposals to relevant affinity groups with the message "
+"that we are looking for a diverse speaker roster."
+msgstr ""
+
+#: templates/about/diversity.html:37
+msgid ""
+"Suggest to potential speakers that they submit a proposal during our Call "
+"for Proposals conference phase."
+msgstr ""
+
+#: templates/about/diversity.html:38
 msgid "Organize community-based public speaking trainings and practice events "
 msgstr ""
 
-#: templates/about/diversity.html:56
+#: templates/about/diversity.html:39
+msgid ""
+"Suggest ways that the onsite conference experience can be more welcoming and "
+"supportive, free from intimidation and marginalization."
+msgstr ""
+
+#: templates/about/diversity.html:40
 msgid "Share your ideas and best practices for how we can realize our vision."
+msgstr ""
+
+#: templates/about/diversity.html:41
+msgid ""
+"We value diversity in the communities we bring together. We strive to "
+"provide balanced representation of the richness of our collective human "
+"experience, and welcome your contributions to helping us achieve that goal "
+"by following our code of conduct."
+msgstr ""
+
+#: templates/about/diversity.html:44
+msgid ""
+"You may always send an email to <a href='mailto:scipy-organizers@scipy."
+"org'>scipy-organizers@scipy.org</a> with any question, comments, or concerns."
+msgstr ""
+
+#: templates/about/diversity.html:46
+msgid ""
+"Credit for the original version of this document comes from <a href='http://"
+"assets.en.oreilly.com/1/eventprovider/1/ConfDiversity.pdf'>O'Reilly Media</"
+"a> via the <a href='https://us.pycon.org/2014/about/diversity/'>PyCon "
+"diversity statement</a>"
 msgstr ""
 
 #: templates/about/what_next.html:6 templates/about/what_next.html.py:9
@@ -132,24 +350,32 @@ msgid "Start by <a href=\"%(login_url)s\">logging in</a>."
 msgstr "Começando em <a href=\"%(login_url)s\">acesse</a>."
 
 #: templates/homepage.html:15
-msgid "Attend<"
+msgid "Attend"
 msgstr ""
 
-#: templates/homepage.html:21
+#: templates/homepage.html:17
+msgid ""
+"The annual SciPyLA Conference allows participants from academic, commercial, "
+"and governmental organizations to showcase their latest Scientific Python "
+"projects, learn from skilled users and developers, and collaborate on code "
+"development."
+msgstr ""
+
+#: templates/homepage.html:18
 msgid ""
 "We look forward to a very exciting conference and hope to see you at the "
 "2016 conference."
 msgstr ""
 
-#: templates/homepage.html:25
+#: templates/homepage.html:22
 msgid "Be Inspired"
 msgstr ""
 
-#: templates/homepage.html:26
+#: templates/homepage.html:23
 msgid "Check the review from the previous editions:"
 msgstr ""
 
-#: templates/homepage.html:56
+#: templates/homepage.html:53
 msgid "Follow"
 msgstr ""
 
@@ -542,8 +768,11 @@ msgid "US$5,000"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:10
-#, python-format
-msgid "{%% trans "
+#: templates/sponsor_levels_alone.html:25
+#: templates/sponsor_levels_alone.html:39
+#: templates/sponsor_levels_alone.html:51
+#: templates/sponsor_levels_alone.html:62
+msgid "Benefits:"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:12
@@ -585,13 +814,6 @@ msgstr ""
 
 #: templates/sponsor_levels_alone.html:22
 msgid "US$3,000"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:25
-#: templates/sponsor_levels_alone.html:39
-#: templates/sponsor_levels_alone.html:51
-#: templates/sponsor_levels_alone.html:62
-msgid "Benefits:"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:27
@@ -699,44 +921,165 @@ msgstr ""
 msgid "..."
 msgstr ""
 
+#: templates/sponsor_levels_alone.html:81
+msgid ""
+"Please email <a href='mailto:scipy-organizers@scipy.org'>scipy-"
+"organizers@scipy.org</a> with any questions or to reserve your Sponsorship "
+"Package."
+msgstr ""
+
 #: templates/sponsorship.html:13
 msgid "SciPyLA 2016 Sponsorship"
 msgstr ""
 
-#: templates/sponsorship.html:32
+#: templates/sponsorship.html:15
+msgid ""
+"As a community, SciPy advances scientific and analytic computing through the "
+"development and promotion of open source Python software; Python usage "
+"continues to grow significantly in scientific and analytic computing thanks "
+"to the efforts of this community."
+msgstr ""
+
+#: templates/sponsorship.html:18
+#, python-format
+msgid ""
+"The annual SciPyLA Conference brings together academic and industry users to "
+"present their latest work, learn from skilled users and developers, and "
+"collaborate on advancing the ecosystem. Attendance in 2013 grew 70%% to 330 "
+"people; our goal for 2014 is 500+. And based on feedback from last year’s "
+"attendees, we’ve increased the length of the conference by one day to "
+"accommodate all the events and talks."
+msgstr ""
+
+#: templates/sponsorship.html:20
 msgid "2-days of Tutorials"
 msgstr ""
 
-#: templates/sponsorship.html:41
+#: templates/sponsorship.html:22
+msgid ""
+"We provide two days of expert-led tutorials at the start of the conference.  "
+"These tutorials are very popular, with an introductory track for attendees "
+"new to Python, and intermediate and advanced tracks for experienced users."
+msgstr ""
+
+#: templates/sponsorship.html:24
 msgid "3-days of Talks, Poster Sessions"
 msgstr ""
 
-#: templates/sponsorship.html:51
+#: templates/sponsorship.html:26
+msgid ""
+"Authors share their juried presentations and poster papers covering the "
+"latest developments in the use of Python in science during the three main "
+"days of the conference.  Presentations, posters, lightning talks provide a "
+"wide variety of opportunities for attendees to participate and learn."
+msgstr ""
+
+#: templates/sponsorship.html:28
 msgid "Why Sponsor?"
 msgstr ""
 
-#: templates/sponsorship.html:53
+#: templates/sponsorship.html:30
 msgid "Contribute to the growth of the community and code base:"
 msgstr ""
 
-#: templates/sponsorship.html:61
+#: templates/sponsorship.html:32
+msgid ""
+"Your sponsorship helps us build a financial foundation for the conference "
+"and the community, providing more opportunities for the community to build "
+"out the Python scientific computing tools and packages."
+msgstr ""
+
+#: templates/sponsorship.html:34
 msgid "Build awareness, recruit, and make contacts:"
 msgstr ""
 
-#: templates/sponsorship.html:69
+#: templates/sponsorship.html:36
+#, python-format
+msgid ""
+"SciPyLA brings together some of the best minds in scientific and analytic "
+"computing, 25%% of them students; you’ll be hard-pressed to find this kind "
+"of audience anywhere else."
+msgstr ""
+
+#: templates/sponsorship.html:38
 msgid "Help fund attendance:"
 msgstr ""
 
-#: templates/sponsorship.html:86
+#: templates/sponsorship.html:41
+msgid ""
+"SciPyLA offers scholarships for students and researchers who contribute to "
+"the community.  In 2013 we were able to pay the travel, registration, and "
+"lodging costs for 15 applicants selected for their outstanding contributions "
+"to open source scientific Python projects. In the last 8 years over 70 "
+"students have attended from countries around the world."
+msgstr ""
+
+#: templates/sponsorship.html:43
+msgid ""
+"Sponsorships also help us to keep this meeting very affordable compared to "
+"many others."
+msgstr ""
+
+#: templates/sponsorship.html:45
 msgid "2016 Sponsor Participation"
+msgstr ""
+
+#: templates/sponsorship.html:47
+msgid ""
+"SciPyLA 2016 was sponsored by Universidade Gastón Dachary, Machinalis, "
+"Python Software Foundation, GitHub, Enthought."
 msgstr ""
 
 #: templates/sponsorship/list.html:7 templates/sponsorship/list.html.py:14
 msgid "About Our Sponsors"
 msgstr "Sobre sonos patrocinadores"
 
+#: templates/sponsorship/list.html:15
+msgid "Learn how to become a sponsor"
+msgstr ""
+
+#: templates/sponsorship/list.html:44
+msgid "Federal University of Santa Catarina"
+msgstr ""
+
+#: templates/sponsorship/list.html:47
+msgid ""
+"Since 1960, the Federal University of  Santa Catarina (UFSC) has been "
+"participating in the economic, social, political and cultural development of "
+"the State and of the country. Throughout this period it has been working on "
+"preparing students to become highly skilled professionals, thus contributing "
+"to scientific progress and establishing itself as a niche of excellence, and "
+"being ranked as one of the best centers for higher education in Brazil."
+msgstr ""
+
+#: templates/sponsorship/list.html:48
+msgid ""
+"Today, besides the investments made on new facilities and on increasing the "
+"offers for admission and the range of programs offered at the campus of "
+"Florianópolis, UFSC can already see results of its expansion in the state "
+"through the campi of Joinville, Curitibanos and Araranguá, where the focus "
+"is on meeting the local and regional needs and  demands."
+msgstr ""
+
 #: templates/venue/lodging.html:14
 msgid "Venue Lodging Details"
+msgstr ""
+
+#: templates/venue/lodging.html:20
+msgid ""
+"There are many lodging options near the Federal University of Santa Catarina."
+msgstr ""
+
+#: templates/venue/lodging.html:22
+msgid ""
+"Lodging options with discounts for SciPyLA 2016 attends will be listed here "
+"soon.  Please visit this page later."
+msgstr ""
+
+#: templates/venue/lodging.html:24
+msgid ""
+"For more options you can visit <a href='http://booking.com/'>Booking</a> and "
+"<a href='http://airbnb.com/'>AirBnb</a>."
 msgstr ""
 
 #: templates/venue/venue.html:14
@@ -747,6 +1090,17 @@ msgstr ""
 msgid ""
 "SciPyLA 2016 will be held at the Federal University of Santa Catarina campus "
 "in Florianópolis, Santa Catarina, Brazil."
+msgstr ""
+
+#: templates/venue/venue.html:34
+msgid ""
+"The university is located in the heart of Florianópolis, allowing easy "
+"access to the city's renowned <a href='http://www.pmf.sc.gov.br/entidades/"
+"turismo/index.php?cms=atrativos+naturais+++praias&menu=6'>beaches</a>, <a "
+"href='http://www.pmf.sc.gov.br/entidades/turismo/index.php?cms=parques"
+"+municipais&menu=6'>parks</a>, <a href='http://www.pmf.sc.gov.br/entidades/"
+"turismo/index.php?cms=atrativos+turisticos+culturais&menu=6'>museums</a>, "
+"and <a href='http://www.floripacreativecity.com/'>restaurants</a>."
 msgstr ""
 
 #: templates/video_highlights.html:13

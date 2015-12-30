@@ -12,8 +12,8 @@
 <div class="row">
     <div class="span12">
         <h1>{% trans "About Our Sponsors" %}</h1>
-        <a href="{% url cms_page "sponsors/apply/" %}" class="btn">Learn how to become a sponsor <span class="arrow"></span></a>
-        <h3>Institutional</h3>
+        <a href="{% url cms_page "sponsors/apply/" %}" class="btn">{% trans "Learn how to become a sponsor" %}<span class="arrow"></span></a>
+        <h3>{% trans "Institutional" %}</h3>
 
         <!-- Template
         <div class="row">
@@ -41,27 +41,11 @@
                 </h2>
             </div>
             <div class="span10">
-                <h5>Federal University of Santa Catarina</h5>
+                <h5>{% trans "Federal University of Santa Catarina" %}</h5>
                 <p><a href="http://ufsc.br/">http://ufsc.br/</a></p>
                 <!-- The text come from http://en.ufsc.br/ -->
-                <p>
-                Since 1960, the Federal University of  Santa Catarina (UFSC) has
-                been participating in the economic, social, political and
-                cultural development of the State and of the country. Throughout
-                this period it has been working on preparing students to become
-                highly skilled professionals, thus contributing to scientific
-                progress and establishing itself as a niche of excellence, and
-                being ranked as one of the best centers for higher education in
-                Brazil.
-                </p>
-                <p>
-                Today, besides the investments made on new facilities and on
-                increasing the offers for admission and the range of programs
-                offered at the campus of Florianópolis, UFSC can already see
-                results of its expansion in the state through the campi of
-                Joinville, Curitibanos and Araranguá, where the focus is on
-                meeting the local and regional needs and  demands.
-                </p>
+                <p>{% trans "Since 1960, the Federal University of  Santa Catarina (UFSC) has been participating in the economic, social, political and cultural development of the State and of the country. Throughout this period it has been working on preparing students to become highly skilled professionals, thus contributing to scientific progress and establishing itself as a niche of excellence, and being ranked as one of the best centers for higher education in Brazil." %}</p>
+                <p>{% trans "Today, besides the investments made on new facilities and on increasing the offers for admission and the range of programs offered at the campus of Florianópolis, UFSC can already see results of its expansion in the state through the campi of Joinville, Curitibanos and Araranguá, where the focus is on meeting the local and regional needs and  demands." %}</p>
             </div>
         </div>
 
