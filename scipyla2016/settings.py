@@ -8,7 +8,9 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                             os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 
-LOCALE_PATHS = ( PROJECT_ROOT + '/locale', )
+LOCALE_PATHS = [
+    os.path.join(os.path.dirname(__file__), 'locale')
+]
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -46,12 +48,11 @@ TIME_ZONE = "US/Eastern"
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "en-us"
 LANGUAGES = (
-            ('en', ('English')),
-            ('pt', ('Portuguese')),
-            ('es', ('Spanish')),
-            )
+    ("en", "English"),
+    ("pt-br", "Portuguese"),
+    ("es", "Spanish")
+)
 
 SITE_ID = 1
 
@@ -103,6 +104,7 @@ TEMPLATE_LOADERS = [
 MIDDLEWARE_CLASSES = [
     "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",

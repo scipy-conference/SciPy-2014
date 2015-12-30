@@ -10,7 +10,10 @@ import symposion.views
 
 from scipyla2016.schedule.views import poster_list, sprint_list
 
-# from pinax.apps.account.openid_consumer import PinaxConsumer
+from sitetree.sitetreeapp import register_i18n_trees
+
+
+register_i18n_trees(['main'])
 
 urlpatterns = patterns(
     "",

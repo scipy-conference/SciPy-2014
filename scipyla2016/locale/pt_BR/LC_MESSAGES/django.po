@@ -8,27 +8,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-29 19:01-0200\n"
+"POT-Creation-Date: 2015-12-29 16:32-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: templates/homepage.html:7 templates/keynotes.html:7
+#: templates/privacy_policy.html:7 templates/sponsor_levels.html:7
+#: templates/sponsorship.html:7 templates/video_highlights.html:7
 #: templates/about/about.html:7 templates/about/code_of_conduct.html:7
 #: templates/about/diversity.html:7 templates/about/organizers.html:7
-#: templates/homepage.html:7 templates/keynotes.html:7
 #: templates/participate/plotting_contest.html:7
-#: templates/privacy_policy.html:7 templates/sponsor_levels.html:7
-#: templates/sponsorship.html:7 templates/venue/directions.html:7
-#: templates/venue/floorplans.html:7 templates/venue/lodging.html:7
-#: templates/venue/restaurants.html:7 templates/venue/venue.html:7
-#: templates/video_highlights.html:7
+#: templates/venue/directions.html:7 templates/venue/floorplans.html:7
+#: templates/venue/lodging.html:7 templates/venue/restaurants.html:7
+#: templates/venue/venue.html:7
 msgid "Welcome"
 msgstr "Bem-vindo"
+
+#: templates/site_base.html:40
+msgid "Log in"
+msgstr "Acessar"
+
+#: templates/site_base.html:43
+msgid "Sign up"
+msgstr "Cadastrar-se"
+
+#: templates/site_base.html:47
+msgid "Dashboard"
+msgstr "Mural"
+
+#: templates/site_base.html:50
+msgid "Settings"
+msgstr "Configurações"
+
+#: templates/site_base.html:54
+msgid "Admin"
+msgstr "Administrador"
+
+#: templates/site_base.html:58
+msgid "Log out"
+msgstr "Sair"
+
+#: templates/site_base.html:67
+msgid "Scientific Computing with Python"
+msgstr "Computação Científica com Python"
+
+#: templates/site_base.html:67
+msgid "Florianópolis, Santa Catarina, Brazil &#8226; May 16-20"
+msgstr "Florianópolis, Santa Catarina, Brazil &#8226; 16-20 de Maio"
+
+#: templates/site_base.html:67
+msgid "Registration will open soon"
+msgstr "Inscrições irão abrir em breve"
 
 #: templates/about/what_next.html:6 templates/about/what_next.html.py:9
 msgid "What Next?"
@@ -48,7 +84,8 @@ msgstr ""
 msgid "Start by <a href=\"%(login_url)s\">logging in</a>."
 msgstr "Começando em <a href=\"%(login_url)s\">acesse</a>."
 
-#: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
+#: templates/participate/bofs.html:7
+#: templates/participate/financial_aid.html:7
 #: templates/participate/wssspe.html:7
 msgid "BoFs Call"
 msgstr ""
@@ -194,42 +231,6 @@ msgstr ""
 "utilize o seguinte formulário e ele ou ela será\n"
 "                            notificado e terá a oportunidade de responder.\n"
 "                        "
-
-#: templates/site_base.html:40
-msgid "Log in"
-msgstr "Acessar"
-
-#: templates/site_base.html:43
-msgid "Sign up"
-msgstr "Cadastrar-se"
-
-#: templates/site_base.html:47
-msgid "Dashboard"
-msgstr "Mural"
-
-#: templates/site_base.html:50
-msgid "Settings"
-msgstr "Configurações"
-
-#: templates/site_base.html:54
-msgid "Admin"
-msgstr "Administrador"
-
-#: templates/site_base.html:58
-msgid "Log out"
-msgstr "Sair"
-
-#: templates/site_base.html:67
-msgid "Scientific Computing with Python"
-msgstr "Computação Científica com Python"
-
-#: templates/site_base.html:67
-msgid "Florianópolis, Santa Catarina, Brazil &#8226; May 16-20"
-msgstr "Florianópolis, Santa Catarina, Brazil &#8226; 16-20 de Maio"
-
-#: templates/site_base.html:67
-msgid "Registration will open soon"
-msgstr "Inscrições irão abrir em breve"
 
 #: templates/sponsorship/list.html:7 templates/sponsorship/list.html.py:14
 msgid "About Our Sponsors"
