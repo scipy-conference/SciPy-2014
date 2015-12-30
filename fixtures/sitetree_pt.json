@@ -235,7 +235,7 @@
             "hint": "", 
             "url": "floorplans", 
             "inbreadcrumbs": false, 
-            "title": "Venue Floor Maps", 
+            "title": "Mapa do local do evento", 
             "tree": 2, 
             "access_perm_type": 1, 
             "alias": null, 
