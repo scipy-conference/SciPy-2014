@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-30 16:07-0200\n"
+"POT-Creation-Date: 2015-12-30 21:51-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,6 +51,183 @@ msgstr ""
 #: templates/venue/restaurants.html:7 templates/venue/venue.html:7
 #: templates/video_highlights.html:7
 msgid "Welcome"
+msgstr ""
+
+#: templates/about/about.html:14
+msgid "Submit a Proposal!"
+msgstr ""
+
+#: templates/about/about.html:16
+msgid "To submit a proposal"
+msgstr ""
+
+#: templates/about/about.html:17
+msgid "sign up"
+msgstr ""
+
+#: templates/about/about.html:18
+msgid "log in"
+msgstr ""
+
+#: templates/about/about.html:19
+msgid "to your account and proceed to your"
+msgstr ""
+
+#: templates/about/about.html:21
+msgid "account dashboard"
+msgstr ""
+
+#: templates/about/about.html:26
+msgid "Click:"
+msgstr ""
+
+#: templates/about/about.html:28
+msgid "submit proposal"
+msgstr ""
+
+#: templates/about/about.html:29
+msgid "talks and posters"
+msgstr ""
+
+#: templates/about/about.html:30
+msgid "create new... "
+msgstr ""
+
+#: templates/about/about.html:35
+msgid "SciPyLA 2016 Conference Announcement"
+msgstr ""
+
+#: templates/about/about.html:37
+msgid ""
+"SciPy Latin America 2016 Conference, the fourth annual Scientific Computing "
+"with Python conference, will be held this May 16th-20th 2016, in "
+"Florianópolis / Brazil. SciPy Latin America is a regional community "
+"dedicated to the advancement of scientific computing through open source "
+"Python software for mathematics, science, and engineering."
+msgstr ""
+
+#: templates/about/about.html:39
+msgid ""
+"During the presentation days SciPy is proud to host the following event and "
+"talk types:"
+msgstr ""
+
+#: templates/about/about.html:42 templates/about/about.html.py:53
+msgid "Tutorials"
+msgstr ""
+
+#: templates/about/about.html:43 templates/about/about.html.py:58
+msgid "Talks"
+msgstr ""
+
+#: templates/about/about.html:44 templates/about/about.html.py:63
+msgid "Lighting Talks"
+msgstr ""
+
+#: templates/about/about.html:45
+msgid "Poster Presentations"
+msgstr ""
+
+#: templates/about/about.html:46
+msgid "Track teen"
+msgstr ""
+
+#: templates/about/about.html:51
+msgid ""
+"The full program will consist of two days of tutorials, followed by three "
+"days of presentations."
+msgstr ""
+
+#: templates/about/about.html:55
+msgid ""
+"We are looking for tutorials that can help the community to grow at any "
+"level. The tutorials provide conceptual and practical coverage of tools that "
+"have broad interest at both an introductory or advanced level. Our goal is "
+"to have tutorials that can encourage scientific computing with Python, "
+"improve the community and shape the future. Tutorials last for 100-120 "
+"minutes, but if you believe you need more than one slot, you can split the "
+"content and submit two proposals complement each other, but are independent."
+msgstr ""
+
+#: templates/about/about.html:60
+msgid ""
+"These are the traditional lectures offered in the main days of the "
+"conference. They have a maximum duration of 30 minutes with 5 minutes for "
+"questions. If you believe you have a topic but do not know how to write the "
+"proposal, contact our activities committee and we will help you in this "
+"task. We will gladly help you submit a good proposal."
+msgstr ""
+
+#: templates/about/about.html:65
+msgid ""
+"You want to give a talk, but you do not have enough material for one? These "
+"talks are a maximum of 5 minutes in a sequence of similar talks in the main "
+"hall. No need to fill all the available time. The registration of this talk "
+"modality will be held during the event until last presentation of the day."
+msgstr ""
+
+#: templates/about/about.html:68
+msgid "Posters"
+msgstr ""
+
+#: templates/about/about.html:70
+msgid ""
+"The poster session offers a more interactive presentation and targeted "
+"public that the talks. The idea is to present your topic in the poster and "
+"when the participants exchange rooms they find their work, read what you "
+"wrote and initiate a discussion about it. Simple like that."
+msgstr ""
+
+#: templates/about/about.html:73
+msgid "Track Teen"
+msgstr ""
+
+#: templates/about/about.html:75
+msgid ""
+"The teen track is a journey that aims to introduce a great creative "
+"potential public (such as children and adolescents) the world of science, "
+"programming and any area that can contribute to your creative, through an "
+"educational and fun interactive way ."
+msgstr ""
+
+#: templates/about/about.html:78
+msgid ""
+"One of the goals of this conference is to show teenagers that science and "
+"programming are made by people like them. Both are present in daily use by "
+"anyone and the only thing needed is the desire to learn and implement these "
+"ideas that arise in their minds. And it can become generators of ideas that "
+"can be useful to others."
+msgstr ""
+
+#: templates/about/about.html:82
+msgid "Important Dates"
+msgstr ""
+
+#: templates/about/about.html:85
+msgid "March 1st: Initial date for submission of talks, tutorials and posters;"
+msgstr ""
+
+#: templates/about/about.html:86
+msgid "April 8th: Deadline for submission of talks, tutorials and posters;"
+msgstr ""
+
+#: templates/about/about.html:87
+msgid ""
+"April 22nd: Notification of acceptance for talks, tutorials and posters;"
+msgstr ""
+
+#: templates/about/about.html:88
+msgid "May 16th-20th: 2 days of tutorials, 3 days of conference."
+msgstr ""
+
+#: templates/about/about.html:92
+msgid ""
+"We look forward to a very exciting conference and hope to see you all in "
+"Florianópolis soon!"
+msgstr ""
+
+#: templates/about/about.html:94
+msgid "The SciPyLA2016 Organizers"
 msgstr ""
 
 #: templates/about/code_of_conduct.html:14
@@ -371,103 +548,13 @@ msgstr ""
 msgid "Follow"
 msgstr ""
 
-#: templates/keynotes.html:13
-msgid "SciPyLA 2016 Keynote Speakers"
-msgstr ""
-
-#: templates/keynotes.html:14
-msgid "Will be announced soon."
-msgstr ""
-
 #: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
 #: templates/participate/wssspe.html:7
 msgid "BoFs Call"
 msgstr ""
 
-#: templates/participate/financial_aid.html:13
-msgid "SciPyLA 2016 Financial Aid Applications"
-msgstr ""
-
 #: templates/participate/presentations.html:7
 msgid "Talk and Poster Presentations Call"
-msgstr ""
-
-#: templates/participate/presentations.html:13
-msgid "SciPyLA 2016 Talk and Poster Presentations"
-msgstr ""
-
-#: templates/participate/presentations.html:18
-msgid "Accepted Presentations"
-msgstr ""
-
-#: templates/participate/presentations.html:31
-#: templates/participate/tutorials.html:111
-msgid "Call for Submissions"
-msgstr ""
-
-#: templates/participate/presentations.html:42
-msgid ""
-"<strong>We invite proposals for 20 minute talk and poster presentation by "
-"April 1, 2014</strong>"
-msgstr ""
-
-#: templates/participate/presentations.html:44
-#: templates/participate/tutorials.html:156
-msgid "Proposal Submission"
-msgstr ""
-
-#: templates/participate/presentations.html:46
-#: templates/participate/tutorials.html:158
-msgid "To submit a proposal, <a href="
-msgstr ""
-
-#: templates/participate/presentations.html:51
-#: templates/participate/tutorials.html:162
-msgid "submit proposal"
-msgstr ""
-
-#: templates/participate/presentations.html:51
-msgid "talk/poster"
-msgstr ""
-
-#: templates/participate/presentations.html:51
-#: templates/participate/tutorials.html:162
-msgid "create new... "
-msgstr ""
-
-#: templates/participate/presentations.html:57
-msgid ""
-"<strong>The Brief Description</strong>: The brief description you fill out "
-"below will appear in the online program."
-msgstr ""
-
-#: templates/participate/presentations.html:58
-msgid ""
-"<strong>The Detailed Abstract</strong>: Your placement in the program will "
-"be based on reviews of your detailed abstract. This should be a 150-300 word "
-"detailed outline of your presentation. This detailed abstract should "
-"concisely describe software of interest to the SciPy community, tools or "
-"techniques for more effective computing, or how scientific Python was "
-"applied to solve a research problem. A traditional background/motivation, "
-"methods, results, and conclusion structure is encouraged but not required. "
-"Links to project websites, source code repositories, figures, full papers, "
-"and evidence of public speaking ability are encouraged."
-msgstr ""
-
-#: templates/participate/presentations.html:61
-msgid "Review and Proceedings"
-msgstr ""
-
-#: templates/participate/presentations.html:67
-msgid "Accepted presentations will be announced on May 1st."
-msgstr ""
-
-#: templates/participate/presentations.html:70
-msgid "The SciPyLA 2016 Program Chairs"
-msgstr ""
-
-#: templates/participate/presentations.html:73
-msgid "Melissa Weber Mendonça, Federal University of Santa Catarina"
 msgstr ""
 
 #: templates/participate/sprints.html:7
@@ -476,69 +563,6 @@ msgstr ""
 
 #: templates/participate/tutorials.html:7
 msgid "Tutorials Call"
-msgstr ""
-
-#: templates/participate/tutorials.html:13
-msgid "SciPyLA 2016 Tutorials"
-msgstr ""
-
-#: templates/participate/tutorials.html:134
-msgid "Topics"
-msgstr ""
-
-#: templates/participate/tutorials.html:161
-msgid "Click"
-msgstr ""
-
-#: templates/participate/tutorials.html:162
-msgid "tutorials"
-msgstr ""
-
-#: templates/participate/tutorials.html:164
-msgid "For the submission you will need the following information:"
-msgstr ""
-
-#: templates/participate/tutorials.html:169
-msgid ""
-"Which track the tutorial would fit best in (Introductory, Intermediate, or "
-"Advanced) and, in the case of an Introductory tutorial submission, select "
-"one of the 4 introductory topics."
-msgstr ""
-
-#: templates/participate/tutorials.html:187
-msgid "Selection"
-msgstr ""
-
-#: templates/participate/tutorials.html:196
-msgid "Important dates:"
-msgstr ""
-
-#: templates/participate/tutorials.html:200
-msgid "Mar 14th:\tTutorial submissions due"
-msgstr ""
-
-#: templates/participate/tutorials.html:201
-msgid "May 1st:\tSpeakers and schedule announced"
-msgstr ""
-
-#: templates/participate/tutorials.html:204
-msgid "Sunday-Monday, July 6 - 7: SciPyLA 2016 Tutorials, Austin TX"
-msgstr ""
-
-#: templates/participate/tutorials.html:205
-msgid "Tuesday-Thursday, July 8 - 10: SciPyLA 2016 Conference, Austin TX"
-msgstr ""
-
-#: templates/participate/tutorials.html:206
-msgid "Friday-Saturday, July 11 - 12: SciPyLA 2016 Sprints, Austin TX & remote"
-msgstr ""
-
-#: templates/participate/tutorials.html:213
-msgid "The SciPyLA 2016 Tutorial Chairs"
-msgstr ""
-
-#: templates/participate/tutorials.html:216
-msgid "Jeudy Blanco"
 msgstr ""
 
 #: templates/privacy_policy.html:13
@@ -1080,8 +1104,4 @@ msgid ""
 "+municipais&menu=6'>parks</a>, <a href='http://www.pmf.sc.gov.br/entidades/"
 "turismo/index.php?cms=atrativos+turisticos+culturais&menu=6'>museums</a>, "
 "and <a href='http://www.floripacreativecity.com/'>restaurants</a>."
-msgstr ""
-
-#: templates/video_highlights.html:13
-msgid "SciPyLA 2015 Video Highlights"
 msgstr ""
