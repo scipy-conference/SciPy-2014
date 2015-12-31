@@ -4,7 +4,7 @@
         "model": "sites.site", 
         "fields": {
             "domain": "dq276.o1.gondor.io", 
-            "name": "SciPy 2014"
+            "name": "SciPyLA 2016"
         }
     }, 
     {
@@ -12,7 +12,15 @@
         "model": "sites.site", 
         "fields": {
             "domain": "localhost", 
-            "name": "SciPy 2014 [local]"
+            "name": "SciPyLA 2016 [local]"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "scipyla.org", 
+            "name": "SciPyLA 2016"
         }
     }
 ]
