@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-30 21:51-0200\n"
+"POT-Creation-Date: 2015-12-30 22:00-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,16 +100,17 @@ msgstr ""
 #: templates/about/about.html:37
 msgid ""
 "SciPy Latin America 2016 Conference, the fourth annual Scientific Computing "
-"with Python conference, will be held this May 16th-20th 2016, in "
-"Florianópolis / Brazil. SciPy Latin America is a regional community "
+"with Python conference in Latin America, will be held this May 16th-20th "
+"2016, in Florianópolis, Brazil. SciPy Latin America is a regional community "
 "dedicated to the advancement of scientific computing through open source "
-"Python software for mathematics, science, and engineering."
+"software for mathematics, science, and engineering mainly developed with "
+"Python."
 msgstr ""
 
 #: templates/about/about.html:39
 msgid ""
-"During the presentation days SciPy is proud to host the following event and "
-"talk types:"
+"During the conference SciPyLA is proud to host the following event and talk "
+"types:"
 msgstr ""
 
 #: templates/about/about.html:42 templates/about/about.html.py:53
@@ -140,22 +141,19 @@ msgstr ""
 
 #: templates/about/about.html:55
 msgid ""
-"We are looking for tutorials that can help the community to grow at any "
-"level. The tutorials provide conceptual and practical coverage of tools that "
-"have broad interest at both an introductory or advanced level. Our goal is "
+"Multiple interactive half-day (3h) tutorials will be taught by community "
+"experts. The tutorials provide conceptual and practical coverage of tools "
+"for attends with no-prior, intermediate and advanced knowledge. Our goal is "
 "to have tutorials that can encourage scientific computing with Python, "
-"improve the community and shape the future. Tutorials last for 100-120 "
-"minutes, but if you believe you need more than one slot, you can split the "
-"content and submit two proposals complement each other, but are independent."
+"improve the community and shape the future."
 msgstr ""
 
 #: templates/about/about.html:60
 msgid ""
-"These are the traditional lectures offered in the main days of the "
-"conference. They have a maximum duration of 30 minutes with 5 minutes for "
-"questions. If you believe you have a topic but do not know how to write the "
-"proposal, contact our activities committee and we will help you in this "
-"task. We will gladly help you submit a good proposal."
+"These are the traditional lectures. They have a maximum duration of 30 "
+"minutes with 5 minutes for questions. If you believe you have a topic but do "
+"not know how to write the proposal, contact our activities committee and we "
+"will help you in this task. We will gladly help you submit a good proposal."
 msgstr ""
 
 #: templates/about/about.html:65
@@ -217,16 +215,20 @@ msgid ""
 msgstr ""
 
 #: templates/about/about.html:88
-msgid "May 16th-20th: 2 days of tutorials, 3 days of conference."
+msgid "May 16th-18th: SciPyLA 2016, 2 days of tutorials;"
 msgstr ""
 
-#: templates/about/about.html:92
+#: templates/about/about.html:89
+msgid "May 19th-20th: SciPyLA 2016, 3 days of talks."
+msgstr ""
+
+#: templates/about/about.html:93
 msgid ""
 "We look forward to a very exciting conference and hope to see you all in "
 "Florianópolis soon!"
 msgstr ""
 
-#: templates/about/about.html:94
+#: templates/about/about.html:95
 msgid "The SciPyLA2016 Organizers"
 msgstr ""
 
@@ -1023,13 +1025,13 @@ msgid ""
 "many others."
 msgstr ""
 
-#: templates/sponsorship.html:45
-msgid "2016 Sponsor Participation"
+#: templates/sponsorship.html:47
+msgid "2015 Sponsor Participation"
 msgstr ""
 
-#: templates/sponsorship.html:47
+#: templates/sponsorship.html:49
 msgid ""
-"SciPyLA 2016 was sponsored by Universidade Gastón Dachary, Machinalis, "
+"SciPyLA 2015 was sponsored by Universidade Gastón Dachary, Machinalis, "
 "Python Software Foundation, GitHub, Enthought."
 msgstr ""
 
