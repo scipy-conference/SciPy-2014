@@ -13,8 +13,8 @@
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 2, 
-            "name": "talk/poster", 
-            "slug": "talk-poster"
+            "name": "talk", 
+            "slug": "talk"
         }
     }, 
     {
@@ -22,17 +22,8 @@
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 3, 
-            "name": "birds of a feather", 
-            "slug": "bof"
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "proposals.proposalkind", 
-        "fields": {
-            "section": 4, 
-            "name": "sprint", 
-            "slug": "sprint"
+            "name": "poster", 
+            "slug": "poster"
         }
     }, 
     {
@@ -52,28 +43,6 @@
         "fields": {
             "start": null, 
             "section": 2, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 3, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 4, 
             "end": null, 
             "closed": null, 
             "published": null
