@@ -59,9 +59,9 @@ $ python manage.py dumpdata --indent=4 sponsorship.sponsorlevel > fixtures/spons
 
 ## Translation
 
-Please read https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#localization-how-to-create-language-files.
+Please read https://docs.djangoproject.com/en/1.4/topics/i18n/translation/#localization-how-to-create-language-files.
 
-To generate the `po` files:
+To generate the `po` files and extract the marked texts:
 
 ~~~
 $ cd scipyla2016
@@ -71,7 +71,7 @@ $ django-admin makemessages -l pt -l es
 The files to translate will be available at
 `scipyla2016/locale/XX/LC_MESSAGES/django.po`
 
-After translate the `po` file you need to run
+After translate the `po` file you need to generate the .mo files, run:
 
 ~~~
 $ cd scipyla2016
@@ -82,9 +82,9 @@ To test the translation you need to change the default language of your web brow
 In Firefox,
 access `about:config`
 and change `intl.accept_languages` to `en`, `pt` or `es`,
-Django uses [standard language format](https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code).
+Django uses [standard language format](https://docs.djangoproject.com/en/1.4/topics/i18n/#term-language-code).
 For more information about how Django discovers language preference
-read https://docs.djangoproject.com/en/1.9/topics/i18n/translation/#how-django-discovers-language-preference.
+read https://docs.djangoproject.com/en/1.4/topics/i18n/translation/#how-django-discovers-language-preference.
 
 ## Issues
 
