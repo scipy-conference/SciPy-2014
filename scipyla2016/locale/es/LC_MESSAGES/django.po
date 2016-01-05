@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-30 22:00-0200\n"
+"POT-Creation-Date: 2016-01-05 12:04-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,7 @@ msgstr ""
 #: templates/about/about.html:70
 msgid ""
 "The poster session offers a more interactive presentation and targeted "
-"public that the talks. The idea is to present your topic in the poster and "
+"public than the talks. The idea is to present your topic in the poster and "
 "when the participants exchange rooms they find their work, read what you "
 "wrote and initiate a discussion about it. Simple like that."
 msgstr ""
@@ -550,7 +550,8 @@ msgstr ""
 msgid "Follow"
 msgstr ""
 
-#: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
+#: templates/participate/bofs.html:7
+#: templates/participate/financial_aid.html:7
 #: templates/participate/wssspe.html:7
 msgid "BoFs Call"
 msgstr ""
@@ -761,7 +762,7 @@ msgid "General Sponsorship Packages Available:"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:6
-msgid "Platinum"
+msgid "Gold"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:6
@@ -769,33 +770,30 @@ msgid "(two available)"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:7
-msgid "US$5,000"
+msgid "US$3,000"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:10
 #: templates/sponsor_levels_alone.html:25
-#: templates/sponsor_levels_alone.html:39
-#: templates/sponsor_levels_alone.html:51
-#: templates/sponsor_levels_alone.html:62
+#: templates/sponsor_levels_alone.html:37
+#: templates/sponsor_levels_alone.html:50
 msgid "Benefits:"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:12
-msgid "Platinum Sponsor link with logo on SciPyLA 2016 website"
+msgid "Gold Sponsor link with logo on SciPyLA 2016 website"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:13
-msgid "33' x 78' banner (sponsor provided) in main session auditorium"
+msgid "90 cm x 180 cm banner (sponsor provided) in main session auditorium"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:14
 msgid ""
-"9' x 9' logo listed as Platinum Sponsor on 33' x 78' Sponsor Banner at main "
-"entrance"
+"logo listed as Gold Sponsor on 90 cm x 180 cm Sponsor Banner at main entrance"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:15
-#: templates/sponsor_levels_alone.html:29
 msgid "Promotion of jobs to attendee list"
 msgstr ""
 
@@ -810,123 +808,100 @@ msgid "1/2 page advertisement in program"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:21
-msgid "Gold"
+msgid "Silver"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:21
-msgid "(four available)"
+msgid "(eight available)"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:22
-msgid "US$3,000"
+msgid "US$2,000"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:27
-msgid "Gold Sponsor link with logo on SciPyLA 2016 website"
+msgid "Silver Sponsor link with logo on SciPyLA 2016 website"
 msgstr ""
 
 #: templates/sponsor_levels_alone.html:28
 msgid ""
-"6.5' x 6.5' logo listed as Gold Sponsor on 33' x 78' Sponsor Banner at main "
+"logo listed as Silver Sponsor on 90 cm x 180 cm Sponsor Banner at main "
 "entrance"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:30
-msgid "Opportunity to host one pre-event workshop on Monday or Tuesday"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:31
+#: templates/sponsor_levels_alone.html:29
 msgid "1/4 page advertisement in program"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:35
-msgid "Silver"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:35
-msgid "(six available)"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:36
-msgid "US$2,000"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:41
-msgid "Silver Sponsor link with logo on SciPyLA 2016 website"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:42
-msgid ""
-"4' x 4' logo listed as Silver Sponsor on 33' x 78' Sponsor Banner at main "
-"entrance"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:43
-msgid "1/8 page advertisement in program"
-msgstr ""
-
-#: templates/sponsor_levels_alone.html:47
+#: templates/sponsor_levels_alone.html:33
 msgid "Bronze"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:48
+#: templates/sponsor_levels_alone.html:34
 msgid "US$1,000"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:53
+#: templates/sponsor_levels_alone.html:39
 msgid "Bronze Sponsor link with logo on SciPyLA 2016 website"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:54
+#: templates/sponsor_levels_alone.html:40
 msgid ""
-"Name listed as Bronze Sponsor on 33' x 78' Sponsor Banner at main entrance"
+"Name listed as Bronze Sponsor on 90 cm x 180 cm Sponsor Banner at main "
+"entrance"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:58
+#: templates/sponsor_levels_alone.html:44
 msgid "Friend"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:59
+#: templates/sponsor_levels_alone.html:45
 msgid "in-kind resources"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:64
-msgid "Friend Sponsor link with logo on SciPyLA 2016 website"
+#: templates/sponsor_levels_alone.html:48
+msgid ""
+"This is a special categorie for companies that help SciPyLA by supporting "
+"their employers to attented SciPyLA."
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:68
+#: templates/sponsor_levels_alone.html:52
+msgid "Friend Sponsor link with logo on SciPyLA 2016 Friend web page"
+msgstr ""
+
+#: templates/sponsor_levels_alone.html:56
 msgid "Media and Community Sponsors"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:69
+#: templates/sponsor_levels_alone.html:57
 msgid "co-promotion"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:72
+#: templates/sponsor_levels_alone.html:60
 msgid "Promotion opportunities:"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:74
+#: templates/sponsor_levels_alone.html:62
 msgid "logo on website"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:75
+#: templates/sponsor_levels_alone.html:63
 msgid "email to conference list"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:76
+#: templates/sponsor_levels_alone.html:64
 msgid "social media promotion"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:77
+#: templates/sponsor_levels_alone.html:65
 msgid "mention in newsletter"
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:78
+#: templates/sponsor_levels_alone.html:66
 msgid "..."
 msgstr ""
 
-#: templates/sponsor_levels_alone.html:81
+#: templates/sponsor_levels_alone.html:69
 msgid ""
 "Please email <a href='mailto:scipy-organizers@scipy.org'>scipy-"
 "organizers@scipy.org</a> with any questions or to reserve your Sponsorship "
@@ -939,21 +914,17 @@ msgstr ""
 
 #: templates/sponsorship.html:15
 msgid ""
-"As a community, SciPy advances scientific and analytic computing through the "
-"development and promotion of open source Python software; Python usage "
-"continues to grow significantly in scientific and analytic computing thanks "
-"to the efforts of this community."
+"As a community, SciPy Latin America advances scientific and analytic "
+"computing through the development and promotion of open source Python "
+"software; Python usage continues to grow significantly in scientific and "
+"analytic computing thanks to the efforts of this community."
 msgstr ""
 
 #: templates/sponsorship.html:18
-#, python-format
 msgid ""
 "The annual SciPyLA Conference brings together academic and industry users to "
 "present their latest work, learn from skilled users and developers, and "
-"collaborate on advancing the ecosystem. Attendance in 2013 grew 70%% to 330 "
-"people; our goal for 2014 is 500+. And based on feedback from last year’s "
-"attendees, we’ve increased the length of the conference by one day to "
-"accommodate all the events and talks."
+"collaborate on advancing the ecosystem."
 msgstr ""
 
 #: templates/sponsorship.html:20
@@ -975,7 +946,7 @@ msgstr ""
 msgid ""
 "Authors share their juried presentations and poster papers covering the "
 "latest developments in the use of Python in science during the three main "
-"days of the conference.  Presentations, posters, lightning talks provide a "
+"days of the conference. Presentations, posters, lightning talks provide a "
 "wide variety of opportunities for attendees to participate and learn."
 msgstr ""
 
@@ -994,11 +965,11 @@ msgid ""
 "out the Python scientific computing tools and packages."
 msgstr ""
 
-#: templates/sponsorship.html:34
+#: templates/sponsorship.html:35
 msgid "Build awareness, recruit, and make contacts:"
 msgstr ""
 
-#: templates/sponsorship.html:36
+#: templates/sponsorship.html:37
 #, python-format
 msgid ""
 "SciPyLA brings together some of the best minds in scientific and analytic "
@@ -1006,30 +977,25 @@ msgid ""
 "of audience anywhere else."
 msgstr ""
 
-#: templates/sponsorship.html:38
+#: templates/sponsorship.html:40
 msgid "Help fund attendance:"
-msgstr ""
-
-#: templates/sponsorship.html:41
-msgid ""
-"SciPyLA offers scholarships for students and researchers who contribute to "
-"the community.  In 2013 we were able to pay the travel, registration, and "
-"lodging costs for 15 applicants selected for their outstanding contributions "
-"to open source scientific Python projects. In the last 8 years over 70 "
-"students have attended from countries around the world."
 msgstr ""
 
 #: templates/sponsorship.html:43
 msgid ""
-"Sponsorships also help us to keep this meeting very affordable compared to "
-"many others."
+"SciPyLA offers scholarships for students and researchers who contribute to "
+"the community."
 msgstr ""
 
-#: templates/sponsorship.html:47
-msgid "2015 Sponsor Participation"
+#: templates/sponsorship.html:45
+msgid "Sponsorships also help us to keep this meeting very affordable."
 msgstr ""
 
 #: templates/sponsorship.html:49
+msgid "2015 Sponsor Participation"
+msgstr ""
+
+#: templates/sponsorship.html:51
 msgid ""
 "SciPyLA 2015 was sponsored by Universidade Gastón Dachary, Machinalis, "
 "Python Software Foundation, GitHub, Enthought."
