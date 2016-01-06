@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-30 22:00-0200\n"
+"POT-Creation-Date: 2016-01-06 14:54-0200\n"
 "PO-Revision-Date: 2016-01-06 12:07-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,6 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 
 #: templates/_default_sidebar.html:5
-#| msgid "About Our Sponsors"
 msgid "Sponsors"
 msgstr "Patrocinadores"
 
@@ -66,12 +65,10 @@ msgid "To submit a proposal"
 msgstr "Submeter proposta"
 
 #: templates/about/about.html:17
-#| msgid "Sign up"
 msgid "sign up"
 msgstr "Cadastrar-se"
 
 #: templates/about/about.html:18
-#| msgid "Log in"
 msgid "log in"
 msgstr "Acessar"
 
@@ -80,7 +77,6 @@ msgid "to your account and proceed to your"
 msgstr "sua conta"
 
 #: templates/about/about.html:21
-#| msgid "Dashboard"
 msgid "account dashboard"
 msgstr "Mural"
 
@@ -129,7 +125,6 @@ msgstr ""
 "eventos e palestras:"
 
 #: templates/about/about.html:42 templates/about/about.html.py:53
-#| msgid "Tutorials Call"
 msgid "Tutorials"
 msgstr "Chamada para tutorial"
 
@@ -142,12 +137,10 @@ msgid "Lighting Talks"
 msgstr "Palestra relâmpago"
 
 #: templates/about/about.html:45
-#| msgid "Talk and Poster Presentations Call"
 msgid "Poster Presentations"
 msgstr "Chamada para Palestras e Posters"
 
 #: templates/about/about.html:46
-#| msgid "Track"
 msgid "Track teen"
 msgstr "Trilha Jovem Cientista"
 
@@ -217,7 +210,6 @@ msgstr ""
 "trabalho, leem, e iniciam uma discussão. Simples assim."
 
 #: templates/about/about.html:73
-#| msgid "Track"
 msgid "Track Teen"
 msgstr "Trilha Jovem Cientista"
 
@@ -323,7 +315,6 @@ msgstr ""
 "serão responsáveis pelo cumprimento do CC durante todo o evento."
 
 #: templates/about/code_of_conduct.html:22
-#| msgid "Reviews"
 msgid "Overview"
 msgstr "Geral"
 
@@ -375,7 +366,6 @@ msgstr ""
 "Obrigado por ajudar a fazer deste um evento acolhedor e amigável para todos."
 
 #: templates/about/code_of_conduct.html:34
-#| msgid "Proposal Details"
 msgid "Details"
 msgstr "Detalhes da proposta"
 
@@ -723,8 +713,7 @@ msgstr "Verifique a revisão das edições anteriores:"
 msgid "Follow"
 msgstr "Seguir"
 
-#: templates/participate/bofs.html:7
-#: templates/participate/financial_aid.html:7
+#: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
 #: templates/participate/wssspe.html:7
 msgid "BoFs Call"
 msgstr "Chamada para BoFs "
@@ -972,7 +961,7 @@ msgstr ""
 msgid ""
 "logo listed as Gold Sponsor on 90 cm x 180 cm Sponsor Banner at main entrance"
 msgstr ""
-"logot listado como patrocinadora Ouro no cartaz dos Patrocinador de 90 cm x "
+"logo listado como patrocinadora Ouro no cartaz dos Patrocinador de 90 cm x "
 "180 cm na entrada principal"
 
 #: templates/sponsor_levels_alone.html:15
@@ -1012,7 +1001,7 @@ msgid ""
 "logo listed as Silver Sponsor on 90 cm x 180 cm Sponsor Banner at main "
 "entrance"
 msgstr ""
-"logot listado como patrocinadora Prata no cartaz dos Patrocinador de 90 cm x "
+"logo listado como patrocinadora Prata no cartaz dos Patrocinador de 90 cm x "
 "180 cm na entrada principal"
 
 #: templates/sponsor_levels_alone.html:29
@@ -1036,7 +1025,7 @@ msgid ""
 "Name listed as Bronze Sponsor on 90 cm x 180 cm Sponsor Banner at main "
 "entrance"
 msgstr ""
-"logot listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm "
+"logo listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm "
 "x 180 cm na entrada principal"
 
 #: templates/sponsor_levels_alone.html:44
