@@ -7,7 +7,7 @@
 --extra-index-url=http://dist.pinaxproject.com/alpha/
 --extra-index-url=http://dist.pinaxproject.com/fresh-start/
 
-Django==1.4.12
+Django==1.4.22
 django-user-accounts==1.0b7
 #symposion==1.0b1.dev54
 -e git+https://github.com/scipy-latinamerica/symposion.git@scipyla#egg=symposion
