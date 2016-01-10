@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-06 14:54-0200\n"
+"POT-Creation-Date: 2016-01-10 09:07-0200\n"
 "PO-Revision-Date: 2016-01-06 12:07-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -722,6 +722,125 @@ msgstr "Chamada para BoFs "
 msgid "Talk and Poster Presentations Call"
 msgstr "Chamada para Palestras e Posters"
 
+#: templates/participate/presentations.html:13
+#, fuzzy
+#| msgid "Talk and Poster Presentations Call"
+msgid "SciPyLA 2016 Talk and Poster Presentations"
+msgstr "Chamada para Palestras e Posters"
+
+#: templates/participate/presentations.html:20
+msgid "Accepted poster presentations are listed at <a href="
+msgstr ""
+
+#: templates/participate/presentations.html:22
+msgid "The schedulte of talks is listed within the full schedule at  <a href="
+msgstr ""
+
+#: templates/participate/presentations.html:25
+#: templates/participate/tutorials.html:111
+msgid "Call for Submissions"
+msgstr ""
+
+#: templates/participate/presentations.html:27
+#, fuzzy
+#| msgid ""
+#| "SciPy Latin America 2016 Conference, the fourth annual Scientific "
+#| "Computing with Python conference in Latin America, will be held this May "
+#| "16th-20th 2016, in Florianópolis, Brazil. SciPy Latin America is a "
+#| "regional community dedicated to the advancement of scientific computing "
+#| "through open source software for mathematics, science, and engineering "
+#| "mainly developed with Python."
+msgid ""
+"SciPyLA 2016, the fourth annual Scientific Computing with Python in Latin "
+"America conference, will be held this May 16th-20th in Florianópolis, Santa "
+"Catarina, Brazil. SciPy is a community dedicated to the advancement of "
+"scientific computing through open source Python software for mathematics, "
+"science, and engineering. The annual SciPyLA Conference allows participants "
+"from academic, commercial, and governmental organizations to showcase their "
+"latest projects, learn from skilled users and developers, and collaborate on "
+"code development."
+msgstr ""
+"A conferência SciPy Latin America2016, a quarta conferência sobre Computação "
+"Científica em Python na América Latina, será realizada em 16-20 maio de "
+"2016, em Florianópolis, Brasil. SciPy América Latina é uma comunidade "
+"regional dedicada ao avanço da computação científica através de software de "
+"código aberto para a matemática, ciência e engenharia desenvolvidos "
+"principalmente com Python."
+
+#: templates/participate/presentations.html:29
+msgid ""
+"<strong>We invite proposals for 20 minutes talks and poster presentations by "
+"April 1, 2014.</strong>"
+msgstr ""
+
+#: templates/participate/presentations.html:31
+#: templates/participate/tutorials.html:128
+#, fuzzy
+#| msgid "Proposal Details"
+msgid "Proposal Submission"
+msgstr "Detalhes da proposta"
+
+#: templates/participate/presentations.html:33
+#: templates/participate/tutorials.html:130
+#, fuzzy
+#| msgid "To submit a proposal"
+msgid "To submit a proposal, <a href="
+msgstr "Submeter proposta"
+
+#: templates/participate/presentations.html:36
+msgid "Click submit proposal, talk/poster, create new..."
+msgstr ""
+
+#: templates/participate/presentations.html:38
+#: templates/participate/tutorials.html:134
+msgid "For the submission you will need the following information:"
+msgstr ""
+
+#: templates/participate/presentations.html:40
+msgid ""
+"<strong>Brief Description</strong>: The brief description you fill out below "
+"will appear in the online program."
+msgstr ""
+
+#: templates/participate/presentations.html:42
+msgid ""
+"<strong>Detailed Abstract</strong>: Your placement in the program will be "
+"based on reviews of your detailed abstract. This should be a 150-300 words "
+"detailed outline of your presentation. This detailed abstract should "
+"concisely describe software of interest to the SciPy community, tools or "
+"techniques for more effective computing, or how scientific Python was "
+"applied to solve a research problem. A traditional background/motivation, "
+"methods, results, and conclusion structure is encouraged but not required. "
+"Links to project websites, source code repositories, figures, full papers, "
+"and evidence of public speaking ability are encouraged."
+msgstr ""
+
+#: templates/participate/presentations.html:47
+msgid ""
+"Each abstract will be peer-reviewed by multiple members of the Program "
+"Committee Board. Abstracts will be accepted for posters or presentations. "
+"Optional papers to be published in the conference proceedings will be "
+"requested following abstract submission. This year the proceedings will be "
+"made available prior to the conference to help attendees navigate the "
+"conference."
+msgstr ""
+
+#: templates/participate/presentations.html:50
+msgid "Accepted presentations will be announced on May 1st."
+msgstr ""
+
+#: templates/participate/presentations.html:52
+#, fuzzy
+#| msgid "The SciPyLA2016 Organizers"
+msgid "The SciPyLA 2016 Program Chairs"
+msgstr "Os organizadores SciPyLA2016"
+
+#: templates/participate/presentations.html:55
+#, fuzzy
+#| msgid "Federal University of Santa Catarina"
+msgid "Melissa Weber Mendonça, Federal University of Santa Catarina"
+msgstr "Universidade Federal de Santa Catarina"
+
 #: templates/participate/sprints.html:7
 msgid "Sprint Call"
 msgstr "Chamada para Sprint"
@@ -729,6 +848,196 @@ msgstr "Chamada para Sprint"
 #: templates/participate/tutorials.html:7
 msgid "Tutorials Call"
 msgstr "Chamada para tutorial"
+
+#: templates/participate/tutorials.html:13
+#, fuzzy
+#| msgid "SciPyLA 2016 Venue"
+msgid "SciPyLA 2016 Tutorials"
+msgstr "Local SciPyLA 2016"
+
+#: templates/participate/tutorials.html:113
+#, fuzzy
+#| msgid ""
+#| "SciPy Latin America 2016 Conference, the fourth annual Scientific "
+#| "Computing with Python conference in Latin America, will be held this May "
+#| "16th-20th 2016, in Florianópolis, Brazil. SciPy Latin America is a "
+#| "regional community dedicated to the advancement of scientific computing "
+#| "through open source software for mathematics, science, and engineering "
+#| "mainly developed with Python."
+msgid ""
+"SciPyLA 2016, the forth annual Scientific Computing with Python in Latin "
+"America conference, will be held this May 16th-20th in Florianópolis, Santa "
+"Catarina, Brazil. SciPy is a community dedicated to the advancement of "
+"scientific computing through open source Python software for mathematics, "
+"science, and engineering. The annual SciPyLA Conference allows participants "
+"from academic, commercial, and governmental organizations to showcase their "
+"latest projects, learn from skilled users and developers, and collaborate on "
+"code development."
+msgstr ""
+"A conferência SciPy Latin America2016, a quarta conferência sobre Computação "
+"Científica em Python na América Latina, será realizada em 16-20 maio de "
+"2016, em Florianópolis, Brasil. SciPy América Latina é uma comunidade "
+"regional dedicada ao avanço da computação científica através de software de "
+"código aberto para a matemática, ciência e engenharia desenvolvidos "
+"principalmente com Python."
+
+#: templates/participate/tutorials.html:115
+msgid ""
+"The conference will kick off with two days of tutorials. These sessions "
+"provide extremely affordable access to expert training, and consistently "
+"receive fantastic feedback from participants.  "
+msgstr ""
+
+#: templates/participate/tutorials.html:117
+msgid ""
+"<strong>We are now accepting tutorial proposals from individuals or teams "
+"that would like to teach a tutorial at SciPyLA 2016</strong>"
+msgstr ""
+
+#: templates/participate/tutorials.html:119
+msgid ""
+"Whether you are a major contributor to a scientific Python library or an "
+"expert-level user, this is a great opportunity to share your knowledge and "
+"offset some of the costs of your SciPyLA 2016 attendance."
+msgstr ""
+
+#: templates/participate/tutorials.html:121
+msgid "Topics"
+msgstr ""
+
+#: templates/participate/tutorials.html:123
+#, python-format
+msgid ""
+"Tutorials should be focused on covering a well-defined topic in a hands-on "
+"manner.  We want to see attendees coding! We encourage submissions to be "
+"designed to allow at least 50%% of the time for hands-on exercises even if "
+"this means the subject matter needs to be limited."
+msgstr ""
+
+#: templates/participate/tutorials.html:126
+msgid ""
+"For examples of content and format, you can refer to past tutorials from "
+"SciPy tutorial sessions (<a href="
+msgstr ""
+
+#: templates/participate/tutorials.html:132
+msgid "Click submit proposal, tutorials, create new... "
+msgstr ""
+
+#: templates/participate/tutorials.html:136
+msgid ""
+"A short bio of the presenter or team members, containing a description of "
+"past experiences as a trainer/teacher/speaker, and (ideally) links to videos "
+"of these experiences if available."
+msgstr ""
+
+#: templates/participate/tutorials.html:137
+msgid ""
+"Which track the tutorial would fit best in (Introductory, Intermediate, or "
+"Advanced) and, in the case of an Introductory tutorial submission, select "
+"one of the 4 introductory topics."
+msgstr ""
+
+#: templates/participate/tutorials.html:138
+msgid ""
+"A description of the tutorial, suitable for posting on the SciPy website for "
+"attendees to view. It should include the target audience, the expected level "
+"of knowledge prior to the class, and the goals of the class."
+msgstr ""
+
+#: templates/participate/tutorials.html:139
+msgid ""
+"A more detailed outline of the tutorial content including the duration of "
+"each part and exercise sessions. Please include a description of how you "
+"plan to make the tutorial hands-on."
+msgstr ""
+
+#: templates/participate/tutorials.html:140
+msgid ""
+"A list of Python packages that attendees will need to have installed prior "
+"to the class to follow along. Please mention if any packages are not cross "
+"platform. Installation instructions or links to installation documentation "
+"should be provided for packages that are not available through easy_install, "
+"pip, EPD, Anaconda, etc., or that require third party or compiled libraries."
+msgstr ""
+
+#: templates/participate/tutorials.html:141
+msgid ""
+"If available, the tutorial notes, slides, exercise files, and iPython "
+"notebooks, even if they are preliminary."
+msgstr ""
+
+#: templates/participate/tutorials.html:144
+#, fuzzy
+#| msgid "Description"
+msgid "Selection"
+msgstr "Descrição"
+
+#: templates/participate/tutorials.html:146
+msgid ""
+"Accepted tutorials will be announced on April 22nd. Final tutorial materials "
+"and instructions for attendees will be due on May 9th. This will include "
+"final version numbers of required software and a test script that can be run "
+"by attendees to ensure that they have sufficient time to prepare their "
+"laptops before the conference."
+msgstr ""
+
+#: templates/participate/tutorials.html:148
+#, fuzzy
+#| msgid "Important Dates"
+msgid "Important dates:"
+msgstr "Datas Importantes"
+
+#: templates/participate/tutorials.html:151
+#, fuzzy
+#| msgid ""
+#| "March 1st: Initial date for submission of talks, tutorials and posters;"
+msgid "March 1st: Initial date for submission of tutorials"
+msgstr ""
+"01 de Março: data inicial para submissão de palestras, tutoriais e pôsteres;"
+
+#: templates/participate/tutorials.html:152
+#, fuzzy
+#| msgid "April 8th: Deadline for submission of talks, tutorials and posters;"
+msgid "April 8th: Deadline for submission of tutorials"
+msgstr ""
+"08 de Abril: data final para submissão de palestras, tutoriais e pôsteres;"
+
+#: templates/participate/tutorials.html:153
+#, fuzzy
+#| msgid ""
+#| "April 22nd: Notification of acceptance for talks, tutorials and posters;"
+msgid "April 22nd: Notification of acceptance for tutorials"
+msgstr ""
+"22 de Abril: Notificação de aceitação para palestras, tutoriais e pôsteres;"
+
+#: templates/participate/tutorials.html:154
+#, fuzzy
+#| msgid "May 16th-18th: SciPyLA 2016, 2 days of tutorials;"
+msgid "May 16th-18th: SciPyLA 2016, 2 days of tutorials"
+msgstr "16-18 de Maio: SciPyLA 2016, 2 dias de tutoriais;"
+
+#: templates/participate/tutorials.html:157
+#, fuzzy
+#| msgid ""
+#| "We look forward to a very exciting conference and hope to see you at the "
+#| "2016 conference."
+msgid ""
+"We look forward to very exciting tutorials and hope to see you all at the "
+"conference."
+msgstr ""
+"Estamos ansiosos para uma conferência muito emocionante e espero vê-los na "
+"conferência em 2016."
+
+#: templates/participate/tutorials.html:160
+#, fuzzy
+#| msgid "The SciPyLA2016 Organizers"
+msgid "The SciPyLA 2016 Tutorial Chairs"
+msgstr "Os organizadores SciPyLA2016"
+
+#: templates/participate/tutorials.html:163
+msgid "<a href="
+msgstr ""
 
 #: templates/privacy_policy.html:13
 msgid "Information We Collect and How It's Used"
@@ -1025,8 +1334,8 @@ msgid ""
 "Name listed as Bronze Sponsor on 90 cm x 180 cm Sponsor Banner at main "
 "entrance"
 msgstr ""
-"logo listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm "
-"x 180 cm na entrada principal"
+"logo listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm x "
+"180 cm na entrada principal"
 
 #: templates/sponsor_levels_alone.html:44
 msgid "Friend"
