@@ -438,5 +438,53 @@
             "urlaspattern": true, 
             "access_guest": false
         }
+    },
+    {
+        "pk": 19,
+        "model": "sitetree.treeitem",
+        "fields": {
+            "parent": null,
+            "access_restricted": false,
+            "access_permissions": [],
+            "description": "",
+            "insitetree": true,
+            "hint": "",
+            "url": "#",
+            "inbreadcrumbs": true,
+            "title": "Participate",
+            "tree": 1,
+            "access_perm_type": 1,
+            "alias": null,
+            "sort_order": 4,
+            "inmenu": true,
+            "access_loggedin": false,
+            "hidden": false,
+            "urlaspattern": false,
+            "access_guest": false
+        }
+    },
+    {
+        "pk": 20,
+        "model": "sitetree.treeitem",
+        "fields": {
+            "parent": 19,
+            "access_restricted": false,
+            "access_permissions": [],
+            "description": "",
+            "insitetree": true,
+            "hint": "",
+            "url": "tutorials",
+            "inbreadcrumbs": true,
+            "title": "Tutorials",
+            "tree": 1,
+            "access_perm_type": 1,
+            "alias": null,
+            "sort_order": 5,
+            "inmenu": true,
+            "access_loggedin": false,
+            "hidden": false,
+            "urlaspattern": true,
+            "access_guest": false
+        }
     }
 ]
