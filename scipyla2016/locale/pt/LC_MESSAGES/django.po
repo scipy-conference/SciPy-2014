@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-06 14:54-0200\n"
+"POT-Creation-Date: 2016-01-10 18:20-0200\n"
 "PO-Revision-Date: 2016-01-06 12:07-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,10 @@ msgstr ""
 "projeto Pinax patrocinado por <a href='http://eldarion.com/'>Eldarion</a> e "
 "a <a href='http://www.python.org/psf/'>Python Software Foundation</a>."
 
-#: templates/about/about.html:7 templates/about/code_of_conduct.html:7
-#: templates/about/diversity.html:7 templates/about/organizers.html:7
-#: templates/homepage.html:7 templates/keynotes.html:7
-#: templates/participate/plotting_contest.html:7
+#: templates/about/about.html:7 templates/about/ambassadors.html:7
+#: templates/about/code_of_conduct.html:7 templates/about/diversity.html:7
+#: templates/about/organizers.html:7 templates/homepage.html:7
+#: templates/keynotes.html:7 templates/participate/plotting_contest.html:7
 #: templates/privacy_policy.html:7 templates/sponsor_levels.html:7
 #: templates/sponsorship.html:7 templates/venue/directions.html:7
 #: templates/venue/floorplans.html:7 templates/venue/lodging.html:7
@@ -493,11 +493,11 @@ msgstr ""
 "Código de Conduta da conferência está licenciada sob uma Licença Unported "
 "Creative Commons Attribution 3.0."
 
-#: templates/about/diversity.html:13
+#: templates/about/diversity.html:14
 msgid "Diversity Events"
 msgstr "Eventos de Diversidade"
 
-#: templates/about/diversity.html:15
+#: templates/about/diversity.html:16
 msgid ""
 "SciPy2014 has a number of new events to support diversity at this year's "
 "conference."
@@ -505,159 +505,446 @@ msgstr ""
 "SciPy2014 tem uma série de novos eventos para apoiar a diversidade na "
 "conferência deste ano."
 
-#: templates/about/diversity.html:17
+#: templates/about/diversity.html:18
 msgid ""
 "Diversity luncheon on Wednesday, July 9th with speaker sponsored by NumFOCUS"
 msgstr "Almoço Diversidade em XX de maio."
 
-#: templates/about/diversity.html:18
+#: templates/about/diversity.html:19
 msgid "Increased support for diversity scholarships with NumFOCUS"
 msgstr "Maior suporte para bolsas de estudos de diversidade com NumFOCUS"
 
-#: templates/about/diversity.html:19
+#: templates/about/diversity.html:20
 msgid "Partnering with PyLadies of Austin to advertise these activities"
 msgstr "Parceria com a PyLadies de Austin para anunciar essas atividades"
 
-#: templates/about/diversity.html:22
+#: templates/about/diversity.html:23
 msgid "Diversity Statement"
 msgstr "Declaração de diversidade"
 
-#: templates/about/diversity.html:24
+#: templates/about/diversity.html:25
 msgid ""
-"Our goal is to create an inclusive, respectful conference environment that "
-"invites participation from people of all races, ethnicities, genders, ages, "
-"abilities, religions, and sexual orientations. SciPy fully supports and "
-"endorses the Python Software Foundation's <a href='http://www.python.org/psf/"
-"diversity/'>diversity statement</a>."
+"The diversity guideline was extracted from PEP about diversity in pythonist "
+"communities, presented in PyConES 2015, and showed bellow:"
 msgstr ""
-"Nosso objetivo é criar um ambiente de conferência inclusiva, respeitosa, que "
-"convida a participação de pessoas de todas as raças, etnias, gêneros, "
-"idades, habilidades, religiões e orientações sexuais. SciPy apoia plenamente "
-"a <a href='http://www.python.org/psf/diversity/'> declaração diversidade </"
-"a> da Python Software Foundation."
 
-#: templates/about/diversity.html:26
-msgid ""
-"The Python Software Foundation and the global Python community welcome and "
-"encourage participation by everyone. Our community is based on mutual "
-"respect, tolerance, and encouragement, and we are working to help each other "
-"live up to these principles. We want our community to be more diverse: "
-"whoever you are, and whatever your background, we welcome you."
-msgstr ""
-"A Python Software Foundation e a comunidade Python global agradece e "
-"incentiva a participação de todos. Nossa comunidade está baseada no respeito "
-"mútuo, tolerância e encorajamento, e estamos trabalhando para ajudar uns aos "
-"outros viver de acordo com esses princípios. Queremos que nossa comunidade "
-"seja mais diversificada: seja quem você for, e qual for a sua origem, nós "
-"vamos recebê-lo de braços abertos."
+#: templates/about/diversity.html:29
+#, fuzzy
+#| msgid "Institutional"
+msgid "Introduction"
+msgstr "Institucional"
 
-#: templates/about/diversity.html:28
+#: templates/about/diversity.html:31
 msgid ""
-"We are actively seeking to increase the diversity of our attendees, "
-"speakers, and sponsors through our calls for proposals, other open "
-"submission processes, and through dialogue with the larger communities we "
-"serve."
+"This document gives conventions for Python (no matter if it's Python2 or "
+"Python3) communities."
 msgstr ""
-"Nós estamos procurando ativamente para aumentar a diversidade de nossos "
-"participantes, palestrantes e patrocinadores através de nossas chamadas de "
-"propostas, outros processos de submissão aberta, e através do diálogo com as "
-"comunidades maiores que servimos."
 
-#: templates/about/diversity.html:30
+#: templates/about/diversity.html:33
 msgid ""
-"This is an ongoing process. We are talking to our program chairs, program "
-"committees, and various innovators, experts, and organizations about this "
-"goal and about ways they can help us achieve it."
+"This conventions can and should evolve as the community does. Sometimes, "
+"this convention may be quite general, and doesn't fit the quintessence of "
+"your community. In those cases, you should adapt the conventions. The only "
+"restriction, when diverging from the letter, should be to keep the spirit "
+"and the purpose."
 msgstr ""
-"Esse é um processo em andamento. Estamos conversando com os organizadores, "
-"membros, vários especialistas em inovações, e organizações sobre essa meta e "
-"sobre formas que podem nos ajudar a alcançá-la."
-
-#: templates/about/diversity.html:32
-msgid ""
-"Here are some ways you can help us build a more diverse conference "
-"experience:"
-msgstr ""
-"Aqui estão algumas maneiras que você pode ajudar-nos a construir conferência "
-"mais diversificada:"
 
 #: templates/about/diversity.html:35
 msgid ""
-"Recommend appropriate speakers and/or program committee members to the "
-"conference chairs. "
+"The purpose of this document is to give a way to consider and measure "
+"diversity in your community. It's not meant to blame, but to inspire."
 msgstr ""
-"Recomende palestrantes apropriados e/ou membros da comissão para presidir a "
-"conferência."
-
-#: templates/about/diversity.html:36
-msgid ""
-"Forward our call for proposals to relevant affinity groups with the message "
-"that we are looking for a diverse speaker roster."
-msgstr ""
-"Encaminhar nossa chamada de propostas para grupos com afinidade relevantes "
-"com a mensagem de que estamos à procura de uma lista diversificada de "
-"palestrantes."
 
 #: templates/about/diversity.html:37
-msgid ""
-"Suggest to potential speakers that they submit a proposal during our Call "
-"for Proposals conference phase."
+msgid "Acknowledgement"
 msgstr ""
-"Sugerir a potenciais palestrantes que submetam propostas para a conferência "
-"durante a fase de  Chamada de Propostas."
-
-#: templates/about/diversity.html:38
-msgid "Organize community-based public speaking trainings and practice events "
-msgstr ""
-"Organizar treinamentos de fala em público para a comunidade e eventos de "
-"prática"
 
 #: templates/about/diversity.html:39
 msgid ""
-"Suggest ways that the onsite conference experience can be more welcoming and "
-"supportive, free from intimidation and marginalization."
+"This document is shamelessly based on the PEP-0008 document. Thanks for the "
+"structure and for the inspiration. Also, big thanks to the people who helped "
+"with translation and proper wording for the first release. Everyone who has "
+"contributed is listed in the Authors section."
 msgstr ""
-"Sugerir formas que a experiência de conferência no local pode ser mais "
-"acolhedora e solidária, livre de intimidação e da marginalização."
-
-#: templates/about/diversity.html:40
-msgid "Share your ideas and best practices for how we can realize our vision."
-msgstr ""
-"Partilhe as suas ideias e melhores práticas sobre como podemos realizar "
-"nossa visão."
 
 #: templates/about/diversity.html:41
-msgid ""
-"We value diversity in the communities we bring together. We strive to "
-"provide balanced representation of the richness of our collective human "
-"experience, and welcome your contributions to helping us achieve that goal "
-"by following our code of conduct."
+msgid "A Diverse Community is Key for Great Minds"
 msgstr ""
-"Valorizamos diversidade nas comunidades que agregamos. Nós nos esforçamos "
-"para fornecer uma representação equilibrada da riqueza da nossa experiência "
-"humana coletiva, e agradecemos suas contribuições para a alcançar esse "
-"objetivo de seguir nosso código de conduta"
 
-#: templates/about/diversity.html:44
+#: templates/about/diversity.html:43
 msgid ""
-"You may always send an email to <a href='mailto:scipy-organizers@scipy."
-"org'>scipy-organizers@scipy.org</a> with any question, comments, or concerns."
+"One of the most important insights is that diversity matters. The guidelines "
+"provided here are intended to improve the diversity of your community. As "
+"PEP 20 says, \"Diversity counts\". Well, is more like \"Readability counts"
+"\", but you get the point."
 msgstr ""
-"Você pode enviar e-mails para <a href='mailto:scipy-organizers@scipy."
-"org'>scipy-organizers@scipy.org</a> com qualquer pergunta, comentário ou "
-"preocupações."
 
-#: templates/about/diversity.html:46
+#: templates/about/diversity.html:45
 msgid ""
-"Credit for the original version of this document comes from <a href='http://"
-"assets.en.oreilly.com/1/eventprovider/1/ConfDiversity.pdf'>O'Reilly Media</"
-"a> via the <a href='https://us.pycon.org/2014/about/diversity/'>PyCon "
-"diversity statement</a>"
+"Diversity in our Python community is important because without it, the "
+"community is not really part of the society, is not the pythonic point of "
+"view of the society, but an elitist group unaware of the rest."
 msgstr ""
-"Crédito para a versão original deste documento em <a href='http://assets.en."
-"oreilly.com/1/eventprovider/1/ConfDiversity.pdf'>O'Reilly Media</a> via the "
-"<a href='https://us.pycon.org/2014/about/diversity/'>PyCon diversity "
-"statement</a>"
+
+#: templates/about/diversity.html:47
+msgid ""
+"A diversity guide is about always reconsidering the statu quo. Reconsidering "
+"the statu quo is important. Reconsidering our environment is more important. "
+"Reconsidering our own position is most important."
+msgstr ""
+
+#: templates/about/diversity.html:49
+msgid ""
+"But most importantly: nobody expects from us to be perfect; sometimes, we "
+"just don't know. When in doubt, we need to remind the reconsidering part and "
+"use our best judgment. Look at other communities and how they deal with each "
+"specific issue and decide what looks best or has a clearer approach. And "
+"don't hesitate to ask!"
+msgstr ""
+
+#: templates/about/diversity.html:51
+msgid "In particular: be open minded and welcoming."
+msgstr ""
+
+#: templates/about/diversity.html:53
+msgid ""
+"Some other good reasons to improve diversity is because diverse communities:"
+msgstr ""
+
+#: templates/about/diversity.html:56
+msgid "build better products"
+msgstr ""
+
+#: templates/about/diversity.html:57
+msgid "help to make the breachs smaller"
+msgstr ""
+
+#: templates/about/diversity.html:58
+msgid "are more creative"
+msgstr ""
+
+#: templates/about/diversity.html:59
+msgid "are better ready to adapt to the world"
+msgstr ""
+
+#: templates/about/diversity.html:60
+msgid "are happier"
+msgstr ""
+
+#: templates/about/diversity.html:61
+msgid ""
+"If this PEP should defend one reason over the rest, this could be: diversity "
+"for diversity."
+msgstr ""
+
+#: templates/about/diversity.html:66
+msgid "Meritocracy is broken"
+msgstr ""
+
+#: templates/about/diversity.html:68
+msgid ""
+"It is, no matter how painful we feel about it. Most of our achievements "
+"start with a privilege. If we think that we have achieved what we deserve "
+"because of our hard work, we're just avoiding to watch and accept all the "
+"privilege that helped us in the past and all the privilege that is currently "
+"helping us."
+msgstr ""
+
+#: templates/about/diversity.html:70
+msgid ""
+"When we recognise how broken meritocracy is, it's clear that it doesn't work "
+"as system to get the best, but to maintain the statu quo."
+msgstr ""
+
+#: templates/about/diversity.html:72
+msgid ""
+"So if we really want to end the statu quo to get a diverse community, we "
+"need to try different approaches to reach people."
+msgstr ""
+
+#: templates/about/diversity.html:74
+msgid ""
+"This document goes through different (and classic) axes to think about "
+"diversity. Any contribution will be more than welcome."
+msgstr ""
+
+#: templates/about/diversity.html:76
+msgid "Gender"
+msgstr ""
+
+#: templates/about/diversity.html:78
+msgid ""
+"For a community to be diverse, we should find different genders. All the "
+"genders."
+msgstr ""
+
+#: templates/about/diversity.html:80
+msgid ""
+"First of all, that implies that our community accepts that gender is not "
+"necessary binary, and everyone has the right to be addressed according to "
+"his/her desires. It's not only about thinking that gender should not matter. "
+"It matters for many people for different reasons. A diverse community "
+"rejoices with all points of view."
+msgstr ""
+
+#: templates/about/diversity.html:82
+msgid ""
+"Secondly, representativity. A diverse community is glad and expecting "
+"diversity in the higher positions. Decisions should be taken representing "
+"the group and we can only achieve it having representation in the whole "
+"hierarchy."
+msgstr ""
+
+#: templates/about/diversity.html:84
+msgid "Sexual Orientation"
+msgstr ""
+
+#: templates/about/diversity.html:86
+msgid ""
+"For a community to be diverse, we need to be sure that nobody is being "
+"rejected because of bigot behaviours."
+msgstr ""
+
+#: templates/about/diversity.html:88
+msgid ""
+"Sexual orientation is not obvious to know, nor necessary; but a good point "
+"is to have a place where people openly rejects homophobia in all its "
+"manifestations. A place where being gay or lesbian doesn't mean to be "
+"pointed out."
+msgstr ""
+
+#: templates/about/diversity.html:90
+msgid "Age"
+msgstr ""
+
+#: templates/about/diversity.html:92
+msgid "For a community to be diverse, we should find people of different ages."
+msgstr ""
+
+#: templates/about/diversity.html:94
+msgid ""
+"All ages, from children to elder people, the message should be: this new "
+"technology is for everyone. Even if it's thought for young people, we can "
+"make it more accesible to everybody. We believe that anyone can keep "
+"learning, and we can provide help and resources for them."
+msgstr ""
+
+#: templates/about/diversity.html:96
+msgid ""
+"A diverse community also has in mind that people grow and sometimes have "
+"children. We can make easy for them to continue being part of the community, "
+"offering childcare when possible."
+msgstr ""
+
+#: templates/about/diversity.html:98
+msgid "Ability"
+msgstr ""
+
+#: templates/about/diversity.html:100
+msgid ""
+"For a community to be diverse, we should find people with functional "
+"diversity."
+msgstr ""
+
+#: templates/about/diversity.html:102
+msgid ""
+"Meaning that we care about being accesible for everyone: from impaired to "
+"people in wheel chair, everyone should feel welcome. We all use technology, "
+"but we just don't see it because it's deeply adapted to us: smartphones, "
+"keys, glasses... A diverse community takes in mind accessibility, and is "
+"resourceful helping others."
+msgstr ""
+
+#: templates/about/diversity.html:104
+msgid "Origin"
+msgstr ""
+
+#: templates/about/diversity.html:106
+msgid ""
+"For a community to be diverse, we should find people from different origins."
+msgstr ""
+
+#: templates/about/diversity.html:108
+msgid ""
+"If we have neighbors from everywhere, we should find them in our Python "
+"community. Think about the social structures and the reasons for not finding "
+"immigrants, for instance, in our community: it can be the access to the "
+"information, or it can be the result of subtle (or not subtle at all) "
+"discrimination based on origin."
+msgstr ""
+
+#: templates/about/diversity.html:110
+msgid "Economic status"
+msgstr ""
+
+#: templates/about/diversity.html:112
+msgid ""
+"For a community to be diverse, we should find different social/economic "
+"statuses."
+msgstr ""
+
+#: templates/about/diversity.html:114
+msgid ""
+"The mere existence of social statuses itself is an evidence of something "
+"going wrong. It's one of the most powerful ways to keep statu quo through "
+"nepotism or mere recommendation system. A symptom of a community to be quite "
+"good is if we don't know everyone, and we see new people coming into the "
+"group even if they don't know anyone. That means that the group is open and "
+"welcoming and that the group makes the effort to reach people outside the "
+"close circles."
+msgstr ""
+
+#: templates/about/diversity.html:116
+msgid "Access to Studies"
+msgstr ""
+
+#: templates/about/diversity.html:118
+msgid "For a community to be diverse, we should find different studies levels."
+msgstr ""
+
+#: templates/about/diversity.html:120
+msgid ""
+"All levels. Having a university degree shouldn't be a requirement to be part "
+"of a technological group. A diverse community doesn't expect knowledge from "
+"newcomers; on the contrary, a diverse community offers knowledge to them."
+msgstr ""
+
+#: templates/about/diversity.html:122
+msgid "Focus Inside the Technology"
+msgstr ""
+
+#: templates/about/diversity.html:124
+msgid ""
+"For a community to be diverse, we should find different approaches for the "
+"community."
+msgstr ""
+
+#: templates/about/diversity.html:126
+msgid ""
+"All approaches. A diverse community shouldn't expect from anyone to be a "
+"programmer. There are many ways to contribute in a group, all of them "
+"important and makes us improve in different ways: programming of course, but "
+"also documenting, mentoring, energizing the community, creating a safe "
+"place, worrying about the health and happiness of its members."
+msgstr ""
+
+#: templates/about/diversity.html:128
+msgid "Other Interests in General"
+msgstr ""
+
+#: templates/about/diversity.html:130
+msgid ""
+"For a community to be diverse, we should find different other insterests."
+msgstr ""
+
+#: templates/about/diversity.html:132
+msgid ""
+"All of them. A diverse community should not expect any particular interest, "
+"but accept and welcome all of them. People is diverse, people like different "
+"things, and this other interests make them better and happier and all of us "
+"could always learn something new. Embrace the otherness."
+msgstr ""
+
+#: templates/about/diversity.html:134
+msgid "Other Interests in Technology"
+msgstr ""
+
+#: templates/about/diversity.html:136
+msgid ""
+"For a community to be diverse, we should find different other tech "
+"insterests."
+msgstr ""
+
+#: templates/about/diversity.html:138
+msgid ""
+"All of them. A diverse community doesn't discriminate anyone because his/her "
+"choice of other technologies. A diverse Python community is more focused on "
+"teaching, learning and enjoying Python than ranting against regexp(any other "
+"programming language). Different approaches enlarge our own vision. If not, "
+"just don't be an asshole."
+msgstr ""
+
+#: templates/about/diversity.html:140
+msgid "Hint"
+msgstr ""
+
+#: templates/about/diversity.html:142
+msgid ""
+"There are different ways to know if we are part of a diverse community. Some "
+"of them are measuring the obvious otherness. But we can also think of how "
+"many times we feel uncomfortable with a new insight, that makes us "
+"reconsider our position. And also, how many times we find ourselves with new "
+"unexpected interests."
+msgstr ""
+
+#: templates/about/diversity.html:144
+msgid "Bonus: pepa.py"
+msgstr ""
+
+#: templates/about/diversity.html:146
+msgid ""
+"This document is meant as a starting point for self evaluation. As it can be "
+"difficult to think of all of these topics, we can find a script which "
+"implements the consistency with the purpose of this PEP. The pepa.py script "
+"is opensource and contributions are welcome."
+msgstr ""
+
+#: templates/about/diversity.html:148
+msgid "Source: https://github.com/yamila-moreno/pepa/blob/master/pepa.py"
+msgstr ""
+
+#: templates/about/diversity.html:150
+msgid "Bonus: why this codename"
+msgstr ""
+
+#: templates/about/diversity.html:152
+msgid ""
+"The codename is a word play. On one hand it comes from the Python "
+"Enhancement Proposals, aka, PEPs. On the other hand, as this document was "
+"presented in III Pycon Spain, it references a historical moment in Spain: in "
+"1812 was presented the first Contitution in Spain, the first time ever "
+"talking about the rights of citizens. This Constitution was commonly known "
+"as Pepa."
+msgstr ""
+
+#: templates/about/diversity.html:154
+msgid "References"
+msgstr ""
+
+#: templates/about/diversity.html:162
+msgid "Copyright"
+msgstr ""
+
+#: templates/about/diversity.html:164
+msgid "This document has been placed in the public domain."
+msgstr ""
+
+#: templates/about/diversity.html:166
+msgid "Source:"
+msgstr ""
+
+#: templates/about/diversity.html:172
+#, fuzzy
+#| msgid "Institutional"
+msgid "Contributions"
+msgstr "Institucional"
+
+#: templates/about/diversity.html:174
+msgid ""
+"Contributions are more than welcome; please, use pull requests system of "
+"Github to propose changes. Include in your PR your name added to this "
+"Authors list."
+msgstr ""
+
+#: templates/about/diversity.html:176
+msgid ""
+"If you're not familiar with pull requests system, open an issue and I'll "
+"answer as soon as possible."
+msgstr ""
+
+#: templates/about/diversity.html:178
+msgid "Authors"
+msgstr ""
 
 #: templates/about/what_next.html:6 templates/about/what_next.html.py:9
 msgid "What Next?"
@@ -713,7 +1000,8 @@ msgstr "Verifique a revisão das edições anteriores:"
 msgid "Follow"
 msgstr "Seguir"
 
-#: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
+#: templates/participate/bofs.html:7
+#: templates/participate/financial_aid.html:7
 #: templates/participate/wssspe.html:7
 msgid "BoFs Call"
 msgstr "Chamada para BoFs "
@@ -1025,8 +1313,8 @@ msgid ""
 "Name listed as Bronze Sponsor on 90 cm x 180 cm Sponsor Banner at main "
 "entrance"
 msgstr ""
-"logo listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm "
-"x 180 cm na entrada principal"
+"logo listado como patrocinadora Bronze no cartaz dos Patrocinador de 90 cm x "
+"180 cm na entrada principal"
 
 #: templates/sponsor_levels_alone.html:44
 msgid "Friend"
@@ -1308,3 +1596,129 @@ msgstr ""
 "+municipais&menu=6'>parques</a>, <a href='http://www.pmf.sc.gov.br/entidades/"
 "turismo/index.php?cms=atrativos+turisticos+culturais&menu=6'>museus</a>, e "
 "<a href='http://www.floripacreativecity.com/'>restaurantes</a>."
+
+#~ msgid ""
+#~ "Our goal is to create an inclusive, respectful conference environment "
+#~ "that invites participation from people of all races, ethnicities, "
+#~ "genders, ages, abilities, religions, and sexual orientations. SciPy fully "
+#~ "supports and endorses the Python Software Foundation's <a href='http://"
+#~ "www.python.org/psf/diversity/'>diversity statement</a>."
+#~ msgstr ""
+#~ "Nosso objetivo é criar um ambiente de conferência inclusiva, respeitosa, "
+#~ "que convida a participação de pessoas de todas as raças, etnias, gêneros, "
+#~ "idades, habilidades, religiões e orientações sexuais. SciPy apoia "
+#~ "plenamente a <a href='http://www.python.org/psf/diversity/'> declaração "
+#~ "diversidade </a> da Python Software Foundation."
+
+#~ msgid ""
+#~ "The Python Software Foundation and the global Python community welcome "
+#~ "and encourage participation by everyone. Our community is based on mutual "
+#~ "respect, tolerance, and encouragement, and we are working to help each "
+#~ "other live up to these principles. We want our community to be more "
+#~ "diverse: whoever you are, and whatever your background, we welcome you."
+#~ msgstr ""
+#~ "A Python Software Foundation e a comunidade Python global agradece e "
+#~ "incentiva a participação de todos. Nossa comunidade está baseada no "
+#~ "respeito mútuo, tolerância e encorajamento, e estamos trabalhando para "
+#~ "ajudar uns aos outros viver de acordo com esses princípios. Queremos que "
+#~ "nossa comunidade seja mais diversificada: seja quem você for, e qual for "
+#~ "a sua origem, nós vamos recebê-lo de braços abertos."
+
+#~ msgid ""
+#~ "We are actively seeking to increase the diversity of our attendees, "
+#~ "speakers, and sponsors through our calls for proposals, other open "
+#~ "submission processes, and through dialogue with the larger communities we "
+#~ "serve."
+#~ msgstr ""
+#~ "Nós estamos procurando ativamente para aumentar a diversidade de nossos "
+#~ "participantes, palestrantes e patrocinadores através de nossas chamadas "
+#~ "de propostas, outros processos de submissão aberta, e através do diálogo "
+#~ "com as comunidades maiores que servimos."
+
+#~ msgid ""
+#~ "This is an ongoing process. We are talking to our program chairs, program "
+#~ "committees, and various innovators, experts, and organizations about this "
+#~ "goal and about ways they can help us achieve it."
+#~ msgstr ""
+#~ "Esse é um processo em andamento. Estamos conversando com os "
+#~ "organizadores, membros, vários especialistas em inovações, e organizações "
+#~ "sobre essa meta e sobre formas que podem nos ajudar a alcançá-la."
+
+#~ msgid ""
+#~ "Here are some ways you can help us build a more diverse conference "
+#~ "experience:"
+#~ msgstr ""
+#~ "Aqui estão algumas maneiras que você pode ajudar-nos a construir "
+#~ "conferência mais diversificada:"
+
+#~ msgid ""
+#~ "Recommend appropriate speakers and/or program committee members to the "
+#~ "conference chairs. "
+#~ msgstr ""
+#~ "Recomende palestrantes apropriados e/ou membros da comissão para presidir "
+#~ "a conferência."
+
+#~ msgid ""
+#~ "Forward our call for proposals to relevant affinity groups with the "
+#~ "message that we are looking for a diverse speaker roster."
+#~ msgstr ""
+#~ "Encaminhar nossa chamada de propostas para grupos com afinidade "
+#~ "relevantes com a mensagem de que estamos à procura de uma lista "
+#~ "diversificada de palestrantes."
+
+#~ msgid ""
+#~ "Suggest to potential speakers that they submit a proposal during our Call "
+#~ "for Proposals conference phase."
+#~ msgstr ""
+#~ "Sugerir a potenciais palestrantes que submetam propostas para a "
+#~ "conferência durante a fase de  Chamada de Propostas."
+
+#~ msgid ""
+#~ "Organize community-based public speaking trainings and practice events "
+#~ msgstr ""
+#~ "Organizar treinamentos de fala em público para a comunidade e eventos de "
+#~ "prática"
+
+#~ msgid ""
+#~ "Suggest ways that the onsite conference experience can be more welcoming "
+#~ "and supportive, free from intimidation and marginalization."
+#~ msgstr ""
+#~ "Sugerir formas que a experiência de conferência no local pode ser mais "
+#~ "acolhedora e solidária, livre de intimidação e da marginalização."
+
+#~ msgid ""
+#~ "Share your ideas and best practices for how we can realize our vision."
+#~ msgstr ""
+#~ "Partilhe as suas ideias e melhores práticas sobre como podemos realizar "
+#~ "nossa visão."
+
+#~ msgid ""
+#~ "We value diversity in the communities we bring together. We strive to "
+#~ "provide balanced representation of the richness of our collective human "
+#~ "experience, and welcome your contributions to helping us achieve that "
+#~ "goal by following our code of conduct."
+#~ msgstr ""
+#~ "Valorizamos diversidade nas comunidades que agregamos. Nós nos esforçamos "
+#~ "para fornecer uma representação equilibrada da riqueza da nossa "
+#~ "experiência humana coletiva, e agradecemos suas contribuições para a "
+#~ "alcançar esse objetivo de seguir nosso código de conduta"
+
+#~ msgid ""
+#~ "You may always send an email to <a href='mailto:scipy-organizers@scipy."
+#~ "org'>scipy-organizers@scipy.org</a> with any question, comments, or "
+#~ "concerns."
+#~ msgstr ""
+#~ "Você pode enviar e-mails para <a href='mailto:scipy-organizers@scipy."
+#~ "org'>scipy-organizers@scipy.org</a> com qualquer pergunta, comentário ou "
+#~ "preocupações."
+
+#~ msgid ""
+#~ "Credit for the original version of this document comes from <a "
+#~ "href='http://assets.en.oreilly.com/1/eventprovider/1/ConfDiversity."
+#~ "pdf'>O'Reilly Media</a> via the <a href='https://us.pycon.org/2014/about/"
+#~ "diversity/'>PyCon diversity statement</a>"
+#~ msgstr ""
+#~ "Crédito para a versão original deste documento em <a href='http://assets."
+#~ "en.oreilly.com/1/eventprovider/1/ConfDiversity.pdf'>O'Reilly Media</a> "
+#~ "via the <a href='https://us.pycon.org/2014/about/diversity/'>PyCon "
+#~ "diversity statement</a>"
