@@ -10,7 +10,8 @@
 
 {% block body %}
 
-<h1>{% trans "Diversity Events" %}</h1>
+<!--
+<h2>{% trans "Diversity Events" %}</h2>
 
 <p>{% trans "SciPy2014 has a number of new events to support diversity at this year's conference." %}</p>
 <ul>
@@ -18,32 +19,170 @@
     <li>{% trans "Increased support for diversity scholarships with NumFOCUS" %}</li>
     <li>{% trans "Partnering with PyLadies of Austin to advertise these activities" %}</li>
 </ul>
-
+-->
 <h1>{% trans "Diversity Statement" %}</h1>
 
-<p>{% trans "Our goal is to create an inclusive, respectful conference environment that invites participation from people of all races, ethnicities, genders, ages, abilities, religions, and sexual orientations. SciPy fully supports and endorses the Python Software Foundation's <a href='http://www.python.org/psf/diversity/'>diversity statement</a>." %}</p>
+{% trans "The diversity guideline was extracted from PEP about diversity in pythonist communities, presented in PyConES 2015, and showed bellow:" %}
 
-<p>{% trans "The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you." %}</p>
+<hr/>
 
-<p>{% trans "We are actively seeking to increase the diversity of our attendees, speakers, and sponsors through our calls for proposals, other open submission processes, and through dialogue with the larger communities we serve." %}</p>
+<h2>{% trans "Introduction" %}</h2>
 
-<p>{% trans "This is an ongoing process. We are talking to our program chairs, program committees, and various innovators, experts, and organizations about this goal and about ways they can help us achieve it." %}</p>
+<p>{% trans "This document gives conventions for Python (no matter if it's Python2 or Python3) communities." %}</p>
 
-<p>{% trans "Here are some ways you can help us build a more diverse conference experience:" %}</p>
+<p>{% trans "This conventions can and should evolve as the community does. Sometimes, this convention may be quite general, and doesn't fit the quintessence of your community. In those cases, you should adapt the conventions. The only restriction, when diverging from the letter, should be to keep the spirit and the purpose." %}</p>
+
+<p>{% trans "The purpose of this document is to give a way to consider and measure diversity in your community. It's not meant to blame, but to inspire." %}</p>
+
+<h2>{% trans "Acknowledgement" %}</h2>
+
+<p>{% trans "This document is shamelessly based on the PEP-0008 document. Thanks for the structure and for the inspiration. Also, big thanks to the people who helped with translation and proper wording for the first release. Everyone who has contributed is listed in the Authors section." %}</p>
+
+<h2>{% trans "A Diverse Community is Key for Great Minds" %}</h2>
+
+<p>{% trans 'One of the most important insights is that diversity matters. The guidelines provided here are intended to improve the diversity of your community. As PEP 20 says, "Diversity counts". Well, is more like "Readability counts", but you get the point.' %}</p>
+
+<p>{% trans "Diversity in our Python community is important because without it, the community is not really part of the society, is not the pythonic point of view of the society, but an elitist group unaware of the rest." %}</p>
+
+<p>{% trans "A diversity guide is about always reconsidering the statu quo. Reconsidering the statu quo is important. Reconsidering our environment is more important. Reconsidering our own position is most important." %}</p>
+
+<p>{% trans "But most importantly: nobody expects from us to be perfect; sometimes, we just don't know. When in doubt, we need to remind the reconsidering part and use our best judgment. Look at other communities and how they deal with each specific issue and decide what looks best or has a clearer approach. And don't hesitate to ask!" %}</p>
+
+<p>{% trans "In particular: be open minded and welcoming." %}</p>
+
+<p>{% trans "Some other good reasons to improve diversity is because diverse communities:" %}</p>
 
 <ul>
-    <li>{% trans "Recommend appropriate speakers and/or program committee members to the conference chairs. " %}</li>
-    <li>{% trans "Forward our call for proposals to relevant affinity groups with the message that we are looking for a diverse speaker roster." %}</li>
-    <li>{% trans "Suggest to potential speakers that they submit a proposal during our Call for Proposals conference phase." %}</li>
-    <li>{% trans "Organize community-based public speaking trainings and practice events " %}</li>
-    <li>{% trans "Suggest ways that the onsite conference experience can be more welcoming and supportive, free from intimidation and marginalization." %}</li>
-    <li>{% trans "Share your ideas and best practices for how we can realize our vision." %}</li>
-    <li>{% trans "We value diversity in the communities we bring together. We strive to provide balanced representation of the richness of our collective human experience, and welcome your contributions to helping us achieve that goal by following our code of conduct." %}</li>
+    <li>{% trans "build better products" %}</li>
+    <li>{% trans "help to make the breachs smaller" %}</li>
+    <li>{% trans "are more creative" %}</li>
+    <li>{% trans "are better ready to adapt to the world" %}</li>
+    <li>{% trans "are happier" %}</li>
+    <li>{% trans "If this PEP should defend one reason over the rest, this could be: diversity for diversity." %}</li>
 </ul>
 
-<p>{% trans "You may always send an email to <a href='mailto:scipy-organizers@scipy.org'>scipy-organizers@scipy.org</a> with any question, comments, or concerns." %}</p>
+<p></p>
 
-<p>{% trans "Credit for the original version of this document comes from <a href='http://assets.en.oreilly.com/1/eventprovider/1/ConfDiversity.pdf'>O'Reilly Media</a> via the <a href='https://us.pycon.org/2014/about/diversity/'>PyCon diversity statement</a>" %}</p>
+<h2>{% trans "Meritocracy is broken" %}</h2>
 
+<p>{% trans "It is, no matter how painful we feel about it. Most of our achievements start with a privilege. If we think that we have achieved what we deserve because of our hard work, we're just avoiding to watch and accept all the privilege that helped us in the past and all the privilege that is currently helping us." %}</p>
+
+<p>{% trans "When we recognise how broken meritocracy is, it's clear that it doesn't work as system to get the best, but to maintain the statu quo." %}</p>
+
+<p>{% trans "So if we really want to end the statu quo to get a diverse community, we need to try different approaches to reach people." %}</p>
+
+<p>{% trans "This document goes through different (and classic) axes to think about diversity. Any contribution will be more than welcome." %}</p>
+
+<h2>{% trans "Gender" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different genders. All the genders." %}</p>
+
+<p>{% trans "First of all, that implies that our community accepts that gender is not necessary binary, and everyone has the right to be addressed according to his/her desires. It's not only about thinking that gender should not matter. It matters for many people for different reasons. A diverse community rejoices with all points of view." %}</p>
+
+<p>{% trans "Secondly, representativity. A diverse community is glad and expecting diversity in the higher positions. Decisions should be taken representing the group and we can only achieve it having representation in the whole hierarchy." %}</p>
+
+<h2>{% trans "Sexual Orientation" %}</h2>
+
+<p>{% trans "For a community to be diverse, we need to be sure that nobody is being rejected because of bigot behaviours." %}</p>
+
+<p>{% trans "Sexual orientation is not obvious to know, nor necessary; but a good point is to have a place where people openly rejects homophobia in all its manifestations. A place where being gay or lesbian doesn't mean to be pointed out." %}</p>
+
+<h2>{% trans "Age" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find people of different ages." %}</p>
+
+<p>{% trans "All ages, from children to elder people, the message should be: this new technology is for everyone. Even if it's thought for young people, we can make it more accesible to everybody. We believe that anyone can keep learning, and we can provide help and resources for them." %}</p>
+
+<p>{% trans "A diverse community also has in mind that people grow and sometimes have children. We can make easy for them to continue being part of the community, offering childcare when possible." %}</p>
+
+<h2>{% trans "Ability" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find people with functional diversity." %}</p>
+
+<p>{% trans "Meaning that we care about being accesible for everyone: from impaired to people in wheel chair, everyone should feel welcome. We all use technology, but we just don't see it because it's deeply adapted to us: smartphones, keys, glasses... A diverse community takes in mind accessibility, and is resourceful helping others." %}</p>
+
+<h2>{% trans "Origin" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find people from different origins." %}</p>
+
+<p>{% trans "If we have neighbors from everywhere, we should find them in our Python community. Think about the social structures and the reasons for not finding immigrants, for instance, in our community: it can be the access to the information, or it can be the result of subtle (or not subtle at all) discrimination based on origin." %}</p>
+
+<h2>{% trans "Economic status" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different social/economic statuses." %}</p>
+
+<p>{% trans "The mere existence of social statuses itself is an evidence of something going wrong. It's one of the most powerful ways to keep statu quo through nepotism or mere recommendation system. A symptom of a community to be quite good is if we don't know everyone, and we see new people coming into the group even if they don't know anyone. That means that the group is open and welcoming and that the group makes the effort to reach people outside the close circles." %}</p>
+
+<h2>{% trans "Access to Studies" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different studies levels." %}</p>
+
+<p>{% trans "All levels. Having a university degree shouldn't be a requirement to be part of a technological group. A diverse community doesn't expect knowledge from newcomers; on the contrary, a diverse community offers knowledge to them." %}</p>
+
+<h2>{% trans "Focus Inside the Technology" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different approaches for the community." %}</p>
+
+<p>{% trans "All approaches. A diverse community shouldn't expect from anyone to be a programmer. There are many ways to contribute in a group, all of them important and makes us improve in different ways: programming of course, but also documenting, mentoring, energizing the community, creating a safe place, worrying about the health and happiness of its members." %}</p>
+
+<h2>{% trans "Other Interests in General" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different other insterests." %}</p>
+
+<p>{% trans "All of them. A diverse community should not expect any particular interest, but accept and welcome all of them. People is diverse, people like different things, and this other interests make them better and happier and all of us could always learn something new. Embrace the otherness." %}</p>
+
+<h2>{% trans "Other Interests in Technology" %}</h2>
+
+<p>{% trans "For a community to be diverse, we should find different other tech insterests." %}</p>
+
+<p>{% trans "All of them. A diverse community doesn't discriminate anyone because his/her choice of other technologies. A diverse Python community is more focused on teaching, learning and enjoying Python than ranting against regexp(any other programming language). Different approaches enlarge our own vision. If not, just don't be an asshole." %}</p>
+
+<h2>{% trans "Hint" %}</h2>
+
+<p>{% trans "There are different ways to know if we are part of a diverse community. Some of them are measuring the obvious otherness. But we can also think of how many times we feel uncomfortable with a new insight, that makes us reconsider our position. And also, how many times we find ourselves with new unexpected interests." %}</p>
+
+<h2>{% trans "Bonus: pepa.py" %}</h2>
+
+<p>{% trans "This document is meant as a starting point for self evaluation. As it can be difficult to think of all of these topics, we can find a script which implements the consistency with the purpose of this PEP. The pepa.py script is opensource and contributions are welcome." %}</p>
+
+<p>{% trans "Source: https://github.com/yamila-moreno/pepa/blob/master/pepa.py" %}</p>
+
+<h2>{% trans "Bonus: why this codename" %}</h2>
+
+<p>{% trans "The codename is a word play. On one hand it comes from the Python Enhancement Proposals, aka, PEPs. On the other hand, as this document was presented in III Pycon Spain, it references a historical moment in Spain: in 1812 was presented the first Contitution in Spain, the first time ever talking about the rights of citizens. This Constitution was commonly known as Pepa." %}</p>
+
+<h2>{% trans "References" %}</h2>
+
+<p>PEP-8:
+    <a href="PEP-8: https://www.python.org/dev/peps/pep-0008/">
+    https://www.python.org/dev/peps/pep-0008/
+    </a>
+</p>
+
+<h2>{% trans "Copyright" %}</h2>
+
+<p>{% trans "This document has been placed in the public domain." %}</p>
+
+<p>{% trans "Source:" %}
+    <a href="http://github.com/yamila-moreno/pepa">
+        http://github.com/yamila-moreno/pepa
+    </a>
+</p>
+
+<h2>{% trans "Contributions" %}</h2>
+
+<p>{% trans "Contributions are more than welcome; please, use pull requests system of Github to propose changes. Include in your PR your name added to this Authors list." %}</p>
+
+<p>{% trans "If you're not familiar with pull requests system, open an issue and I'll answer as soon as possible." %}</p>
+
+<h2>{% trans "Authors" %}</h2>
+
+<ul>
+    <li>Yamila Moreno (@yamila-moreno)</li>
+    <li>Alejandro Guirao (@lekum)</li>
+    <li>TankorSmash (@tankorsmash)</li>
+    <li>Juan Luis Cano Rodríguez (@Juanlu001)</li>
+    <li>Iacopo Spalletti (@yakky)</li>
+</ul>
 
 {% endblock %}
