@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-10 09:07-0200\n"
+"POT-Creation-Date: 2016-01-10 09:17-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -564,11 +564,16 @@ msgid "SciPyLA 2016 Talk and Poster Presentations"
 msgstr ""
 
 #: templates/participate/presentations.html:20
-msgid "Accepted poster presentations are listed at <a href="
+msgid ""
+"Accepted poster presentations are listed at <a href='https://conference."
+"scipy.org/scipyla2016/posters/'>conference.scipy.org/scipyla2016/posters</a>."
 msgstr ""
 
 #: templates/participate/presentations.html:22
-msgid "The schedulte of talks is listed within the full schedule at  <a href="
+msgid ""
+"The schedulte of talks is listed within the full schedule at  <a "
+"href='https://conference.scipy.org/scipyla2016/schedule/'>conference.scipy."
+"org/scipyla2016/schedule</a>."
 msgstr ""
 
 #: templates/participate/presentations.html:25
@@ -601,7 +606,12 @@ msgstr ""
 
 #: templates/participate/presentations.html:33
 #: templates/participate/tutorials.html:130
-msgid "To submit a proposal, <a href="
+msgid ""
+"To submit a proposal, <a href='https://conference.scipy.org/scipyla2016/"
+"account/signup/'>sign up</a> or <a href='https://conference.scipy.org/"
+"scipyla2016/account/login/'>log in</a> to your account and proceed to your "
+"<a href='https://conference.scipy.org/scipyla2016/dashboard/'>account "
+"dashboard</a>."
 msgstr ""
 
 #: templates/participate/presentations.html:36
@@ -714,7 +724,12 @@ msgstr ""
 #: templates/participate/tutorials.html:126
 msgid ""
 "For examples of content and format, you can refer to past tutorials from "
-"SciPy tutorial sessions (<a href="
+"SciPy tutorial sessions (<a href='http://conference.scipy.org/scipy2015/"
+"participate/tutorials/' target='_blank'>SciPy2015</a>, <a href='http://"
+"conference.scipy.org/scipy2014/participate/tutorials/' "
+"target='_blank'>SciPy2014</a>).  We are looking for awesome techniques or "
+"packages, helping new or advanced python programmers develop better or "
+"faster scientific applications."
 msgstr ""
 
 #: templates/participate/tutorials.html:132
@@ -808,7 +823,10 @@ msgid "The SciPyLA 2016 Tutorial Chairs"
 msgstr ""
 
 #: templates/participate/tutorials.html:163
-msgid "<a href="
+msgid ""
+"<a href='mailto:jeudy.blanco@cinespa.ucr.ac.cr'>Jeudy Blanco</a>, Professor "
+"and researcher at <a href='http://cinespa.ucr.ac.cr/'>CINESPA</a>, "
+"Universidad de Costa Rica"
 msgstr ""
 
 #: templates/privacy_policy.html:13
