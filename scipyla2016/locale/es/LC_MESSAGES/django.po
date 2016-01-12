@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 23:20-0200\n"
+"POT-Creation-Date: 2016-01-11 23:27-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -829,6 +829,78 @@ msgstr ""
 
 #: templates/about/diversity.html:178
 msgid "Authors"
+msgstr ""
+
+#: templates/about/organizers.html:14
+msgid "The SciPyLA 2016 Organization Team"
+msgstr ""
+
+#: templates/about/organizers.html:16
+msgid "Executive Committee"
+msgstr ""
+
+#: templates/about/organizers.html:18
+msgid "Conference Chair:"
+msgstr ""
+
+#: templates/about/organizers.html:26
+msgid "Academic Chair:"
+msgstr ""
+
+#: templates/about/organizers.html:33
+msgid "Scientific Chair:"
+msgstr ""
+
+#: templates/about/organizers.html:41
+msgid "Communications:"
+msgstr ""
+
+#: templates/about/organizers.html:49
+msgid "Birds of Feathers:"
+msgstr ""
+
+#: templates/about/organizers.html:57
+msgid "Proceedings:"
+msgstr ""
+
+#: templates/about/organizers.html:65
+msgid "Financial Aid:"
+msgstr ""
+
+#: templates/about/organizers.html:74
+msgid "Tutorials:"
+msgstr ""
+
+#: templates/about/organizers.html:82
+msgid "Sprints:"
+msgstr ""
+
+#: templates/about/organizers.html:91
+msgid "Technical:"
+msgstr ""
+
+#: templates/about/organizers.html:99
+msgid "Sponsors:"
+msgstr ""
+
+#: templates/about/organizers.html:107
+msgid "Financial:"
+msgstr ""
+
+#: templates/about/organizers.html:115
+msgid "Logistics"
+msgstr ""
+
+#: templates/about/organizers.html:123
+msgid "Program Committee"
+msgstr ""
+
+#: templates/about/organizers.html:138
+msgid "Mini Symposiums Committee"
+msgstr ""
+
+#: templates/about/organizers.html:149
+msgid "Diversity Committee"
 msgstr ""
 
 #: templates/about/what_next.html:6 templates/about/what_next.html.py:9
