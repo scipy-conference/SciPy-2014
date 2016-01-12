@@ -513,7 +513,7 @@
             "description": "", 
             "insitetree": true, 
             "hint": "", 
-            "url": "participate/ambassadors", 
+            "url": "ambassadors", 
             "inbreadcrumbs": true, 
             "title": "Ambassadors", 
             "tree": 1, 
@@ -523,7 +523,7 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": false, 
+            "urlaspattern": true, 
             "access_guest": false
         }
     }, 
@@ -993,7 +993,7 @@
             "description": "", 
             "insitetree": true, 
             "hint": "", 
-            "url": "participate/ambassadors", 
+            "url": "ambassadors", 
             "inbreadcrumbs": true, 
             "title": "Embaixadores", 
             "tree": 2, 
@@ -1003,7 +1003,7 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": false, 
+            "urlaspattern": true, 
             "access_guest": false
         }
     }, 
@@ -1449,7 +1449,7 @@
             "description": "", 
             "insitetree": true, 
             "hint": "", 
-            "url": "participate/ambassadors", 
+            "url": "ambassadors", 
             "inbreadcrumbs": true, 
             "title": "Embaixadores", 
             "tree": 3, 
@@ -1459,7 +1459,7 @@
             "inmenu": true, 
             "access_loggedin": false, 
             "hidden": false, 
-            "urlaspattern": false, 
+            "urlaspattern": true, 
             "access_guest": false
         }
     }
