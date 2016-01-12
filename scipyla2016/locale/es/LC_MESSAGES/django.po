@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 23:27-0200\n"
+"POT-Creation-Date: 2016-01-12 17:44-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,11 @@ msgid ""
 "href='http://www.python.org/psf/'>Python Software Foundation</a>."
 msgstr ""
 
-#: templates/about/about.html:7 templates/about/ambassadors.html:7
-#: templates/about/code_of_conduct.html:7 templates/about/diversity.html:7
-#: templates/about/organizers.html:7 templates/homepage.html:7
-#: templates/keynotes.html:7 templates/participate/plotting_contest.html:7
+#: templates/about/about.html:7 templates/about/code_of_conduct.html:7
+#: templates/about/diversity.html:7 templates/about/organizers.html:7
+#: templates/homepage.html:7 templates/keynotes.html:7
+#: templates/participate/ambassadors.html:7
+#: templates/participate/plotting_contest.html:7
 #: templates/privacy_policy.html:7 templates/sponsor_levels.html:7
 #: templates/sponsorship.html:7 templates/venue/directions.html:7
 #: templates/venue/floorplans.html:7 templates/venue/lodging.html:7
@@ -947,6 +948,22 @@ msgstr ""
 
 #: templates/homepage.html:53
 msgid "Follow"
+msgstr ""
+
+#: templates/participate/ambassadors.html:14
+msgid "The SciPyLA 2016 Ambassadors Team"
+msgstr ""
+
+#: templates/participate/ambassadors.html:16
+msgid "Bolivia:"
+msgstr ""
+
+#: templates/participate/ambassadors.html:23
+msgid "Costa Rica:"
+msgstr ""
+
+#: templates/participate/ambassadors.html:29
+msgid "Venezuela:"
 msgstr ""
 
 #: templates/participate/bofs.html:7 templates/participate/financial_aid.html:7
