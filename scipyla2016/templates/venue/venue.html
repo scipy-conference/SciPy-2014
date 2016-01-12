@@ -1,0 +1,53 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% load boxes_tags %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+
+
+<h1>{% trans "SciPyLA 2016 Venue" %}</h1>
+
+<!-- FIXME Add photo of UFSC
+<img src="../site_media/static/img/att.jpg" alt="AT&amp;T Executive Education and Conference Center" width="427" height="285" class="right">
+-->
+
+<p>{% trans "SciPyLA 2016 will be held at the Federal University of Santa Catarina campus in Florianópolis, Santa Catarina, Brazil." %}</p>
+
+<figure>
+    <iframe width="100%"
+            height="200"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="http://www.openstreetmap.org/export/embed.html?bbox=-48.75801086425781%2C-27.778341612236314%2C-48.23204040527344%2C-27.426023525271468&amp;layer=mapnik&amp;marker=-27.602628403138915%2C-48.495025634765625"
+            style="border: 1px solid black">
+    </iframe>
+</figure>
+
+<p>{% trans "The university is located in the heart of Florianópolis, allowing easy access to the city's renowned <a href='http://www.pmf.sc.gov.br/entidades/turismo/index.php?cms=atrativos+naturais+++praias&menu=6'>beaches</a>, <a href='http://www.pmf.sc.gov.br/entidades/turismo/index.php?cms=parques+municipais&menu=6'>parks</a>, <a href='http://www.pmf.sc.gov.br/entidades/turismo/index.php?cms=atrativos+turisticos+culturais&menu=6'>museums</a>, and <a href='http://www.floripacreativecity.com/'>restaurants</a>." %}</p>
+
+<figure>
+    <iframe width="560"
+            height="315"
+            src="https://www.youtube.com/embed/v-UWSoDEwLU?list=PLuEW3_j1YcI6lu9XRHzNTeuBoQ9fRmSQS"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+    <!-- Old video
+    <iframe width="420"
+            height="315"
+            src="https://www.youtube.com/embed/Gg2bGzWxyp4"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+    -->
+</figure>
+
+{% endblock %}

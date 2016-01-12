@@ -1,50 +1,6 @@
 [
     {
         "pk": 1, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 1, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 2, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 3, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "proposals.proposalsection", 
-        "fields": {
-            "start": null, 
-            "section": 4, 
-            "end": null, 
-            "closed": null, 
-            "published": null
-        }
-    }, 
-    {
-        "pk": 1, 
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 1, 
@@ -57,8 +13,8 @@
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 2, 
-            "name": "talk/poster", 
-            "slug": "talk-poster"
+            "name": "talk", 
+            "slug": "talk"
         }
     }, 
     {
@@ -66,17 +22,30 @@
         "model": "proposals.proposalkind", 
         "fields": {
             "section": 3, 
-            "name": "birds of a feather", 
-            "slug": "bof"
+            "name": "poster", 
+            "slug": "poster"
         }
     }, 
     {
-        "pk": 4, 
-        "model": "proposals.proposalkind", 
+        "pk": 1, 
+        "model": "proposals.proposalsection", 
         "fields": {
-            "section": 4, 
-            "name": "sprint", 
-            "slug": "sprint"
+            "start": null, 
+            "section": 1, 
+            "end": null, 
+            "closed": null, 
+            "published": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "proposals.proposalsection", 
+        "fields": {
+            "start": null, 
+            "section": 2, 
+            "end": null, 
+            "closed": null, 
+            "published": null
         }
     }
 ]

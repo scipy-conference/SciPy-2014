@@ -1,0 +1,53 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% load boxes_tags %}
+
+{% block head_title %}{% trans "Welcome" %}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+
+<h1>{% trans "SciPyLA 2016 Sponsorship" %}</h1>
+
+<p>{% trans "As a community, SciPy Latin America advances scientific and analytic computing through the development and promotion of open source Python software; Python usage continues to grow significantly in scientific and analytic computing thanks to the efforts of this community." %}</p>
+
+<!-- FIXME The attendance is incorrect. -->
+<p>{% trans "The annual SciPyLA Conference brings together academic and industry users to present their latest work, learn from skilled users and developers, and collaborate on advancing the ecosystem." %}</p>
+
+<p>{% trans "2-days of Tutorials" %}</p>
+
+<p style="padding-left: 2em;">{% trans "We provide two days of expert-led tutorials at the start of the conference.  These tutorials are very popular, with an introductory track for attendees new to Python, and intermediate and advanced tracks for experienced users." %}</p>
+
+<p>{% trans "3-days of Talks, Poster Sessions" %}</p>
+
+<p style="padding-left: 2em;">{% trans "Authors share their juried presentations and poster papers covering the latest developments in the use of Python in science during the three main days of the conference. Presentations, posters, lightning talks provide a wide variety of opportunities for attendees to participate and learn." %}</p>
+
+<h2>{% trans "Why Sponsor?" %}</h2>
+
+<h3>{% trans "Contribute to the growth of the community and code base:" %}</h3>
+
+<p>{% trans "Your sponsorship helps us build a financial foundation for the conference and the community, providing more opportunities for the community to build out the Python scientific computing tools and packages." %}</p>
+
+<!--
+<h3>{% trans "Build awareness, recruit, and make contacts:" %}</h3>
+
+<p>{% trans "SciPyLA brings together some of the best minds in scientific and analytic computing, 25% of them students; you’ll be hard-pressed to find this kind of audience anywhere else." %}</p>
+-->
+
+<h3>{% trans "Help fund attendance:" %}</h3>
+
+<!-- FIXME Need data from 2015 -->
+<p>{% trans "SciPyLA offers scholarships for students and researchers who contribute to the community." %}</p>
+
+<p>{% trans "Sponsorships also help us to keep this meeting very affordable." %}</p>
+
+{% include "sponsor_levels_alone.html" %}
+
+<h2>{% trans "2015 Sponsor Participation" %}</h2>
+
+<p>{% trans "SciPyLA 2015 was sponsored by Universidade Gastón Dachary, Machinalis, Python Software Foundation, GitHub, Enthought." %}</p>
+
+{% endblock %}

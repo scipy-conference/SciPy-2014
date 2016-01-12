@@ -27,11 +27,11 @@
         }
     }, 
     {
-        "pk": 9, 
+        "pk": 1, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 4, 
+            "benefit": 2, 
             "max_words": null, 
             "level": 1
         }
@@ -47,21 +47,21 @@
         }
     }, 
     {
-        "pk": 1, 
+        "pk": 9, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 2, 
+            "benefit": 4, 
             "max_words": null, 
             "level": 1
         }
     }, 
     {
-        "pk": 10, 
+        "pk": 2, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 4, 
+            "benefit": 2, 
             "max_words": null, 
             "level": 2
         }
@@ -77,21 +77,21 @@
         }
     }, 
     {
-        "pk": 2, 
+        "pk": 10, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 2, 
+            "benefit": 4, 
             "max_words": null, 
             "level": 2
         }
     }, 
     {
-        "pk": 11, 
+        "pk": 3, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 4, 
+            "benefit": 2, 
             "max_words": null, 
             "level": 3
         }
@@ -107,11 +107,11 @@
         }
     }, 
     {
-        "pk": 3, 
+        "pk": 11, 
         "model": "sponsorship.benefitlevel", 
         "fields": {
             "other_limits": "", 
-            "benefit": 2, 
+            "benefit": 4, 
             "max_words": null, 
             "level": 3
         }

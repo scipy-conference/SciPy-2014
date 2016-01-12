@@ -3,3 +3,8 @@ _build
 dev.db
 site_media
 *.DS_Store
+/bin/*
+/local/*
+/lib/*
+/include/*
+/src/*

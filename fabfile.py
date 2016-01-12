@@ -153,8 +153,8 @@ def update_repo(commit=None):
 
     scipy_put('deployment/regenerate.sh', pjoin(SITE_PATH, 'bin/regenerate.sh'))
     scipy_put(env['local_settings'],
-              pjoin(REPO, 'scipy2014/local_settings.py'))
-    scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipy2014', 'secrets.py'))
+              pjoin(REPO, 'scipyla2016/local_settings.py'))
+    scipy_do('cp ~/secrets.py %s' % pjoin(REPO, 'scipyla2016', 'secrets.py'))
 
 
 def build_static(venv_path):
@@ -185,8 +185,8 @@ def deploy_nginx():
 
 @task
 def deploy_supervisor():
-    upload_template('deployment/scipy2014.conf',
-                    '/etc/supervisor/conf.d/scipy2014.conf',
+    upload_template('deployment/scipyla2016.conf',
+                    '/etc/supervisor/conf.d/scipyla2016.conf',
                     use_sudo=True)
     supervisor.update_config()
 
@@ -231,7 +231,7 @@ def put_gunicorn_conf(venv):
 
 @task
 def restart_gunicorn():
-    sudo('supervisorctl restart scipy2014')
+    sudo('supervisorctl restart scipyla2016')
 
 
 @task
@@ -284,7 +284,7 @@ def provision():
 def setup_db():
     with settings(mysql_user='root', password='notapassword'):
         mysql.user('scipy', password='notapassword')
-        mysql.database('scipy2014', owner='scipy')
+        mysql.database('scipyla2016', owner='scipy')
 """
 
 
